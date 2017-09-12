@@ -123,8 +123,8 @@ define(function(require, exports, module)
                regex : "`.*?`"
             },
 	    {
-		    token: ["identifier", "keyword.operator"],
-		     regex : "([a-zA-Z.][a-zA-Z0-9._]*\\b)(=)"
+		    token: ["identifier", "text", "keyword.operator"],
+		     regex : "([a-zA-Z.][a-zA-Z0-9._]*\\b)(\\s*)(=)"
 	    },
             {
                onMatch : function(value) {

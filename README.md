@@ -16,15 +16,15 @@ Included here is
 
 - the version of shinyAce used by TrestleTech
 - the source for 
-        - ptr.js
-        - ptr_completions.js
-        - ptr_hightlight_rules.js
-        - ptr_worker.js
-        - ptrparse.js
-        - mode-ptr.js
-        - worker-ptr.js
-        - ptR.peg
-        - parseTail.js    
+        + ptr.js
+        + ptr_completions.js
+        + ptr_hightlight_rules.js
+        + ptr_worker.js
+        + ptrparse.js
+        + mode-ptr.js
+        + worker-ptr.js
+        + ptR.peg
+        + parseTail.js    
 - scripts to build the above.
 
 ptR.peg source for pegjs: Used for creating parser to check syntax for the ACE editor

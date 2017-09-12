@@ -1,0 +1,1089 @@
+attr,variable,value
+writing-mode,Value,lr-tb
+writing-mode,Value,rl-tb
+writing-mode,Value,tb-rl
+writing-mode,Value,lr
+writing-mode,Value,rl
+writing-mode,Value,tb
+writing-mode,Value,inherit
+glyph-orientation-vertical,Value,auto
+glyph-orientation-vertical,Value,<angle>
+glyph-orientation-vertical,Value,inherit
+glyph-orientation-horizontal,Value,<angle>
+glyph-orientation-horizontal,Value,inherit
+direction,Value,ltr
+direction,Value,rtl
+direction,Value,inherit
+unicode-bidi,Value,normal
+unicode-bidi,Value,embed
+unicode-bidi,Value,bidi-override
+unicode-bidi,Value,inherit
+text-anchor,Value,start
+text-anchor,Value,middle
+text-anchor,Value,end
+text-anchor,Value,inherit
+dominant-baseline,Value,auto
+dominant-baseline,Value,use-script
+dominant-baseline,Value,no-change
+dominant-baseline,Value,reset-size
+dominant-baseline,Value,ideographic
+dominant-baseline,Value,alphabetic
+dominant-baseline,Value,hanging
+dominant-baseline,Value,mathematical
+dominant-baseline,Value,central
+dominant-baseline,Value,middle
+dominant-baseline,Value,text-after-edge
+dominant-baseline,Value,text-before-edge
+dominant-baseline,Value,inherit
+alignment-baseline,Value,auto
+alignment-baseline,Value,baseline
+alignment-baseline,Value,before-edge
+alignment-baseline,Value,text-before-edge
+alignment-baseline,Value,middle
+alignment-baseline,Value,central
+alignment-baseline,Value,after-edge
+alignment-baseline,Value,text-after-edge
+alignment-baseline,Value,ideographic
+alignment-baseline,Value,alphabetic
+alignment-baseline,Value,hanging
+alignment-baseline,Value,mathematical
+alignment-baseline,Value,inherit
+baseline-shift,Value,baseline
+baseline-shift,Value,sub
+baseline-shift,Value,super
+baseline-shift,Value,<percentage>
+baseline-shift,Value,<length>
+baseline-shift,Value,inherit
+font-family,Value,"[[ <family-name> | <generic-family> ],]* [<family-name> | <generic-family>] | inherit"
+font-style,Value,normal
+font-style,Value,italic
+font-style,Value,oblique
+font-style,Value,inherit
+font-variant,Value,normal
+font-variant,Value,small-caps
+font-variant,Value,inherit
+font-weight,Value,normal
+font-weight,Value,bold
+font-weight,Value,bolder
+font-weight,Value,lighter
+font-weight,Value,100
+font-weight,Value,200
+font-weight,Value,300
+font-weight,Value,400
+font-weight,Value,500
+font-weight,Value,600
+font-weight,Value,700
+font-weight,Value,800
+font-weight,Value,900
+font-weight,Value,inherit
+font-stretch,Value,normal
+font-stretch,Value,wider
+font-stretch,Value,narrower
+font-stretch,Value,ultra-condensed
+font-stretch,Value,extra-condensed
+font-stretch,Value,condensed
+font-stretch,Value,semi-condensed
+font-stretch,Value,semi-expanded
+font-stretch,Value,expanded
+font-stretch,Value,extra-expanded
+font-stretch,Value,ultra-expanded
+font-stretch,Value,inherit
+font-size,Value,<absolute-size>
+font-size,Value,<relative-size>
+font-size,Value,<length>
+font-size,Value,<percentage>
+font-size,Value,inherit
+font-size-adjust,Value,<number>
+font-size-adjust,Value,none
+font-size-adjust,Value,inherit
+kerning,Value,auto
+kerning,Value,<length>
+kerning,Value,inherit
+letter-spacing,Value,normal
+letter-spacing,Value,<length>
+letter-spacing,Value,inherit
+word-spacing,Value,normal
+word-spacing,Value,<length>
+word-spacing,Value,inherit
+text-decoration,Value,none | [ underline || overline || line-through || blink ] | inherit
+overflow,Value,visible
+overflow,Value,hidden
+overflow,Value,scroll
+overflow,Value,auto
+overflow,Value,inherit
+clip,Value,<shape>
+clip,Value,auto
+clip,Value,inherit
+clip-path,Value,<funciri>
+clip-path,Value,none
+clip-path,Value,inherit
+clip-rule,Value,nonzero
+clip-rule,Value,evenodd
+clip-rule,Value,inherit
+mask,Value,<funciri>
+mask,Value,none
+mask,Value,inherit
+opacity,Value,<opacity-value>
+opacity,Value,inherit
+fill,Value,<paint> (See Specifying paint)
+fill-rule,Value,nonzero
+fill-rule,Value,evenodd
+fill-rule,Value,inherit
+fill-opacity,Value,<opacity-value>
+fill-opacity,Value,inherit
+stroke,Value,<paint> (See Specifying paint)
+stroke-width,Value,<percentage>
+stroke-width,Value,<length>
+stroke-width,Value,inherit
+stroke-linecap,Value,butt
+stroke-linecap,Value,round
+stroke-linecap,Value,square
+stroke-linecap,Value,inherit
+stroke-linejoin,Value,miter
+stroke-linejoin,Value,round
+stroke-linejoin,Value,bevel
+stroke-linejoin,Value,inherit
+stroke-miterlimit,Value,<miterlimit>
+stroke-miterlimit,Value,inherit
+stroke-dasharray,Value,none
+stroke-dasharray,Value,<dasharray>
+stroke-dasharray,Value,inherit
+stroke-dashoffset,Value,<percentage>
+stroke-dashoffset,Value,<length>
+stroke-dashoffset,Value,inherit
+stroke-opacity,Value,<opacity-value>
+stroke-opacity,Value,inherit
+display,Value,inline
+display,Value,block
+display,Value,list-item
+display,Value,run-in
+display,Value,compact
+display,Value,marker
+display,Value,table
+display,Value,inline-table
+display,Value,table-row-group
+display,Value,table-header-group
+display,Value,table-footer-group
+display,Value,table-row
+display,Value,table-column-group
+display,Value,table-column
+display,Value,table-cell
+display,Value,table-caption
+display,Value,none
+display,Value,inherit
+visibility,Value,visible
+visibility,Value,hidden
+visibility,Value,collapse
+visibility,Value,inherit
+color-interpolation,Value,auto
+color-interpolation,Value,sRGB
+color-interpolation,Value,linearRGB
+color-interpolation,Value,inherit
+color-interpolation-filters,Value,auto
+color-interpolation-filters,Value,sRGB
+color-interpolation-filters,Value,linearRGB
+color-interpolation-filters,Value,inherit
+color-rendering,Value,auto
+color-rendering,Value,optimizeSpeed
+color-rendering,Value,optimizeQuality
+color-rendering,Value,inherit
+shape-rendering,Value,auto
+shape-rendering,Value,optimizeSpeed
+shape-rendering,Value,crispEdges
+shape-rendering,Value,geometricPrecision
+shape-rendering,Value,inherit
+text-rendering,Value,auto
+text-rendering,Value,optimizeSpeed
+text-rendering,Value,optimizeLegibility
+text-rendering,Value,geometricPrecision
+text-rendering,Value,inherit
+image-rendering,Value,auto
+image-rendering,Value,optimizeSpeed
+image-rendering,Value,optimizeQuality
+image-rendering,Value,inherit
+color,Value,<color>
+color,Value,inherit
+color-profile,Value,auto
+color-profile,Value,sRGB
+color-profile,Value,<name>
+color-profile,Value,<iri>
+color-profile,Value,inherit
+pointer-events,Value,visiblePainted
+pointer-events,Value,visibleFill
+pointer-events,Value,visibleStroke
+pointer-events,Value,visible
+pointer-events,Value,painted
+pointer-events,Value,fill
+pointer-events,Value,stroke
+pointer-events,Value,all
+pointer-events,Value,none
+pointer-events,Value,inherit
+cursor,Value,"[ [<funciri> ,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize| text | wait | help ] ] | inherit"
+filter,Value,<funciri>
+filter,Value,none
+filter,Value,inherit
+enable-background,Value,accumulate | new [ <x> <y> <width> <height> ] | inherit
+lighting-color,Value,currentColor |<color> [<icccolor>] | inherit
+flood-color,Value,currentColor |<color> [<icccolor>] | inherit
+flood-opacity,Value,<opacity-value>
+flood-opacity,Value,inherit
+stop-color,Value,currentColor
+stop-color,Value,<color> <icccolor>
+stop-color,Value,inherit
+stop-opacity,Value,<opacity-value>
+stop-opacity,Value,inherit
+writing-mode,Applies to,text
+glyph-orientation-vertical,Applies to,altGlyph
+glyph-orientation-vertical,Applies to,textPath
+glyph-orientation-vertical,Applies to,text
+glyph-orientation-vertical,Applies to,tref
+glyph-orientation-vertical,Applies to,tspan
+glyph-orientation-horizontal,Applies to,altGlyph
+glyph-orientation-horizontal,Applies to,textPath
+glyph-orientation-horizontal,Applies to,text
+glyph-orientation-horizontal,Applies to,tref
+glyph-orientation-horizontal,Applies to,tspan
+direction,Applies to,altGlyph
+direction,Applies to,textPath
+direction,Applies to,text
+direction,Applies to,tref
+direction,Applies to,tspan
+unicode-bidi,Applies to,altGlyph
+unicode-bidi,Applies to,textPath
+unicode-bidi,Applies to,text
+unicode-bidi,Applies to,tref
+unicode-bidi,Applies to,tspan
+text-anchor,Applies to,altGlyph
+text-anchor,Applies to,textPath
+text-anchor,Applies to,text
+text-anchor,Applies to,tref
+text-anchor,Applies to,tspan
+dominant-baseline,Applies to,altGlyph
+dominant-baseline,Applies to,textPath
+dominant-baseline,Applies to,text
+dominant-baseline,Applies to,tref
+dominant-baseline,Applies to,tspan
+alignment-baseline,Applies to,tspan
+alignment-baseline,Applies to,tref
+alignment-baseline,Applies to,altGlyph
+alignment-baseline,Applies to,textPath
+baseline-shift,Applies to,tspan
+baseline-shift,Applies to,tref
+baseline-shift,Applies to,altGlyph
+baseline-shift,Applies to,textPath
+font-family,Applies to,altGlyph
+font-family,Applies to,textPath
+font-family,Applies to,text
+font-family,Applies to,tref
+font-family,Applies to,tspan
+font-style,Applies to,altGlyph
+font-style,Applies to,textPath
+font-style,Applies to,text
+font-style,Applies to,tref
+font-style,Applies to,tspan
+font-variant,Applies to,altGlyph
+font-variant,Applies to,textPath
+font-variant,Applies to,text
+font-variant,Applies to,tref
+font-variant,Applies to,tspan
+font-weight,Applies to,altGlyph
+font-weight,Applies to,textPath
+font-weight,Applies to,text
+font-weight,Applies to,tref
+font-weight,Applies to,tspan
+font-stretch,Applies to,altGlyph
+font-stretch,Applies to,textPath
+font-stretch,Applies to,text
+font-stretch,Applies to,tref
+font-stretch,Applies to,tspan
+font-size,Applies to,altGlyph
+font-size,Applies to,textPath
+font-size,Applies to,text
+font-size,Applies to,tref
+font-size,Applies to,tspan
+font-size-adjust,Applies to,altGlyph
+font-size-adjust,Applies to,textPath
+font-size-adjust,Applies to,text
+font-size-adjust,Applies to,tref
+font-size-adjust,Applies to,tspan
+kerning,Applies to,altGlyph
+kerning,Applies to,textPath
+kerning,Applies to,text
+kerning,Applies to,tref
+kerning,Applies to,tspan
+letter-spacing,Applies to,altGlyph
+letter-spacing,Applies to,textPath
+letter-spacing,Applies to,text
+letter-spacing,Applies to,tref
+letter-spacing,Applies to,tspan
+word-spacing,Applies to,altGlyph
+word-spacing,Applies to,textPath
+word-spacing,Applies to,text
+word-spacing,Applies to,tref
+word-spacing,Applies to,tspan
+text-decoration,Applies to,altGlyph
+text-decoration,Applies to,textPath
+text-decoration,Applies to,text
+text-decoration,Applies to,tref
+text-decoration,Applies to,tspan
+overflow,Applies to,pattern
+overflow,Applies to,marker
+overflow,Applies to,svg
+overflow,Applies to,symbol
+overflow,Applies to,image
+overflow,Applies to,foreignObject
+clip,Applies to,pattern
+clip,Applies to,marker
+clip,Applies to,svg
+clip,Applies to,symbol
+clip,Applies to,image
+clip,Applies to,foreignObject
+clip-path,Applies to,a
+clip-path,Applies to,defs
+clip-path,Applies to,glyph
+clip-path,Applies to,g
+clip-path,Applies to,marker
+clip-path,Applies to,mask
+clip-path,Applies to,missing-glyph
+clip-path,Applies to,pattern
+clip-path,Applies to,svg
+clip-path,Applies to,switch
+clip-path,Applies to,symbol
+clip-path,Applies to,circle
+clip-path,Applies to,ellipse
+clip-path,Applies to,image
+clip-path,Applies to,line
+clip-path,Applies to,path
+clip-path,Applies to,polygon
+clip-path,Applies to,polyline
+clip-path,Applies to,rect
+clip-path,Applies to,text
+clip-path,Applies to,use
+clip-path,Applies to,clipPath
+clip-rule,Applies to,circle
+clip-rule,Applies to,ellipse
+clip-rule,Applies to,image
+clip-rule,Applies to,line
+clip-rule,Applies to,path
+clip-rule,Applies to,polygon
+clip-rule,Applies to,polyline
+clip-rule,Applies to,rect
+clip-rule,Applies to,text
+clip-rule,Applies to,use
+mask,Applies to,a
+mask,Applies to,defs
+mask,Applies to,glyph
+mask,Applies to,g
+mask,Applies to,marker
+mask,Applies to,mask
+mask,Applies to,missing-glyph
+mask,Applies to,pattern
+mask,Applies to,svg
+mask,Applies to,switch
+mask,Applies to,symbol
+mask,Applies to,circle
+mask,Applies to,ellipse
+mask,Applies to,image
+mask,Applies to,line
+mask,Applies to,path
+mask,Applies to,polygon
+mask,Applies to,polyline
+mask,Applies to,rect
+mask,Applies to,text
+mask,Applies to,use
+opacity,Applies to,circle
+opacity,Applies to,ellipse
+opacity,Applies to,image
+opacity,Applies to,line
+opacity,Applies to,path
+opacity,Applies to,polygon
+opacity,Applies to,polyline
+opacity,Applies to,rect
+opacity,Applies to,text
+opacity,Applies to,use
+opacity,Applies to,a
+opacity,Applies to,svg
+opacity,Applies to,g
+opacity,Applies to,defs
+opacity,Applies to,symbol
+opacity,Applies to,switch
+opacity,Applies to,glyph
+opacity,Applies to,missing-glyph
+opacity,Applies to,pattern
+opacity,Applies to,marker
+fill,Applies to,path
+fill,Applies to,rect
+fill,Applies to,circle
+fill,Applies to,ellipse
+fill,Applies to,line
+fill,Applies to,polyline
+fill,Applies to,polygon
+fill,Applies to,altGlyph
+fill,Applies to,textPath
+fill,Applies to,text
+fill,Applies to,tref
+fill,Applies to,tspan
+fill-rule,Applies to,path
+fill-rule,Applies to,rect
+fill-rule,Applies to,circle
+fill-rule,Applies to,ellipse
+fill-rule,Applies to,line
+fill-rule,Applies to,polyline
+fill-rule,Applies to,polygon
+fill-rule,Applies to,altGlyph
+fill-rule,Applies to,textPath
+fill-rule,Applies to,text
+fill-rule,Applies to,tref
+fill-rule,Applies to,tspan
+fill-opacity,Applies to,path
+fill-opacity,Applies to,rect
+fill-opacity,Applies to,circle
+fill-opacity,Applies to,ellipse
+fill-opacity,Applies to,line
+fill-opacity,Applies to,polyline
+fill-opacity,Applies to,polygon
+fill-opacity,Applies to,altGlyph
+fill-opacity,Applies to,textPath
+fill-opacity,Applies to,text
+fill-opacity,Applies to,tref
+fill-opacity,Applies to,tspan
+stroke,Applies to,path
+stroke,Applies to,rect
+stroke,Applies to,circle
+stroke,Applies to,ellipse
+stroke,Applies to,line
+stroke,Applies to,polyline
+stroke,Applies to,polygon
+stroke,Applies to,altGlyph
+stroke,Applies to,textPath
+stroke,Applies to,text
+stroke,Applies to,tref
+stroke,Applies to,tspan
+stroke-width,Applies to,path
+stroke-width,Applies to,rect
+stroke-width,Applies to,circle
+stroke-width,Applies to,ellipse
+stroke-width,Applies to,line
+stroke-width,Applies to,polyline
+stroke-width,Applies to,polygon
+stroke-width,Applies to,altGlyph
+stroke-width,Applies to,textPath
+stroke-width,Applies to,text
+stroke-width,Applies to,tref
+stroke-width,Applies to,tspan
+stroke-linecap,Applies to,path
+stroke-linecap,Applies to,rect
+stroke-linecap,Applies to,circle
+stroke-linecap,Applies to,ellipse
+stroke-linecap,Applies to,line
+stroke-linecap,Applies to,polyline
+stroke-linecap,Applies to,polygon
+stroke-linecap,Applies to,altGlyph
+stroke-linecap,Applies to,textPath
+stroke-linecap,Applies to,text
+stroke-linecap,Applies to,tref
+stroke-linecap,Applies to,tspan
+stroke-linejoin,Applies to,path
+stroke-linejoin,Applies to,rect
+stroke-linejoin,Applies to,circle
+stroke-linejoin,Applies to,ellipse
+stroke-linejoin,Applies to,line
+stroke-linejoin,Applies to,polyline
+stroke-linejoin,Applies to,polygon
+stroke-linejoin,Applies to,altGlyph
+stroke-linejoin,Applies to,textPath
+stroke-linejoin,Applies to,text
+stroke-linejoin,Applies to,tref
+stroke-linejoin,Applies to,tspan
+stroke-miterlimit,Applies to,path
+stroke-miterlimit,Applies to,rect
+stroke-miterlimit,Applies to,circle
+stroke-miterlimit,Applies to,ellipse
+stroke-miterlimit,Applies to,line
+stroke-miterlimit,Applies to,polyline
+stroke-miterlimit,Applies to,polygon
+stroke-miterlimit,Applies to,altGlyph
+stroke-miterlimit,Applies to,textPath
+stroke-miterlimit,Applies to,text
+stroke-miterlimit,Applies to,tref
+stroke-miterlimit,Applies to,tspan
+stroke-dasharray,Applies to,path
+stroke-dasharray,Applies to,rect
+stroke-dasharray,Applies to,circle
+stroke-dasharray,Applies to,ellipse
+stroke-dasharray,Applies to,line
+stroke-dasharray,Applies to,polyline
+stroke-dasharray,Applies to,polygon
+stroke-dasharray,Applies to,altGlyph
+stroke-dasharray,Applies to,textPath
+stroke-dasharray,Applies to,text
+stroke-dasharray,Applies to,tref
+stroke-dasharray,Applies to,tspan
+stroke-dashoffset,Applies to,path
+stroke-dashoffset,Applies to,rect
+stroke-dashoffset,Applies to,circle
+stroke-dashoffset,Applies to,ellipse
+stroke-dashoffset,Applies to,line
+stroke-dashoffset,Applies to,polyline
+stroke-dashoffset,Applies to,polygon
+stroke-dashoffset,Applies to,altGlyph
+stroke-dashoffset,Applies to,textPath
+stroke-dashoffset,Applies to,text
+stroke-dashoffset,Applies to,tref
+stroke-dashoffset,Applies to,tspan
+stroke-opacity,Applies to,path
+stroke-opacity,Applies to,rect
+stroke-opacity,Applies to,circle
+stroke-opacity,Applies to,ellipse
+stroke-opacity,Applies to,line
+stroke-opacity,Applies to,polyline
+stroke-opacity,Applies to,polygon
+stroke-opacity,Applies to,altGlyph
+stroke-opacity,Applies to,textPath
+stroke-opacity,Applies to,text
+stroke-opacity,Applies to,tref
+stroke-opacity,Applies to,tspan
+display,Applies to,circle
+display,Applies to,ellipse
+display,Applies to,image
+display,Applies to,line
+display,Applies to,path
+display,Applies to,polygon
+display,Applies to,polyline
+display,Applies to,rect
+display,Applies to,text
+display,Applies to,use
+display,Applies to,svg
+display,Applies to,g
+display,Applies to,switch
+display,Applies to,a
+display,Applies to,foreignObject
+display,Applies to,text
+display,Applies to,tspan
+display,Applies to,tref
+display,Applies to,altGlyph
+display,Applies to,textPath
+visibility,Applies to,circle
+visibility,Applies to,ellipse
+visibility,Applies to,image
+visibility,Applies to,line
+visibility,Applies to,path
+visibility,Applies to,polygon
+visibility,Applies to,polyline
+visibility,Applies to,rect
+visibility,Applies to,text
+visibility,Applies to,use
+visibility,Applies to,text
+visibility,Applies to,tspan
+visibility,Applies to,tref
+visibility,Applies to,altGlyph
+visibility,Applies to,textPath
+visibility,Applies to,a
+color-interpolation,Applies to,a
+color-interpolation,Applies to,defs
+color-interpolation,Applies to,glyph
+color-interpolation,Applies to,g
+color-interpolation,Applies to,marker
+color-interpolation,Applies to,mask
+color-interpolation,Applies to,missing-glyph
+color-interpolation,Applies to,pattern
+color-interpolation,Applies to,svg
+color-interpolation,Applies to,switch
+color-interpolation,Applies to,symbol
+color-interpolation,Applies to,circle
+color-interpolation,Applies to,ellipse
+color-interpolation,Applies to,image
+color-interpolation,Applies to,line
+color-interpolation,Applies to,path
+color-interpolation,Applies to,polygon
+color-interpolation,Applies to,polyline
+color-interpolation,Applies to,rect
+color-interpolation,Applies to,text
+color-interpolation,Applies to,use
+color-interpolation,Applies to,animate
+color-interpolation,Applies to,animateColor
+color-interpolation-filters,Applies to,feBlend
+color-interpolation-filters,Applies to,feColorMatrix
+color-interpolation-filters,Applies to,feComponentTransfer
+color-interpolation-filters,Applies to,feComposite
+color-interpolation-filters,Applies to,feConvolveMatrix
+color-interpolation-filters,Applies to,feDiffuseLighting
+color-interpolation-filters,Applies to,feDisplacementMap
+color-interpolation-filters,Applies to,feFlood
+color-interpolation-filters,Applies to,feGaussianBlur
+color-interpolation-filters,Applies to,feImage
+color-interpolation-filters,Applies to,feMerge
+color-interpolation-filters,Applies to,feMorphology
+color-interpolation-filters,Applies to,feOffset
+color-interpolation-filters,Applies to,feSpecularLighting
+color-interpolation-filters,Applies to,feTile
+color-interpolation-filters,Applies to,feTurbulence
+color-rendering,Applies to,a
+color-rendering,Applies to,defs
+color-rendering,Applies to,glyph
+color-rendering,Applies to,g
+color-rendering,Applies to,marker
+color-rendering,Applies to,mask
+color-rendering,Applies to,missing-glyph
+color-rendering,Applies to,pattern
+color-rendering,Applies to,svg
+color-rendering,Applies to,switch
+color-rendering,Applies to,symbol
+color-rendering,Applies to,circle
+color-rendering,Applies to,ellipse
+color-rendering,Applies to,image
+color-rendering,Applies to,line
+color-rendering,Applies to,path
+color-rendering,Applies to,polygon
+color-rendering,Applies to,polyline
+color-rendering,Applies to,rect
+color-rendering,Applies to,text
+color-rendering,Applies to,use
+color-rendering,Applies to,animate
+color-rendering,Applies to,animateColor
+shape-rendering,Applies to,path
+shape-rendering,Applies to,rect
+shape-rendering,Applies to,circle
+shape-rendering,Applies to,ellipse
+shape-rendering,Applies to,line
+shape-rendering,Applies to,polyline
+shape-rendering,Applies to,polygon
+text-rendering,Applies to,text
+image-rendering,Applies to,image
+color,Applies to,path
+color,Applies to,rect
+color,Applies to,circle
+color,Applies to,ellipse
+color,Applies to,line
+color,Applies to,polyline
+color,Applies to,polygon
+color,Applies to,stop
+color,Applies to,feFlood
+color,Applies to,feDiffuseLighting
+color,Applies to,feSpecularLighting
+pointer-events,Applies to,circle
+pointer-events,Applies to,ellipse
+pointer-events,Applies to,image
+pointer-events,Applies to,line
+pointer-events,Applies to,path
+pointer-events,Applies to,polygon
+pointer-events,Applies to,polyline
+pointer-events,Applies to,rect
+pointer-events,Applies to,text
+pointer-events,Applies to,use
+cursor,Applies to,a
+cursor,Applies to,defs
+cursor,Applies to,glyph
+cursor,Applies to,g
+cursor,Applies to,marker
+cursor,Applies to,mask
+cursor,Applies to,missing-glyph
+cursor,Applies to,pattern
+cursor,Applies to,svg
+cursor,Applies to,switch
+cursor,Applies to,symbol
+cursor,Applies to,circle
+cursor,Applies to,ellipse
+cursor,Applies to,image
+cursor,Applies to,line
+cursor,Applies to,path
+cursor,Applies to,polygon
+cursor,Applies to,polyline
+cursor,Applies to,rect
+cursor,Applies to,text
+cursor,Applies to,use
+filter,Applies to,circle
+filter,Applies to,ellipse
+filter,Applies to,image
+filter,Applies to,line
+filter,Applies to,path
+filter,Applies to,polygon
+filter,Applies to,polyline
+filter,Applies to,rect
+filter,Applies to,text
+filter,Applies to,use
+filter,Applies to,a
+filter,Applies to,svg
+filter,Applies to,g
+filter,Applies to,defs
+filter,Applies to,symbol
+filter,Applies to,switch
+filter,Applies to,glyph
+filter,Applies to,missing-glyph
+filter,Applies to,pattern
+filter,Applies to,marker
+enable-background,Applies to,a
+enable-background,Applies to,defs
+enable-background,Applies to,glyph
+enable-background,Applies to,g
+enable-background,Applies to,marker
+enable-background,Applies to,mask
+enable-background,Applies to,missing-glyph
+enable-background,Applies to,pattern
+enable-background,Applies to,svg
+enable-background,Applies to,switch
+enable-background,Applies to,symbol
+lighting-color,Applies to,feDiffuseLighting
+lighting-color,Applies to,feSpecularLighting
+flood-color,Applies to,feFlood
+flood-opacity,Applies to,feFlood
+stop-color,Applies to,stop
+stop-opacity,Applies to,stop
+writing-mode,Initial,lr-tb
+writing-mode,Inherited,yes
+writing-mode,Percentages,N/A
+writing-mode,Media,visual
+writing-mode,Animatable,no
+glyph-orientation-vertical,Initial,auto
+glyph-orientation-vertical,Inherited,yes
+glyph-orientation-vertical,Percentages,N/A
+glyph-orientation-vertical,Media,visual
+glyph-orientation-vertical,Animatable,no
+glyph-orientation-horizontal,Initial,0deg
+glyph-orientation-horizontal,Inherited,yes
+glyph-orientation-horizontal,Percentages,N/A
+glyph-orientation-horizontal,Media,visual
+glyph-orientation-horizontal,Animatable,no
+direction,Initial,ltr
+direction,Inherited,yes
+direction,Percentages,N/A
+direction,Media,visual
+direction,Animatable,no
+unicode-bidi,Initial,normal
+unicode-bidi,Inherited,no
+unicode-bidi,Percentages,N/A
+unicode-bidi,Media,visual
+unicode-bidi,Animatable,no
+text-anchor,Initial,start
+text-anchor,Inherited,yes
+text-anchor,Percentages,N/A
+text-anchor,Media,visual
+text-anchor,Animatable,yes
+dominant-baseline,Initial,auto
+dominant-baseline,Inherited,no
+dominant-baseline,Percentages,N/A
+dominant-baseline,Media,visual
+dominant-baseline,Animatable,yes
+alignment-baseline,Initial,auto
+alignment-baseline,Inherited,no
+alignment-baseline,Percentages,N/A
+alignment-baseline,Media,visual
+alignment-baseline,Animatable,yes
+baseline-shift,Initial,baseline
+baseline-shift,Inherited,no
+baseline-shift,Percentages,"refers to the ""line-height"" of the text element, which in the case of SVG is defined to be equal to the font-size"
+baseline-shift,Media,visual
+baseline-shift,Animatable,yes
+font-family,Initial,depends on user agent
+font-family,Inherited,yes
+font-family,Percentages,N/A
+font-family,Media,visual
+font-family,Animatable,yes
+font-style,Initial,normal
+font-style,Inherited,yes
+font-style,Percentages,N/A
+font-style,Media,visual
+font-style,Animatable,yes
+font-variant,Initial,normal
+font-variant,Inherited,yes
+font-variant,Percentages,N/A
+font-variant,Media,visual
+font-variant,Animatable,yes
+font-weight,Initial,normal
+font-weight,Inherited,yes
+font-weight,Percentages,N/A
+font-weight,Media,visual
+font-weight,Animatable,yes
+font-stretch,Initial,normal
+font-stretch,Inherited,yes
+font-stretch,Percentages,N/A
+font-stretch,Media,visual
+font-stretch,Animatable,yes
+font-size,Initial,medium
+font-size,Inherited,"yes, the computed value is inherited"
+font-size,Percentages,refer to parent element's font size
+font-size,Media,visual
+font-size,Animatable,yes
+font-size-adjust,Initial,none
+font-size-adjust,Inherited,yes
+font-size-adjust,Percentages,N/A
+font-size-adjust,Media,visual
+font-size-adjust,Animatable,yes (non-additive)
+kerning,Initial,auto
+kerning,Inherited,yes
+kerning,Percentages,N/A
+kerning,Media,visual
+kerning,Animatable,yes
+letter-spacing,Initial,normal
+letter-spacing,Inherited,yes
+letter-spacing,Percentages,N/A
+letter-spacing,Media,visual
+letter-spacing,Animatable,yes
+word-spacing,Initial,normal
+word-spacing,Inherited,yes
+word-spacing,Percentages,N/A
+word-spacing,Media,visual
+word-spacing,Animatable,yes
+text-decoration,Initial,none
+text-decoration,Inherited,no (see prose)
+text-decoration,Percentages,N/A
+text-decoration,Media,visual
+text-decoration,Animatable,yes
+overflow,Initial,see prose
+overflow,Inherited,no
+overflow,Percentages,N/A
+overflow,Media,visual
+overflow,Animatable,yes
+clip,Initial,auto
+clip,Inherited,no
+clip,Percentages,N/A
+clip,Media,visual
+clip,Animatable,yes
+clip-path,Initial,none
+clip-path,Inherited,no
+clip-path,Percentages,N/A
+clip-path,Media,visual
+clip-path,Animatable,yes
+clip-rule,Initial,nonzero
+clip-rule,Inherited,yes
+clip-rule,Percentages,N/A
+clip-rule,Media,visual
+clip-rule,Animatable,yes
+mask,Initial,none
+mask,Inherited,no
+mask,Percentages,N/A
+mask,Media,visual
+mask,Animatable,yes
+opacity,Initial,1
+opacity,Inherited,no
+opacity,Percentages,N/A
+opacity,Media,visual
+opacity,Animatable,yes
+fill,Initial,black
+fill,Inherited,yes
+fill,Percentages,N/A
+fill,Media,visual
+fill,Animatable,yes
+fill-rule,Initial,nonzero
+fill-rule,Inherited,yes
+fill-rule,Percentages,N/A
+fill-rule,Media,visual
+fill-rule,Animatable,yes
+fill-opacity,Initial,1
+fill-opacity,Inherited,yes
+fill-opacity,Percentages,N/A
+fill-opacity,Media,visual
+fill-opacity,Animatable,yes
+stroke,Initial,none
+stroke,Inherited,yes
+stroke,Percentages,N/A
+stroke,Media,visual
+stroke,Animatable,yes
+stroke-width,Initial,1
+stroke-width,Inherited,yes
+stroke-width,Percentages,Yes
+stroke-width,Media,visual
+stroke-width,Animatable,yes
+stroke-linecap,Initial,butt
+stroke-linecap,Inherited,yes
+stroke-linecap,Percentages,N/A
+stroke-linecap,Media,visual
+stroke-linecap,Animatable,yes
+stroke-linejoin,Initial,miter
+stroke-linejoin,Inherited,yes
+stroke-linejoin,Percentages,N/A
+stroke-linejoin,Media,visual
+stroke-linejoin,Animatable,yes
+stroke-miterlimit,Initial,4
+stroke-miterlimit,Inherited,yes
+stroke-miterlimit,Percentages,N/A
+stroke-miterlimit,Media,visual
+stroke-miterlimit,Animatable,yes
+stroke-dasharray,Initial,none
+stroke-dasharray,Inherited,yes
+stroke-dasharray,Percentages,yes (see below)
+stroke-dasharray,Media,visual
+stroke-dasharray,Animatable,yes (non-additive)
+stroke-dashoffset,Initial,0
+stroke-dashoffset,Inherited,yes
+stroke-dashoffset,Percentages,see prose
+stroke-dashoffset,Media,visual
+stroke-dashoffset,Animatable,yes
+stroke-opacity,Initial,1
+stroke-opacity,Inherited,yes
+stroke-opacity,Percentages,N/A
+stroke-opacity,Media,visual
+stroke-opacity,Animatable,yes
+display,Initial,inline
+display,Inherited,no
+display,Percentages,N/A
+display,Media,all
+display,Animatable,yes
+visibility,Initial,visible
+visibility,Inherited,yes
+visibility,Percentages,N/A
+visibility,Media,visual
+visibility,Animatable,yes
+color-interpolation,Initial,sRGB
+color-interpolation,Inherited,yes
+color-interpolation,Percentages,N/A
+color-interpolation,Media,visual
+color-interpolation,Animatable,yes
+color-interpolation-filters,Initial,linearRGB
+color-interpolation-filters,Inherited,yes
+color-interpolation-filters,Percentages,N/A
+color-interpolation-filters,Media,visual
+color-interpolation-filters,Animatable,yes
+color-rendering,Initial,auto
+color-rendering,Inherited,yes
+color-rendering,Percentages,N/A
+color-rendering,Media,visual
+color-rendering,Animatable,yes
+shape-rendering,Initial,auto
+shape-rendering,Inherited,yes
+shape-rendering,Percentages,N/A
+shape-rendering,Media,visual
+shape-rendering,Animatable,yes
+text-rendering,Initial,auto
+text-rendering,Inherited,yes
+text-rendering,Percentages,N/A
+text-rendering,Media,visual
+text-rendering,Animatable,yes
+image-rendering,Initial,auto
+image-rendering,Inherited,yes
+image-rendering,Percentages,N/A
+image-rendering,Media,visual
+image-rendering,Animatable,yes
+color,Initial,depends on user agent
+color,Inherited,yes
+color,Percentages,N/A
+color,Media,visual
+color,Animatable,yes
+color-profile,Initial,auto
+color-profile,Inherited,yes
+color-profile,Percentages,N/A
+color-profile,Media,visual
+color-profile,Animatable,yes
+pointer-events,Initial,visiblePainted
+pointer-events,Inherited,yes
+pointer-events,Percentages,N/A
+pointer-events,Media,visual
+pointer-events,Animatable,yes
+cursor,Initial,auto
+cursor,Inherited,yes
+cursor,Percentages,N/A
+cursor,Media,"visual, interactive"
+cursor,Animatable,yes
+filter,Initial,none
+filter,Inherited,no
+filter,Percentages,N/A
+filter,Media,visual
+filter,Animatable,yes
+enable-background,Initial,accumulate
+enable-background,Inherited,no
+enable-background,Percentages,N/A
+enable-background,Media,visual
+enable-background,Animatable,no
+lighting-color,Initial,white
+lighting-color,Inherited,no
+lighting-color,Percentages,N/A
+lighting-color,Media,visual
+lighting-color,Animatable,yes
+flood-color,Initial,black
+flood-color,Inherited,no
+flood-color,Percentages,N/A
+flood-color,Media,visual
+flood-color,Animatable,yes
+flood-opacity,Initial,1
+flood-opacity,Inherited,no
+flood-opacity,Percentages,N/A
+flood-opacity,Media,visual
+flood-opacity,Animatable,yes
+stop-color,Initial,black
+stop-color,Inherited,no
+stop-color,Percentages,N/A
+stop-color,Media,visual
+stop-color,Animatable,yes
+stop-opacity,Initial,1
+stop-opacity,Inherited,no
+stop-opacity,Percentages,N/A
+stop-opacity,Media,visual
+stop-opacity,Animatable,yes
+marker-start,Value,none | <funciri> | inherit
+marker-start,Value,none | <funciri> | inherit
+marker-start,Value,none | <funciri> | inherit
+marker-start,Value,none | <funciri> | inherit
+marker-mid,Value,none | <funciri> | inherit
+marker-mid,Value,none | <funciri> | inherit
+marker-mid,Value,none | <funciri> | inherit
+marker-mid,Value,none | <funciri> | inherit
+marker-end,Value,none | <funciri> | inherit
+marker-end,Value,none | <funciri> | inherit
+marker-end,Value,none | <funciri> | inherit
+marker-end,Value,none | <funciri> | inherit
+marker-start,Initial,none
+marker-start,Initial,none
+marker-start,Initial,none
+marker-start,Initial,none
+marker-mid,Initial,none
+marker-mid,Initial,none
+marker-mid,Initial,none
+marker-mid,Initial,none
+marker-end,Initial,none
+marker-end,Initial,none
+marker-end,Initial,none
+marker-end,Initial,none
+marker-start,Applies to,path
+marker-start,Applies to,line
+marker-start,Applies to,polyline
+marker-start,Applies to,polygon
+marker-mid,Applies to,path
+marker-mid,Applies to,line
+marker-mid,Applies to,polyline
+marker-mid,Applies to,polygon
+marker-end,Applies to,path
+marker-end,Applies to,line
+marker-end,Applies to,polyline
+marker-end,Applies to,polygon
+marker-start,Inherited,yes
+marker-start,Inherited,yes
+marker-start,Inherited,yes
+marker-start,Inherited,yes
+marker-mid,Inherited,yes
+marker-mid,Inherited,yes
+marker-mid,Inherited,yes
+marker-mid,Inherited,yes
+marker-end,Inherited,yes
+marker-end,Inherited,yes
+marker-end,Inherited,yes
+marker-end,Inherited,yes
+marker-start,Media,visual
+marker-start,Media,visual
+marker-start,Media,visual
+marker-start,Media,visual
+marker-mid,Media,visual
+marker-mid,Media,visual
+marker-mid,Media,visual
+marker-mid,Media,visual
+marker-end,Media,visual
+marker-end,Media,visual
+marker-end,Media,visual
+marker-end,Media,visual
+marker-start,Animatable,yes
+marker-start,Animatable,yes
+marker-start,Animatable,yes
+marker-start,Animatable,yes
+marker-mid,Animatable,yes
+marker-mid,Animatable,yes
+marker-mid,Animatable,yes
+marker-mid,Animatable,yes
+marker-end,Animatable,yes
+marker-end,Animatable,yes
+marker-end,Animatable,yes
+marker-end,Animatable,yes
+color,Applies to,altGlyph
+color,Applies to,textPath
+color,Applies to,text
+color,Applies to,tref
+color,Applies to,tspan
+color-profile,Applies to,image

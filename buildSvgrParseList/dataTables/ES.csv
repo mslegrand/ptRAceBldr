@@ -1,0 +1,1203 @@
+element	variable	value
+a	category	Container Element
+a	content.model	animation elements:
+a	content.model	descriptive elements:
+a	content.model	shape elements:
+a	content.model	structural elements:
+a	content.model	gradient elements:
+a	content.model	a
+a	content.model	altGlyphDef
+a	content.model	clipPath
+a	content.model	color-profile
+a	content.model	cursor
+a	content.model	filter
+a	content.model	font
+a	content.model	font-face
+a	content.model	foreignObject
+a	content.model	image
+a	content.model	marker
+a	content.model	mask
+a	content.model	pattern
+a	content.model	script
+a	content.model	style
+a	content.model	switch
+a	content.model	text
+a	content.model	view
+a	attr	conditional processing attributes:
+a	attr	core attributes:
+a	attr	graphical event attributes:
+a	attr	presentation attributes:
+a	attr	xlink attributes:
+a	attr	class
+a	attr	style
+a	attr	externalResourcesRequired
+a	attr	transform
+a	attr	xlink:href
+a	attr	xlink:show
+a	attr	xlink:actuate
+a	attr	target
+view	category	Uncategorized Element
+view	content.model	descriptive elements:
+view	attr	core attributes:
+view	attr	externalResourcesRequired
+view	attr	viewBox
+view	attr	preserveAspectRatio
+view	attr	zoomAndPan
+view	attr	viewTarget
+text	category	Graphics Element
+text	category	Text Content Element
+text	content.model	animation elements:
+text	content.model	descriptive elements:
+text	content.model	text content child elements:
+text	content.model	a
+text	attr	conditional processing attributes:
+text	attr	core attributes:
+text	attr	graphical event attributes:
+text	attr	presentation attributes:
+text	attr	class
+text	attr	style
+text	attr	externalResourcesRequired
+text	attr	transform
+text	attr	lengthAdjust
+text	attr	x
+text	attr	y
+text	attr	dx
+text	attr	dy
+text	attr	rotate
+text	attr	textLength
+tspan	category	Text Content Element
+tspan	category	Text Content Child Element
+tspan	content.model	descriptive elements:
+tspan	content.model	a
+tspan	content.model	altGlyph
+tspan	content.model	animate
+tspan	content.model	animateColor
+tspan	content.model	set
+tspan	content.model	tref
+tspan	content.model	tspan
+tspan	attr	conditional processing attributes:
+tspan	attr	core attributes:
+tspan	attr	graphical event attributes:
+tspan	attr	presentation attributes:
+tspan	attr	class
+tspan	attr	style
+tspan	attr	externalResourcesRequired
+tspan	attr	x
+tspan	attr	y
+tspan	attr	dx
+tspan	attr	dy
+tspan	attr	rotate
+tspan	attr	textLength
+tspan	attr	lengthAdjust
+tref	category	Text Content Element
+tref	category	Text Content Child Element
+tref	content.model	descriptive elements:
+tref	content.model	animate
+tref	content.model	animateColor
+tref	content.model	set
+tref	attr	conditional processing attributes:
+tref	attr	core attributes:
+tref	attr	graphical event attributes:
+tref	attr	presentation attributes:
+tref	attr	xlink attributes:
+tref	attr	class
+tref	attr	style
+tref	attr	externalResourcesRequired
+tref	attr	xlink:href
+textPath	category	Text Content Element
+textPath	category	Text Content Child Element
+textPath	content.model	descriptive elements:
+textPath	content.model	a
+textPath	content.model	altGlyph
+textPath	content.model	animate
+textPath	content.model	animateColor
+textPath	content.model	set
+textPath	content.model	tref
+textPath	content.model	tspan
+textPath	attr	conditional processing attributes:
+textPath	attr	core attributes:
+textPath	attr	graphical event attributes:
+textPath	attr	presentation attributes:
+textPath	attr	xlink attributes:
+textPath	attr	class
+textPath	attr	style
+textPath	attr	externalResourcesRequired
+textPath	attr	xlink:href
+textPath	attr	startOffset
+textPath	attr	method
+textPath	attr	spacing
+altGlyph	category	Text Content Element
+altGlyph	category	Text Content Child Element
+altGlyph	content.model	Any elements or character data.
+altGlyph	attr	conditional processing attributes:
+altGlyph	attr	core attributes:
+altGlyph	attr	graphical event attributes:
+altGlyph	attr	presentation attributes:
+altGlyph	attr	xlink attributes:
+altGlyph	attr	class
+altGlyph	attr	style
+altGlyph	attr	externalResourcesRequired
+altGlyph	attr	x
+altGlyph	attr	y
+altGlyph	attr	dx
+altGlyph	attr	dy
+altGlyph	attr	glyphRef
+altGlyph	attr	format
+altGlyph	attr	rotate
+altGlyph	attr	xlink:href
+altGlyphDef	category	Uncategorized Element
+altGlyphDef	content.model	glyphRef
+altGlyphDef	content.model	altGlyphItem
+altGlyphDef	attr	core attributes:
+altGlyphItem	category	Uncategorized Element
+altGlyphItem	content.model	glyphRef
+altGlyphItem	attr	core attributes:
+glyphRef	category	Uncategorized Element
+glyphRef	content.model	Empty.
+glyphRef	attr	core attributes:
+glyphRef	attr	presentation attributes:
+glyphRef	attr	xlink attributes:
+glyphRef	attr	class
+glyphRef	attr	style
+glyphRef	attr	x
+glyphRef	attr	y
+glyphRef	attr	dx
+glyphRef	attr	dy
+glyphRef	attr	glyphRef
+glyphRef	attr	format
+glyphRef	attr	xlink:href
+animate	category	Animation Element
+animate	content.model	descriptive elements:
+animate	attr	conditional processing attributes:
+animate	attr	core attributes:
+animate	attr	animation event attributes:
+animate	attr	xlink attributes:
+animate	attr	animation attribute target attributes:
+animate	attr	animation timing attributes:
+animate	attr	animation value attributes:
+animate	attr	animation addition attributes:
+animate	attr	presentation attributes:
+animate	attr	externalResourcesRequired
+set	category	Animation Element
+set	content.model	descriptive elements:
+set	attr	conditional processing attributes:
+set	attr	core attributes:
+set	attr	animation event attributes:
+set	attr	xlink attributes:
+set	attr	animation attribute target attributes:
+set	attr	animation timing attributes:
+set	attr	externalResourcesRequired
+set	attr	to
+animateMotion	category	Animation Element
+animateMotion	content.model	descriptive elements:
+animateMotion	content.model	mpath
+animateMotion	attr	conditional processing attributes:
+animateMotion	attr	core attributes:
+animateMotion	attr	animation event attributes:
+animateMotion	attr	xlink attributes:
+animateMotion	attr	animation timing attributes:
+animateMotion	attr	animation value attributes:
+animateMotion	attr	animation addition attributes:
+animateMotion	attr	externalResourcesRequired
+animateMotion	attr	path
+animateMotion	attr	keyPoints
+animateMotion	attr	rotate
+animateMotion	attr	origin
+mpath	category	Uncategorized Element
+mpath	content.model	descriptive elements:
+mpath	attr	core attributes:
+mpath	attr	xlink attributes:
+mpath	attr	externalResourcesRequired
+mpath	attr	xlink:href
+animateColor	category	Animation Element
+animateColor	content.model	descriptive elements:
+animateColor	attr	conditional processing attributes:
+animateColor	attr	core attributes:
+animateColor	attr	animation event attributes:
+animateColor	attr	xlink attributes:
+animateColor	attr	animation attribute target attributes:
+animateColor	attr	animation timing attributes:
+animateColor	attr	animation value attributes:
+animateColor	attr	animation addition attributes:
+animateColor	attr	presentation attributes:
+animateColor	attr	externalResourcesRequired
+animateTransform	category	Animation Element
+animateTransform	content.model	descriptive elements:
+animateTransform	attr	conditional processing attributes:
+animateTransform	attr	core attributes:
+animateTransform	attr	animation event attributes:
+animateTransform	attr	xlink attributes:
+animateTransform	attr	animation attribute target attributes:
+animateTransform	attr	animation timing attributes:
+animateTransform	attr	animation value attributes:
+animateTransform	attr	animation addition attributes:
+animateTransform	attr	externalResourcesRequired
+animateTransform	attr	type
+rect	category	Basic Shape Element
+rect	category	Graphics Element
+rect	category	Shape Element
+rect	content.model	animation elements:
+rect	content.model	descriptive elements:
+rect	attr	conditional processing attributes:
+rect	attr	core attributes:
+rect	attr	graphical event attributes:
+rect	attr	presentation attributes:
+rect	attr	class
+rect	attr	style
+rect	attr	externalResourcesRequired
+rect	attr	transform
+rect	attr	x
+rect	attr	y
+rect	attr	width
+rect	attr	height
+rect	attr	rx
+rect	attr	ry
+circle	category	Basic Shape Element
+circle	category	Graphics Element
+circle	category	Shape Element
+circle	content.model	animation elements:
+circle	content.model	descriptive elements:
+circle	attr	conditional processing attributes:
+circle	attr	core attributes:
+circle	attr	graphical event attributes:
+circle	attr	presentation attributes:
+circle	attr	class
+circle	attr	style
+circle	attr	externalResourcesRequired
+circle	attr	transform
+circle	attr	cx
+circle	attr	cy
+circle	attr	r
+ellipse	category	Basic Shape Element
+ellipse	category	Graphics Element
+ellipse	category	Shape Element
+ellipse	content.model	animation elements:
+ellipse	content.model	descriptive elements:
+ellipse	attr	conditional processing attributes:
+ellipse	attr	core attributes:
+ellipse	attr	graphical event attributes:
+ellipse	attr	presentation attributes:
+ellipse	attr	class
+ellipse	attr	style
+ellipse	attr	externalResourcesRequired
+ellipse	attr	transform
+ellipse	attr	cx
+ellipse	attr	cy
+ellipse	attr	rx
+ellipse	attr	ry
+line	category	Basic Shape Element
+line	category	Graphics Element
+line	category	Shape Element
+line	content.model	animation elements:
+line	content.model	descriptive elements:
+line	attr	conditional processing attributes:
+line	attr	core attributes:
+line	attr	graphical event attributes:
+line	attr	presentation attributes:
+line	attr	class
+line	attr	style
+line	attr	externalResourcesRequired
+line	attr	transform
+line	attr	x1
+line	attr	y1
+line	attr	x2
+line	attr	y2
+polyline	category	Basic Shape Element
+polyline	category	Graphics Element
+polyline	category	Shape Element
+polyline	content.model	animation elements:
+polyline	content.model	descriptive elements:
+polyline	attr	conditional processing attributes:
+polyline	attr	core attributes:
+polyline	attr	graphical event attributes:
+polyline	attr	presentation attributes:
+polyline	attr	class
+polyline	attr	style
+polyline	attr	externalResourcesRequired
+polyline	attr	transform
+polyline	attr	points
+polygon	category	Basic Shape Element
+polygon	category	Graphics Element
+polygon	category	Shape Element
+polygon	content.model	animation elements:
+polygon	content.model	descriptive elements:
+polygon	attr	conditional processing attributes:
+polygon	attr	core attributes:
+polygon	attr	graphical event attributes:
+polygon	attr	presentation attributes:
+polygon	attr	class
+polygon	attr	style
+polygon	attr	externalResourcesRequired
+polygon	attr	transform
+polygon	attr	points
+clipPath	category	Uncategorized Element
+clipPath	content.model	descriptive elements:
+clipPath	content.model	animation elements:
+clipPath	content.model	shape elements:
+clipPath	content.model	text
+clipPath	content.model	use
+clipPath	attr	conditional processing attributes:
+clipPath	attr	core attributes:
+clipPath	attr	presentation attributes:
+clipPath	attr	class
+clipPath	attr	style
+clipPath	attr	externalResourcesRequired
+clipPath	attr	transform
+clipPath	attr	clipPathUnits
+mask	category	Container Element
+mask	content.model	animation elements:
+mask	content.model	descriptive elements:
+mask	content.model	shape elements:
+mask	content.model	structural elements:
+mask	content.model	gradient elements:
+mask	content.model	a
+mask	content.model	altGlyphDef
+mask	content.model	clipPath
+mask	content.model	color-profile
+mask	content.model	cursor
+mask	content.model	filter
+mask	content.model	font
+mask	content.model	font-face
+mask	content.model	foreignObject
+mask	content.model	image
+mask	content.model	marker
+mask	content.model	mask
+mask	content.model	pattern
+mask	content.model	script
+mask	content.model	style
+mask	content.model	switch
+mask	content.model	text
+mask	content.model	view
+mask	attr	conditional processing attributes:
+mask	attr	core attributes:
+mask	attr	presentation attributes:
+mask	attr	class
+mask	attr	style
+mask	attr	externalResourcesRequired
+mask	attr	x
+mask	attr	y
+mask	attr	width
+mask	attr	height
+mask	attr	maskUnits
+mask	attr	maskContentUnits
+color-profile	category	Uncategorized Element
+color-profile	content.model	descriptive elements:
+color-profile	attr	core attributes:
+color-profile	attr	xlink attributes:
+color-profile	attr	local
+color-profile	attr	name
+color-profile	attr	rendering-intent
+color-profile	attr	xlink:href
+cursor	category	Uncategorized Element
+cursor	content.model	descriptive elements:
+cursor	attr	core attributes:
+cursor	attr	conditional processing attributes:
+cursor	attr	xlink attributes:
+cursor	attr	externalResourcesRequired
+cursor	attr	x
+cursor	attr	y
+cursor	attr	xlink:href
+svg	category	Container Element
+svg	category	Structural Element
+svg	content.model	animation elements:
+svg	content.model	descriptive elements:
+svg	content.model	shape elements:
+svg	content.model	structural elements:
+svg	content.model	gradient elements:
+svg	content.model	a
+svg	content.model	altGlyphDef
+svg	content.model	clipPath
+svg	content.model	color-profile
+svg	content.model	cursor
+svg	content.model	filter
+svg	content.model	font
+svg	content.model	font-face
+svg	content.model	foreignObject
+svg	content.model	image
+svg	content.model	marker
+svg	content.model	mask
+svg	content.model	pattern
+svg	content.model	script
+svg	content.model	style
+svg	content.model	switch
+svg	content.model	text
+svg	content.model	view
+svg	attr	conditional processing attributes:
+svg	attr	core attributes:
+svg	attr	document event attributes:
+svg	attr	graphical event attributes:
+svg	attr	presentation attributes:
+svg	attr	class
+svg	attr	style
+svg	attr	externalResourcesRequired
+svg	attr	x
+svg	attr	y
+svg	attr	width
+svg	attr	height
+svg	attr	viewBox
+svg	attr	preserveAspectRatio
+svg	attr	zoomAndPan
+svg	attr	version
+svg	attr	baseProfile
+svg	attr	contentScriptType
+svg	attr	contentStyleType
+svg	attr	x
+svg	attr	y
+svg	attr	width
+svg	attr	height
+svg	attr	version
+svg	attr	baseProfile
+g	category	Container Element
+g	category	Structural Element
+g	content.model	animation elements:
+g	content.model	descriptive elements:
+g	content.model	shape elements:
+g	content.model	structural elements:
+g	content.model	gradient elements:
+g	content.model	a
+g	content.model	altGlyphDef
+g	content.model	clipPath
+g	content.model	color-profile
+g	content.model	cursor
+g	content.model	filter
+g	content.model	font
+g	content.model	font-face
+g	content.model	foreignObject
+g	content.model	image
+g	content.model	marker
+g	content.model	mask
+g	content.model	pattern
+g	content.model	script
+g	content.model	style
+g	content.model	switch
+g	content.model	text
+g	content.model	view
+g	attr	conditional processing attributes:
+g	attr	core attributes:
+g	attr	graphical event attributes:
+g	attr	presentation attributes:
+g	attr	class
+g	attr	style
+g	attr	externalResourcesRequired
+g	attr	transform
+defs	category	Container Element
+defs	category	Structural Element
+defs	content.model	animation elements:
+defs	content.model	descriptive elements:
+defs	content.model	shape elements:
+defs	content.model	structural elements:
+defs	content.model	gradient elements:
+defs	content.model	a
+defs	content.model	altGlyphDef
+defs	content.model	clipPath
+defs	content.model	color-profile
+defs	content.model	cursor
+defs	content.model	filter
+defs	content.model	font
+defs	content.model	font-face
+defs	content.model	foreignObject
+defs	content.model	image
+defs	content.model	marker
+defs	content.model	mask
+defs	content.model	pattern
+defs	content.model	script
+defs	content.model	style
+defs	content.model	switch
+defs	content.model	text
+defs	content.model	view
+defs	attr	conditional processing attributes:
+defs	attr	core attributes:
+defs	attr	graphical event attributes:
+defs	attr	presentation attributes:
+defs	attr	class
+defs	attr	style
+defs	attr	externalResourcesRequired
+defs	attr	transform
+desc	category	Descriptive Element
+desc	content.model	Any elements or character data.
+desc	attr	core attributes:
+desc	attr	class
+desc	attr	style
+title	category	Descriptive Element
+title	content.model	Any elements or character data.
+title	attr	core attributes:
+title	attr	class
+title	attr	style
+symbol	category	Container Element
+symbol	category	Structural Element
+symbol	content.model	animation elements:
+symbol	content.model	descriptive elements:
+symbol	content.model	shape elements:
+symbol	content.model	structural elements:
+symbol	content.model	gradient elements:
+symbol	content.model	a
+symbol	content.model	altGlyphDef
+symbol	content.model	clipPath
+symbol	content.model	color-profile
+symbol	content.model	cursor
+symbol	content.model	filter
+symbol	content.model	font
+symbol	content.model	font-face
+symbol	content.model	foreignObject
+symbol	content.model	image
+symbol	content.model	marker
+symbol	content.model	mask
+symbol	content.model	pattern
+symbol	content.model	script
+symbol	content.model	style
+symbol	content.model	switch
+symbol	content.model	text
+symbol	content.model	view
+symbol	attr	core attributes:
+symbol	attr	graphical event attributes:
+symbol	attr	presentation attributes:
+symbol	attr	class
+symbol	attr	style
+symbol	attr	externalResourcesRequired
+symbol	attr	preserveAspectRatio
+symbol	attr	viewBox
+use	category	Graphics Element
+use	category	Graphics Referencing Element
+use	category	Structural Element
+use	content.model	animation elements:
+use	content.model	descriptive elements:
+use	attr	core attributes:
+use	attr	conditional processing attributes:
+use	attr	graphical event attributes:
+use	attr	presentation attributes:
+use	attr	xlink attributes:
+use	attr	class
+use	attr	style
+use	attr	externalResourcesRequired
+use	attr	transform
+use	attr	x
+use	attr	y
+use	attr	width
+use	attr	height
+use	attr	xlink:href
+image	category	Graphics Element
+image	category	Graphics Referencing Element
+image	content.model	animation elements:
+image	content.model	descriptive elements:
+image	attr	core attributes:
+image	attr	conditional processing attributes:
+image	attr	graphical event attributes:
+image	attr	xlink attributes:
+image	attr	presentation attributes:
+image	attr	class
+image	attr	style
+image	attr	externalResourcesRequired
+image	attr	preserveAspectRatio
+image	attr	transform
+image	attr	x
+image	attr	y
+image	attr	width
+image	attr	height
+image	attr	xlink:href
+switch	category	Container Element
+switch	content.model	animation elements:
+switch	content.model	descriptive elements:
+switch	content.model	shape elements:
+switch	content.model	a
+switch	content.model	foreignObject
+switch	content.model	g
+switch	content.model	image
+switch	content.model	svg
+switch	content.model	switch
+switch	content.model	text
+switch	content.model	use
+switch	attr	conditional processing attributes:
+switch	attr	core attributes:
+switch	attr	graphical event attributes:
+switch	attr	presentation attributes:
+switch	attr	class
+switch	attr	style
+switch	attr	externalResourcesRequired
+switch	attr	transform
+filter	category	Uncategorized Element
+filter	content.model	descriptive elements:
+filter	content.model	filter primitive elements:
+filter	content.model	animate
+filter	content.model	set
+filter	attr	core attributes:
+filter	attr	presentation attributes:
+filter	attr	xlink attributes:
+filter	attr	class
+filter	attr	style
+filter	attr	externalResourcesRequired
+filter	attr	x
+filter	attr	y
+filter	attr	width
+filter	attr	height
+filter	attr	filterRes
+filter	attr	filterUnits
+filter	attr	primitiveUnits
+filter	attr	xlink:href
+feDistantLight	category	Light Source Element
+feDistantLight	content.model	animate
+feDistantLight	content.model	set
+feDistantLight	attr	core attributes:
+feDistantLight	attr	azimuth
+feDistantLight	attr	elevation
+fePointLight	category	Light Source Element
+fePointLight	content.model	animate
+fePointLight	content.model	set
+fePointLight	attr	core attributes:
+fePointLight	attr	x
+fePointLight	attr	y
+fePointLight	attr	z
+feSpotLight	category	Light Source Element
+feSpotLight	content.model	animate
+feSpotLight	content.model	set
+feSpotLight	attr	core attributes:
+feSpotLight	attr	x
+feSpotLight	attr	y
+feSpotLight	attr	z
+feSpotLight	attr	pointsAtX
+feSpotLight	attr	pointsAtY
+feSpotLight	attr	pointsAtZ
+feSpotLight	attr	specularExponent
+feSpotLight	attr	limitingConeAngle
+feBlend	category	Filter Primitive Element
+feBlend	content.model	animate
+feBlend	content.model	set
+feBlend	attr	core attributes:
+feBlend	attr	presentation attributes:
+feBlend	attr	filter primitive attributes:
+feBlend	attr	class
+feBlend	attr	style
+feBlend	attr	in1
+feBlend	attr	in2
+feBlend	attr	mode
+feColorMatrix	category	Filter Primitive Element
+feColorMatrix	content.model	animate
+feColorMatrix	content.model	set
+feColorMatrix	attr	core attributes:
+feColorMatrix	attr	presentation attributes:
+feColorMatrix	attr	filter primitive attributes:
+feColorMatrix	attr	class
+feColorMatrix	attr	style
+feColorMatrix	attr	in1
+feColorMatrix	attr	type
+feColorMatrix	attr	values
+feComponentTransfer	category	Filter Primitive Element
+feComponentTransfer	content.model	feFuncA
+feComponentTransfer	content.model	feFuncB
+feComponentTransfer	content.model	feFuncG
+feComponentTransfer	content.model	feFuncR
+feComponentTransfer	attr	core attributes:
+feComponentTransfer	attr	presentation attributes:
+feComponentTransfer	attr	filter primitive attributes:
+feComponentTransfer	attr	class
+feComponentTransfer	attr	style
+feComponentTransfer	attr	in1
+feFuncR	category	Uncategorized Element
+feFuncR	content.model	animate
+feFuncR	content.model	set
+feFuncR	attr	core attributes:
+feFuncR	attr	transfer function element attributes:
+feFuncG	category	Uncategorized Element
+feFuncG	content.model	animate
+feFuncG	content.model	set
+feFuncG	attr	core attributes:
+feFuncG	attr	transfer function element attributes:
+feFuncB	category	Uncategorized Element
+feFuncB	content.model	animate
+feFuncB	content.model	set
+feFuncB	attr	core attributes:
+feFuncB	attr	transfer function element attributes:
+feFuncA	category	Uncategorized Element
+feFuncA	content.model	animate
+feFuncA	content.model	set
+feFuncA	attr	core attributes:
+feFuncA	attr	transfer function element attributes:
+feComposite	category	Filter Primitive Element
+feComposite	content.model	animate
+feComposite	content.model	set
+feComposite	attr	core attributes:
+feComposite	attr	presentation attributes:
+feComposite	attr	filter primitive attributes:
+feComposite	attr	class
+feComposite	attr	style
+feComposite	attr	in1
+feComposite	attr	in2
+feComposite	attr	operator
+feComposite	attr	k1
+feComposite	attr	k2
+feComposite	attr	k3
+feComposite	attr	k4
+feConvolveMatrix	category	Filter Primitive Element
+feConvolveMatrix	content.model	animate
+feConvolveMatrix	content.model	set
+feConvolveMatrix	attr	core attributes:
+feConvolveMatrix	attr	presentation attributes:
+feConvolveMatrix	attr	filter primitive attributes:
+feConvolveMatrix	attr	class
+feConvolveMatrix	attr	style
+feConvolveMatrix	attr	in1
+feConvolveMatrix	attr	order
+feConvolveMatrix	attr	kernelMatrix
+feConvolveMatrix	attr	divisor
+feConvolveMatrix	attr	bias
+feConvolveMatrix	attr	targetX
+feConvolveMatrix	attr	targetY
+feConvolveMatrix	attr	edgeMode
+feConvolveMatrix	attr	kernelUnitLength
+feConvolveMatrix	attr	preserveAlpha
+feDiffuseLighting	category	Filter Primitive Element
+feDiffuseLighting	content.model	descriptive elements:
+feDiffuseLighting	content.model	light source elements:
+feDiffuseLighting	attr	core attributes:
+feDiffuseLighting	attr	presentation attributes:
+feDiffuseLighting	attr	filter primitive attributes:
+feDiffuseLighting	attr	class
+feDiffuseLighting	attr	style
+feDiffuseLighting	attr	in1
+feDiffuseLighting	attr	surfaceScale
+feDiffuseLighting	attr	diffuseConstant
+feDiffuseLighting	attr	kernelUnitLength
+feDisplacementMap	category	Filter Primitive Element
+feDisplacementMap	content.model	animate
+feDisplacementMap	content.model	set
+feDisplacementMap	attr	core attributes:
+feDisplacementMap	attr	presentation attributes:
+feDisplacementMap	attr	filter primitive attributes:
+feDisplacementMap	attr	class
+feDisplacementMap	attr	style
+feDisplacementMap	attr	in1
+feDisplacementMap	attr	in2
+feDisplacementMap	attr	scale
+feDisplacementMap	attr	xChannelSelector
+feDisplacementMap	attr	yChannelSelector
+feFlood	category	Filter Primitive Element
+feFlood	content.model	animate
+feFlood	content.model	animateColor
+feFlood	content.model	set
+feFlood	attr	core attributes:
+feFlood	attr	presentation attributes:
+feFlood	attr	filter primitive attributes:
+feFlood	attr	class
+feFlood	attr	style
+feGaussianBlur	category	Filter Primitive Element
+feGaussianBlur	content.model	animate
+feGaussianBlur	content.model	set
+feGaussianBlur	attr	core attributes:
+feGaussianBlur	attr	presentation attributes:
+feGaussianBlur	attr	filter primitive attributes:
+feGaussianBlur	attr	class
+feGaussianBlur	attr	style
+feGaussianBlur	attr	in1
+feGaussianBlur	attr	stdDeviation
+feImage	category	Filter Primitive Element
+feImage	content.model	animate
+feImage	content.model	animateTransform
+feImage	content.model	set
+feImage	attr	core attributes:
+feImage	attr	presentation attributes:
+feImage	attr	filter primitive attributes:
+feImage	attr	xlink attributes:
+feImage	attr	class
+feImage	attr	style
+feImage	attr	externalResourcesRequired
+feImage	attr	preserveAspectRatio
+feImage	attr	xlink:href
+feMerge	category	Filter Primitive Element
+feMerge	content.model	feMergeNode
+feMerge	attr	core attributes:
+feMerge	attr	presentation attributes:
+feMerge	attr	filter primitive attributes:
+feMerge	attr	class
+feMerge	attr	style
+feMergeNode	category	Uncategorized Element
+feMergeNode	content.model	animate
+feMergeNode	content.model	set
+feMergeNode	attr	core attributes:
+feMergeNode	attr	in1
+feMorphology	category	Filter Primitive Element
+feMorphology	content.model	animate
+feMorphology	content.model	set
+feMorphology	attr	core attributes:
+feMorphology	attr	presentation attributes:
+feMorphology	attr	filter primitive attributes:
+feMorphology	attr	class
+feMorphology	attr	style
+feMorphology	attr	in1
+feMorphology	attr	operator
+feMorphology	attr	radius
+feOffset	category	Filter Primitive Element
+feOffset	content.model	animate
+feOffset	content.model	set
+feOffset	attr	core attributes:
+feOffset	attr	presentation attributes:
+feOffset	attr	filter primitive attributes:
+feOffset	attr	class
+feOffset	attr	style
+feOffset	attr	in1
+feOffset	attr	dx
+feOffset	attr	dy
+feSpecularLighting	category	Filter Primitive Element
+feSpecularLighting	content.model	descriptive elements:
+feSpecularLighting	content.model	light source elements:
+feSpecularLighting	attr	core attributes:
+feSpecularLighting	attr	presentation attributes:
+feSpecularLighting	attr	filter primitive attributes:
+feSpecularLighting	attr	class
+feSpecularLighting	attr	style
+feSpecularLighting	attr	in1
+feSpecularLighting	attr	surfaceScale
+feSpecularLighting	attr	specularConstant
+feSpecularLighting	attr	specularExponent
+feSpecularLighting	attr	kernelUnitLength
+feTile	category	Filter Primitive Element
+feTile	content.model	animate
+feTile	content.model	set
+feTile	attr	core attributes:
+feTile	attr	presentation attributes:
+feTile	attr	filter primitive attributes:
+feTile	attr	class
+feTile	attr	style
+feTile	attr	in1
+feTurbulence	category	Filter Primitive Element
+feTurbulence	content.model	animate
+feTurbulence	content.model	set
+feTurbulence	attr	core attributes:
+feTurbulence	attr	presentation attributes:
+feTurbulence	attr	filter primitive attributes:
+feTurbulence	attr	class
+feTurbulence	attr	style
+feTurbulence	attr	baseFrequency
+feTurbulence	attr	numOctaves
+feTurbulence	attr	seed
+feTurbulence	attr	stitchTiles
+feTurbulence	attr	type
+font	category	Uncategorized Element
+font	content.model	descriptive elements:
+font	content.model	font-face
+font	content.model	glyph
+font	content.model	hkern
+font	content.model	missing-glyph
+font	content.model	vkern
+font	attr	core attributes:
+font	attr	presentation attributes:
+font	attr	class
+font	attr	style
+font	attr	externalResourcesRequired
+font	attr	horiz-origin-x
+font	attr	horiz-origin-y
+font	attr	horiz-adv-x
+font	attr	vert-origin-x
+font	attr	vert-origin-y
+font	attr	vert-adv-y
+glyph	category	Container Element
+glyph	content.model	animation elements:
+glyph	content.model	descriptive elements:
+glyph	content.model	shape elements:
+glyph	content.model	structural elements:
+glyph	content.model	gradient elements:
+glyph	content.model	a
+glyph	content.model	altGlyphDef
+glyph	content.model	clipPath
+glyph	content.model	color-profile
+glyph	content.model	cursor
+glyph	content.model	filter
+glyph	content.model	font
+glyph	content.model	font-face
+glyph	content.model	foreignObject
+glyph	content.model	image
+glyph	content.model	marker
+glyph	content.model	mask
+glyph	content.model	pattern
+glyph	content.model	script
+glyph	content.model	style
+glyph	content.model	switch
+glyph	content.model	text
+glyph	content.model	view
+glyph	attr	core attributes:
+glyph	attr	presentation attributes:
+glyph	attr	class
+glyph	attr	style
+glyph	attr	d
+glyph	attr	horiz-adv-x
+glyph	attr	vert-origin-x
+glyph	attr	vert-origin-y
+glyph	attr	vert-adv-y
+glyph	attr	unicode
+glyph	attr	glyph-name
+glyph	attr	orientation
+glyph	attr	arabic-form
+glyph	attr	lang
+missing-glyph	category	Container Element
+missing-glyph	content.model	animation elements:
+missing-glyph	content.model	descriptive elements:
+missing-glyph	content.model	shape elements:
+missing-glyph	content.model	structural elements:
+missing-glyph	content.model	gradient elements:
+missing-glyph	content.model	a
+missing-glyph	content.model	altGlyphDef
+missing-glyph	content.model	clipPath
+missing-glyph	content.model	color-profile
+missing-glyph	content.model	cursor
+missing-glyph	content.model	filter
+missing-glyph	content.model	font
+missing-glyph	content.model	font-face
+missing-glyph	content.model	foreignObject
+missing-glyph	content.model	image
+missing-glyph	content.model	marker
+missing-glyph	content.model	mask
+missing-glyph	content.model	pattern
+missing-glyph	content.model	script
+missing-glyph	content.model	style
+missing-glyph	content.model	switch
+missing-glyph	content.model	text
+missing-glyph	content.model	view
+missing-glyph	attr	core attributes:
+missing-glyph	attr	presentation attributes:
+missing-glyph	attr	class
+missing-glyph	attr	style
+missing-glyph	attr	d
+missing-glyph	attr	horiz-adv-x
+missing-glyph	attr	vert-origin-x
+missing-glyph	attr	vert-origin-y
+missing-glyph	attr	vert-adv-y
+hkern	category	Uncategorized Element
+hkern	content.model	Empty.
+hkern	attr	core attributes:
+hkern	attr	u1
+hkern	attr	g1
+hkern	attr	u2
+hkern	attr	g2
+hkern	attr	k
+vkern	category	Uncategorized Element
+vkern	content.model	Empty.
+vkern	attr	core attributes:
+vkern	attr	u1
+vkern	attr	g1
+vkern	attr	u2
+vkern	attr	g2
+vkern	attr	k
+font-face	category	Uncategorized Element
+font-face	content.model	descriptive elements:
+font-face	content.model	font-face-src
+font-face	attr	core attributes:
+font-face	attr	font-family
+font-face	attr	font-style
+font-face	attr	font-variant
+font-face	attr	font-weight
+font-face	attr	font-stretch
+font-face	attr	font-size
+font-face	attr	unicode-range
+font-face	attr	units-per-em
+font-face	attr	panose-1
+font-face	attr	stemv
+font-face	attr	stemh
+font-face	attr	slope
+font-face	attr	cap-height
+font-face	attr	x-height
+font-face	attr	accent-height
+font-face	attr	ascent
+font-face	attr	descent
+font-face	attr	widths
+font-face	attr	bbox
+font-face	attr	ideographic
+font-face	attr	alphabetic
+font-face	attr	mathematical
+font-face	attr	hanging
+font-face	attr	v-ideographic
+font-face	attr	v-alphabetic
+font-face	attr	v-mathematical
+font-face	attr	v-hanging
+font-face	attr	underline-position
+font-face	attr	underline-thickness
+font-face	attr	strikethrough-position
+font-face	attr	strikethrough-thickness
+font-face	attr	overline-position
+font-face	attr	overline-thickness
+font-face-src	category	Uncategorized Element
+font-face-src	content.model	font-face-name
+font-face-src	content.model	font-face-uri
+font-face-src	attr	core attributes:
+font-face-uri	category	Uncategorized Element
+font-face-uri	content.model	font-face-format
+font-face-uri	attr	core attributes:
+font-face-uri	attr	xlink attributes:
+font-face-uri	attr	xlink:href
+font-face-format	category	Uncategorized Element
+font-face-format	content.model	Empty.
+font-face-format	attr	core attributes:
+font-face-format	attr	string
+font-face-name	category	Uncategorized Element
+font-face-name	content.model	Empty.
+font-face-name	attr	core attributes:
+font-face-name	attr	name
+foreignObject	category	Uncategorized Element
+foreignObject	content.model	Any elements or character data.
+foreignObject	attr	core attributes:
+foreignObject	attr	conditional processing attributes:
+foreignObject	attr	graphical event attributes:
+foreignObject	attr	presentation attributes:
+foreignObject	attr	class
+foreignObject	attr	style
+foreignObject	attr	externalResourcesRequired
+foreignObject	attr	transform
+foreignObject	attr	x
+foreignObject	attr	y
+foreignObject	attr	width
+foreignObject	attr	height
+linearGradient	category	Gradient Element
+linearGradient	content.model	descriptive elements:
+linearGradient	content.model	animate
+linearGradient	content.model	animateTransform
+linearGradient	content.model	set
+linearGradient	content.model	stop
+linearGradient	attr	core attributes:
+linearGradient	attr	presentation attributes:
+linearGradient	attr	xlink attributes:
+linearGradient	attr	class
+linearGradient	attr	style
+linearGradient	attr	externalResourcesRequired
+linearGradient	attr	x1
+linearGradient	attr	y1
+linearGradient	attr	x2
+linearGradient	attr	y2
+linearGradient	attr	gradientUnits
+linearGradient	attr	gradientTransform
+linearGradient	attr	spreadMethod
+linearGradient	attr	xlink:href
+radialGradient	category	Gradient Element
+radialGradient	content.model	descriptive elements:
+radialGradient	content.model	animate
+radialGradient	content.model	animateTransform
+radialGradient	content.model	set
+radialGradient	content.model	stop
+radialGradient	attr	core attributes:
+radialGradient	attr	presentation attributes:
+radialGradient	attr	xlink attributes:
+radialGradient	attr	class
+radialGradient	attr	style
+radialGradient	attr	externalResourcesRequired
+radialGradient	attr	cx
+radialGradient	attr	cy
+radialGradient	attr	r
+radialGradient	attr	fx
+radialGradient	attr	fy
+radialGradient	attr	gradientUnits
+radialGradient	attr	gradientTransform
+radialGradient	attr	spreadMethod
+radialGradient	attr	xlink:href
+stop	category	Uncategorized Element
+stop	content.model	animate
+stop	content.model	animateColor
+stop	content.model	set
+stop	attr	core attributes:
+stop	attr	presentation attributes:
+stop	attr	class
+stop	attr	style
+stop	attr	offset
+pattern	category	Container Element
+pattern	content.model	animation elements:
+pattern	content.model	descriptive elements:
+pattern	content.model	shape elements:
+pattern	content.model	structural elements:
+pattern	content.model	gradient elements:
+pattern	content.model	a
+pattern	content.model	altGlyphDef
+pattern	content.model	clipPath
+pattern	content.model	color-profile
+pattern	content.model	cursor
+pattern	content.model	filter
+pattern	content.model	font
+pattern	content.model	font-face
+pattern	content.model	foreignObject
+pattern	content.model	image
+pattern	content.model	marker
+pattern	content.model	mask
+pattern	content.model	pattern
+pattern	content.model	script
+pattern	content.model	style
+pattern	content.model	switch
+pattern	content.model	text
+pattern	content.model	view
+pattern	attr	conditional processing attributes:
+pattern	attr	core attributes:
+pattern	attr	presentation attributes:
+pattern	attr	xlink attributes:
+pattern	attr	class
+pattern	attr	style
+pattern	attr	externalResourcesRequired
+pattern	attr	viewBox
+pattern	attr	preserveAspectRatio
+pattern	attr	x
+pattern	attr	y
+pattern	attr	width
+pattern	attr	height
+pattern	attr	patternUnits
+pattern	attr	patternContentUnits
+pattern	attr	patternTransform
+pattern	attr	xlink:href
+marker	category	Container Element
+marker	content.model	animation elements:
+marker	content.model	descriptive elements:
+marker	content.model	shape elements:
+marker	content.model	structural elements:
+marker	content.model	gradient elements:
+marker	content.model	a
+marker	content.model	altGlyphDef
+marker	content.model	clipPath
+marker	content.model	color-profile
+marker	content.model	cursor
+marker	content.model	filter
+marker	content.model	font
+marker	content.model	font-face
+marker	content.model	foreignObject
+marker	content.model	image
+marker	content.model	marker
+marker	content.model	mask
+marker	content.model	pattern
+marker	content.model	script
+marker	content.model	style
+marker	content.model	switch
+marker	content.model	text
+marker	content.model	view
+marker	attr	core attributes:
+marker	attr	presentation attributes:
+marker	attr	class
+marker	attr	style
+marker	attr	externalResourcesRequired
+marker	attr	viewBox
+marker	attr	preserveAspectRatio
+marker	attr	refX
+marker	attr	refY
+marker	attr	markerUnits
+marker	attr	markerWidth
+marker	attr	markerHeight
+marker	attr	orient
+metadata	category	Descriptive Element
+metadata	content.model	Any elements or character data.
+metadata	attr	core attributes:
+path	category	Graphics Element
+path	category	Shape Element
+path	content.model	animation elements:
+path	content.model	descriptive elements:
+path	attr	conditional processing attributes:
+path	attr	core attributes:
+path	attr	graphical event attributes:
+path	attr	presentation attributes:
+path	attr	class
+path	attr	style
+path	attr	externalResourcesRequired
+path	attr	transform
+path	attr	d
+path	attr	pathLength
+script	category	Uncategorized Element
+script	content.model	Any elements or character data.
+script	attr	core attributes:
+script	attr	xlink attributes:
+script	attr	externalResourcesRequired
+script	attr	type
+script	attr	xlink:href
+style	category	Uncategorized Element
+style	content.model	Any elements or character data.
+style	attr	core attributes:
+style	attr	type
+style	attr	media
+style	attr	title

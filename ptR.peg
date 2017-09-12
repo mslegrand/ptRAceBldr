@@ -1,0 +1,620 @@
+{
+    var mssgStack=[];
+    
+    
+    var contextStack=[];
+    
+    function comparePos( r1, c1, r2, c2){
+        console.log("comparePos");
+        console.log(JSON.stringify(r1));
+        console.log(JSON.stringify(c1));
+        console.log(JSON.stringify(r2));
+        console.log(JSON.stringify(c2));
+        if( r1<r2 ){
+                return 1;
+        }
+         if( r1>r2 ){
+            return -1;
+        }
+        if(r1===r2){
+            if(c1<c2){
+                return 1;
+            } 
+            if(c1>c2){
+                return -1;
+            } 
+        }
+        return 0;
+    };
+    
+    function pushContext( svgEleInfo, cursorPos){
+    console.log("pushContext");
+        if(cursorPos){
+    console.log("cursorPos=");
+    console.log(JSON.stringify(cursorPos));
+    console.log("svgEleInfo=");
+    console.log(JSON.stringify(svgEleInfo));
+    console.log("fuck=");
+    console.log("svgEleInfo.location.start.line",svgEleInfo.location.start.line);
+    console.log("svgEleInfo.location.start.column",svgEleInfo.location.start.column);
+    console.log("cursorPos.row",cursorPos.row);
+    console.log("cursorPos.column",cursorPos.column);
+    var comp1=comparePos( 
+                    svgEleInfo.location.start.line, 
+                    svgEleInfo.location.start.column,
+                    cursorPos.row,
+                    cursorPos.column
+                );
+    console.log("comp1=" + comp1);
+    var comp2=comparePos( 
+                    cursorPos.row,
+                    cursorPos.column,
+                    svgEleInfo.location.end.line, 
+                    svgEleInfo.location.end.column
+                );
+    console.log(", comp2=" + comp2);
+            if(
+                comparePos( 
+                    svgEleInfo.location.start.line, 
+                    svgEleInfo.location.start.column,
+                    cursorPos.row,
+                    cursorPos.column
+                )==1 
+            &&
+            comparePos( 
+                    cursorPos.row,
+                    cursorPos.column,
+                    svgEleInfo.location.end.line, 
+                    svgEleInfo.location.end.column
+                )==1 
+            ){
+                contextStack.push(
+                    {
+                        token: svgEleInfo.token,
+                        location: svgEleInfo.location
+                    }
+                );
+
+            }
+        }
+    };
+    
+    function clearContext(){
+        contextStack=[];
+    };
+    
+    function addWarning( text, alocation ){
+        mssgStack.push(
+        {
+            message: text,
+            location: alocation,
+            type: "warning"
+        });
+    };
+    
+    
+    function addError( text, alocation ){
+        mssgStack.push(
+        {
+            message: text,
+            location: alocation,
+            type: "error"
+        });
+    };
+    
+    function clearMssgs(){
+        mssgStack=[];
+    };
+    
+    
+    function showResult(title, result){
+        console.log("\n" + title + " Result:\n" + JSON.stringify(result) +"\n");
+    }
+    
+    
+    Array.prototype.hasValue = function(value) {
+      var i;
+      for (i=0; i<this.length; i++) { if (this[i] === value) return true; }
+      return false;
+    };
+    
+    function SvgAttrInfo(tok, loc){
+        this.token=tok;
+        this.location=loc;
+    };
+   
+    function SvgEleInfo(tok, loc){
+        this.token=tok;
+        this.location=loc;
+    };
+    
+    function printLocation(loc){
+        if(loc){
+            console.log("location: " + loc.start.line + "," + loc.start.column);
+        } else {
+            console.log("location is null");
+        }
+    };
+
+var acceptedAttributes = {
+ "a" : [ "class", "clip.path", "color.interpolation", "color.rendering", "cursor", "display", "enable.background", "externalResourcesRequired", "filter", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "target", "transform", "visibility", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"view" : [ "externalResourcesRequired", "id", "preserveAspectRatio", "viewBox", "viewTarget", "xml.base", "xml.lang", "xml.space", "zoomAndPan" ],
+"text" : [ "class", "clip.path", "clip.rule", "color", "color.interpolation", "color.rendering", "cursor", "cxy", "direction", "display", "display", "dominant.baseline", "dx", "dxy", "dy", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "filter", "font.family", "font.size", "font.size.adjust", "font.stretch", "font.style", "font.variant", "font.weight", "glyph.orientation.horizontal", "glyph.orientation.vertical", "id", "kerning", "lengthAdjust", "letter.spacing", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pointer.events", "requiredExtensions", "requiredFeatures", "rotate", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "text.anchor", "text.decoration", "text.rendering", "textLength", "transform", "unicode.bidi", "visibility", "visibility", "word.spacing", "writing.mode", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"tspan" : [ "alignment.baseline", "baseline.shift", "class", "color", "cxy", "direction", "display", "dominant.baseline", "dx", "dxy", "dy", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "font.family", "font.size", "font.size.adjust", "font.stretch", "font.style", "font.variant", "font.weight", "glyph.orientation.horizontal", "glyph.orientation.vertical", "id", "kerning", "lengthAdjust", "letter.spacing", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "requiredExtensions", "requiredFeatures", "rotate", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "text.anchor", "text.decoration", "textLength", "unicode.bidi", "visibility", "word.spacing", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"tref" : [ "alignment.baseline", "baseline.shift", "class", "color", "direction", "display", "dominant.baseline", "dx", "dxy", "dy", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "font.family", "font.size", "font.size.adjust", "font.stretch", "font.style", "font.variant", "font.weight", "glyph.orientation.horizontal", "glyph.orientation.vertical", "id", "kerning", "lengthAdjust", "letter.spacing", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "requiredExtensions", "requiredFeatures", "rotate", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "text.anchor", "text.decoration", "textLength", "unicode.bidi", "visibility", "word.spacing", "x", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"textPath" : [ "alignment.baseline", "baseline.shift", "class", "color", "cxy", "direction", "display", "dominant.baseline", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "font.family", "font.size", "font.size.adjust", "font.stretch", "font.style", "font.variant", "font.weight", "glyph.orientation.horizontal", "glyph.orientation.vertical", "id", "kerning", "lengthAdjust", "letter.spacing", "method", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "requiredExtensions", "requiredFeatures", "spacing", "startOffset", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "text.anchor", "text.decoration", "textLength", "unicode.bidi", "visibility", "word.spacing", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"altGlyph" : [ "alignment.baseline", "baseline.shift", "class", "color", "direction", "display", "dominant.baseline", "dx", "dxy", "dy", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "font.family", "font.size", "font.size.adjust", "font.stretch", "font.style", "font.variant", "font.weight", "format", "glyph.orientation.horizontal", "glyph.orientation.vertical", "glyphRef", "id", "kerning", "letter.spacing", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "requiredExtensions", "requiredFeatures", "rotate", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "text.anchor", "text.decoration", "unicode.bidi", "visibility", "word.spacing", "x", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"altGlyphDef" : [ "id", "xml.base", "xml.lang", "xml.space" ],
+"altGlyphItem" : [ "id", "xml.base", "xml.lang", "xml.space" ],
+"glyphRef" : [ "class", "dx", "dxy", "dy", "format", "glyphRef", "id", "style", "x", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"animate" : [ "accumulate", "additive", "attributeName", "attributeType", "begin", "by", "calcMode", "color.interpolation", "color.rendering", "dur", "end", "externalResourcesRequired", "fill", "from", "id", "keySplines", "keyTimes", "max", "min", "onbegin", "onend", "onload", "onrepeat", "repeatCount", "repeatDur", "requiredExtensions", "requiredFeatures", "restart", "systemLanguage", "to", "values", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"set" : [ "attributeName", "attributeType", "begin", "dur", "end", "externalResourcesRequired", "fill", "id", "max", "min", "onbegin", "onend", "onload", "onrepeat", "repeatCount", "repeatDur", "requiredExtensions", "requiredFeatures", "restart", "systemLanguage", "to", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"animateMotion" : [ "accumulate", "additive", "begin", "by", "calcMode", "dur", "end", "externalResourcesRequired", "fill", "from", "id", "keyPoints", "keySplines", "keyTimes", "max", "min", "onbegin", "onend", "onload", "onrepeat", "origin", "path", "repeatCount", "repeatDur", "requiredExtensions", "requiredFeatures", "restart", "rotate", "systemLanguage", "to", "values", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"mpath" : [ "externalResourcesRequired", "id", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"animateColor" : [ "accumulate", "additive", "attributeName", "attributeType", "begin", "by", "calcMode", "color.interpolation", "color.rendering", "dur", "end", "externalResourcesRequired", "fill", "from", "id", "keySplines", "keyTimes", "max", "min", "onbegin", "onend", "onload", "onrepeat", "repeatCount", "repeatDur", "requiredExtensions", "requiredFeatures", "restart", "systemLanguage", "to", "values", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"animateTransform" : [ "accumulate", "additive", "attributeName", "attributeType", "begin", "by", "calcMode", "dur", "end", "externalResourcesRequired", "fill", "from", "id", "keySplines", "keyTimes", "max", "min", "onbegin", "onend", "onload", "onrepeat", "repeatCount", "repeatDur", "requiredExtensions", "requiredFeatures", "restart", "systemLanguage", "to", "type", "values", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"rect" : [ "class", "clip.path", "clip.rule", "color", "color.interpolation", "color.rendering", "cursor", "cxy", "display", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "filter", "height", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pointer.events", "requiredExtensions", "requiredFeatures", "rx", "rxy", "ry", "shape.rendering", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "transform", "visibility", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"circle" : [ "class", "clip.path", "clip.rule", "color", "color.interpolation", "color.rendering", "cursor", "cx", "cxy", "cy", "display", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "filter", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pointer.events", "r", "requiredExtensions", "requiredFeatures", "shape.rendering", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "transform", "visibility", "xml.base", "xml.lang", "xml.space" ],
+"ellipse" : [ "class", "clip.path", "clip.rule", "color", "color.interpolation", "color.rendering", "cursor", "cx", "cxy", "cy", "display", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "filter", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pointer.events", "requiredExtensions", "requiredFeatures", "rx", "rxy", "ry", "shape.rendering", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "transform", "visibility", "xml.base", "xml.lang", "xml.space" ],
+"line" : [ "class", "clip.path", "clip.rule", "color", "color.interpolation", "color.rendering", "cursor", "display", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "filter", "id", "marker.end", "marker.end", "marker.mid", "marker.mid", "marker.start", "marker.start", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pointer.events", "requiredExtensions", "requiredFeatures", "shape.rendering", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "transform", "visibility", "x1", "x12", "x2", "xml.base", "xml.lang", "xml.space", "xy1", "xy2", "y1", "y12", "y2" ],
+"polyline" : [ "class", "clip.path", "clip.rule", "color", "color.interpolation", "color.rendering", "cursor", "display", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "filter", "id", "marker.end", "marker.end", "marker.mid", "marker.mid", "marker.start", "marker.start", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pointer.events", "points", "requiredExtensions", "requiredFeatures", "shape.rendering", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "transform", "visibility", "xml.base", "xml.lang", "xml.space" ],
+"polygon" : [ "class", "clip.path", "clip.rule", "color", "color.interpolation", "color.rendering", "cursor", "display", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "filter", "id", "marker.end", "marker.end", "marker.mid", "marker.mid", "marker.start", "marker.start", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pointer.events", "points", "requiredExtensions", "requiredFeatures", "shape.rendering", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "transform", "visibility", "xml.base", "xml.lang", "xml.space" ],
+"clipPath" : [ "class", "clip.path", "clipPathUnits", "externalResourcesRequired", "id", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "transform", "xml.base", "xml.lang", "xml.space" ],
+"mask" : [ "class", "clip.path", "color.interpolation", "color.rendering", "cursor", "cxy", "enable.background", "externalResourcesRequired", "height", "id", "mask", "maskContentUnits", "maskUnits", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"color.profile" : [ "id", "local", "name", "rendering.intent", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"cursor" : [ "externalResourcesRequired", "id", "requiredExtensions", "requiredFeatures", "systemLanguage", "x", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"svg" : [ "baseProfile", "class", "clip", "clip.path", "color.interpolation", "color.rendering", "contentScriptType", "contentStyleType", "cursor", "cxy", "display", "enable.background", "externalResourcesRequired", "filter", "height", "id", "mask", "onabort", "onactivate", "onclick", "onerror", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onresize", "onscroll", "onunload", "onzoom", "opacity", "overflow", "preserveAspectRatio", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "version", "viewBox", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y", "zoomAndPan" ],
+"g" : [ "class", "clip.path", "color.interpolation", "color.rendering", "cursor", "display", "enable.background", "externalResourcesRequired", "filter", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "transform", "xml.base", "xml.lang", "xml.space" ],
+"defs" : [ "class", "clip.path", "color.interpolation", "color.rendering", "cursor", "enable.background", "externalResourcesRequired", "filter", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "transform", "xml.base", "xml.lang", "xml.space" ],
+"desc" : [ "class", "id", "style", "xml.base", "xml.lang", "xml.space" ],
+"title" : [ "class", "id", "style", "xml.base", "xml.lang", "xml.space" ],
+"symbol" : [ "class", "clip", "clip.path", "color.interpolation", "color.rendering", "cursor", "enable.background", "externalResourcesRequired", "filter", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "overflow", "preserveAspectRatio", "style", "viewBox", "xml.base", "xml.lang", "xml.space" ],
+"use" : [ "class", "clip.path", "clip.rule", "color.interpolation", "color.rendering", "cursor", "cxy", "display", "externalResourcesRequired", "filter", "height", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pointer.events", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "transform", "visibility", "wh", "width", "x", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"image" : [ "class", "clip", "clip.path", "clip.rule", "color.interpolation", "color.profile", "color.rendering", "cursor", "cxy", "display", "externalResourcesRequired", "filter", "height", "id", "image.rendering", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "overflow", "pointer.events", "preserveAspectRatio", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "transform", "visibility", "wh", "width", "x", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"switch" : [ "class", "clip.path", "color.interpolation", "color.rendering", "cursor", "display", "enable.background", "externalResourcesRequired", "filter", "id", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "transform", "xml.base", "xml.lang", "xml.space" ],
+"filter" : [ "class", "cxy", "externalResourcesRequired", "filterRes", "filterUnits", "height", "id", "primitiveUnits", "style", "wh", "width", "x", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feDistantLight" : [ "azimuth", "elevation", "id", "xml.base", "xml.lang", "xml.space" ],
+"fePointLight" : [ "id", "x", "xml.base", "xml.lang", "xml.space", "xyz", "y", "z" ],
+"feSpotLight" : [ "id", "limitingConeAngle", "pointsAtX", "pointsAtXYZ", "pointsAtY", "pointsAtZ", "specularExponent", "x", "xml.base", "xml.lang", "xml.space", "xyz", "y", "z" ],
+"feBlend" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "in1", "in12", "in2", "mode", "result", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feColorMatrix" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "in1", "result", "style", "type", "values", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feComponentTransfer" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "in1", "result", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feFuncR" : [ "amplitude", "exponent", "id", "intercept", "offset", "slope", "tableValues", "type", "xml.base", "xml.lang", "xml.space" ],
+"feFuncG" : [ "amplitude", "exponent", "id", "intercept", "offset", "slope", "tableValues", "type", "xml.base", "xml.lang", "xml.space" ],
+"feFuncB" : [ "amplitude", "exponent", "id", "intercept", "offset", "slope", "tableValues", "type", "xml.base", "xml.lang", "xml.space" ],
+"feFuncA" : [ "amplitude", "exponent", "id", "intercept", "offset", "slope", "tableValues", "type", "xml.base", "xml.lang", "xml.space" ],
+"feComposite" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "in1", "in12", "in2", "k1", "k1234", "k2", "k3", "k4", "operator", "result", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feConvolveMatrix" : [ "bias", "class", "color.interpolation.filters", "cxy", "divisor", "edgeMode", "height", "id", "in1", "kernelMatrix", "kernelUnitLength", "order", "preserveAlpha", "result", "style", "targetX", "targetXY", "targetY", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feDiffuseLighting" : [ "class", "color", "color.interpolation.filters", "cxy", "diffuseConstant", "height", "id", "in1", "kernelUnitLength", "lighting.color", "result", "style", "surfaceScale", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feDisplacementMap" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "in1", "in12", "in2", "result", "scale", "style", "wh", "width", "x", "xChannelSelector", "xml.base", "xml.lang", "xml.space", "xy", "y", "yChannelSelector" ],
+"feFlood" : [ "class", "color", "color.interpolation.filters", "cxy", "flood.color", "flood.opacity", "height", "id", "result", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feGaussianBlur" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "in1", "result", "stdDeviation", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feImage" : [ "class", "color.interpolation.filters", "cxy", "externalResourcesRequired", "height", "id", "preserveAspectRatio", "result", "style", "wh", "width", "x", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feMerge" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "result", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feMergeNode" : [ "id", "in1", "xml.base", "xml.lang", "xml.space" ],
+"feMorphology" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "in1", "operator", "radius", "result", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feOffset" : [ "class", "color.interpolation.filters", "cxy", "dx", "dxy", "dy", "height", "id", "in1", "result", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feSpecularLighting" : [ "class", "color", "color.interpolation.filters", "cxy", "height", "id", "in1", "kernelUnitLength", "lighting.color", "result", "specularConstant", "specularExponent", "style", "surfaceScale", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feTile" : [ "class", "color.interpolation.filters", "cxy", "height", "id", "in1", "result", "style", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"feTurbulence" : [ "baseFrequency", "class", "color.interpolation.filters", "cxy", "height", "id", "numOctaves", "result", "seed", "stitchTiles", "style", "type", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"font" : [ "class", "externalResourcesRequired", "horiz.adv.x", "horiz.origin.x", "horiz.origin.xy", "horiz.origin.y", "id", "style", "vert.adv.y", "vert.origin.x", "vert.origin.xy", "vert.origin.y", "xml.base", "xml.lang", "xml.space" ],
+"glyph" : [ "arabic.form", "class", "clip.path", "color.interpolation", "color.rendering", "cursor", "d", "enable.background", "filter", "glyph.name", "horiz.adv.x", "id", "lang", "mask", "opacity", "orientation", "style", "unicode", "vert.adv.y", "vert.origin.x", "vert.origin.xy", "vert.origin.y", "xml.base", "xml.lang", "xml.space" ],
+"missing.glyph" : [ "class", "clip.path", "color.interpolation", "color.rendering", "cursor", "d", "enable.background", "filter", "horiz.adv.x", "id", "mask", "opacity", "style", "vert.adv.y", "vert.origin.x", "vert.origin.xy", "vert.origin.y", "xml.base", "xml.lang", "xml.space" ],
+"hkern" : [ "g1", "g12", "g2", "id", "k", "u1", "u12", "u2", "xml.base", "xml.lang", "xml.space" ],
+"vkern" : [ "g1", "g12", "g2", "id", "k", "u1", "u12", "u2", "xml.base", "xml.lang", "xml.space" ],
+"font.face" : [ "accent.height", "alphabetic", "ascent", "bbox", "cap.height", "descent", "font.family", "font.size", "font.stretch", "font.style", "font.variant", "font.weight", "hanging", "id", "ideographic", "mathematical", "overline.position", "overline.thickness", "panose.1", "slope", "stemh", "stemv", "strikethrough.position", "strikethrough.thickness", "underline.position", "underline.thickness", "unicode.range", "units.per.em", "v.alphabetic", "v.hanging", "v.ideographic", "v.mathematical", "widths", "x.height", "xml.base", "xml.lang", "xml.space" ],
+"font.face.src" : [ "id", "xml.base", "xml.lang", "xml.space" ],
+"font.face.uri" : [ "id", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"font.face.format" : [ "id", "string", "xml.base", "xml.lang", "xml.space" ],
+"font.face.name" : [ "id", "name", "xml.base", "xml.lang", "xml.space" ],
+"foreignObject" : [ "class", "clip", "cxy", "display", "externalResourcesRequired", "height", "id", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "overflow", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "transform", "wh", "width", "x", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"linearGradient" : [ "class", "colors", "externalResourcesRequired", "gradientTransform", "gradientUnits", "id", "offsets", "spreadMethod", "style", "x1", "x12", "x2", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy1", "xy2", "y1", "y12", "y2" ],
+"radialGradient" : [ "class", "colors", "cx", "cxy", "cy", "externalResourcesRequired", "fx", "fxy", "fy", "gradientTransform", "gradientUnits", "id", "offsets", "r", "spreadMethod", "style", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"stop" : [ "class", "color", "id", "offset", "stop.color", "stop.opacity", "style", "xml.base", "xml.lang", "xml.space" ],
+"pattern" : [ "class", "clip", "clip.path", "color.interpolation", "color.rendering", "cursor", "cxy", "enable.background", "externalResourcesRequired", "filter", "height", "id", "mask", "opacity", "overflow", "patternContentUnits", "patternTransform", "patternUnits", "preserveAspectRatio", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "viewBox", "wh", "width", "x", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space", "xy", "y" ],
+"marker" : [ "class", "clip", "clip.path", "color.interpolation", "color.rendering", "cursor", "enable.background", "externalResourcesRequired", "filter", "id", "markerHeight", "markerUnits", "markerWidth", "mask", "opacity", "orient", "overflow", "preserveAspectRatio", "refX", "refXY", "refY", "style", "viewBox", "xml.base", "xml.lang", "xml.space" ],
+"metadata" : [ "id", "xml.base", "xml.lang", "xml.space" ],
+"path" : [ "class", "clip.path", "clip.rule", "color", "color.interpolation", "color.rendering", "cursor", "d", "display", "externalResourcesRequired", "fill", "fill.opacity", "fill.rule", "filter", "id", "marker.end", "marker.end", "marker.mid", "marker.mid", "marker.start", "marker.start", "mask", "onactivate", "onclick", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "opacity", "pathLength", "pointer.events", "requiredExtensions", "requiredFeatures", "shape.rendering", "stroke", "stroke.dasharray", "stroke.dashoffset", "stroke.linecap", "stroke.linejoin", "stroke.miterlimit", "stroke.opacity", "stroke.width", "style", "systemLanguage", "transform", "visibility", "xml.base", "xml.lang", "xml.space" ],
+"script" : [ "externalResourcesRequired", "id", "type", "xlink.actuate", "xlink.arcrole", "xlink.href", "xlink.role", "xlink.show", "xlink.title", "xlink.type", "xml.base", "xml.lang", "xml.space" ],
+"style" : [ "id", "media", "title", "type", "xml.base", "xml.lang", "xml.space" ],
+"svgR" : [ "baseProfile", "class", "clip", "clip.path", "color.interpolation", "color.rendering", "contentScriptType", "contentStyleType", "cursor", "cxy", "display", "enable.background", "externalResourcesRequired", "filter", "height", "id", "mask", "onabort", "onactivate", "onclick", "onerror", "onfocusin", "onfocusout", "onload", "onmousedown", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onresize", "onscroll", "onunload", "onzoom", "opacity", "overflow", "preserveAspectRatio", "requiredExtensions", "requiredFeatures", "style", "systemLanguage", "version", "viewBox", "wh", "width", "xml.base", "xml.lang", "xml.space", "xy", "zoomAndPan" ]
+};    
+
+
+var allElements = [
+"feComponentTransfer", "feSpecularLighting", "feDiffuseLighting", "feDisplacementMap", "animateTransform", "feConvolveMatrix", "font.face.format", "feDistantLight", "feGaussianBlur", "font.face.name", "linearGradient", "radialGradient", "animateMotion", "color.profile", "feColorMatrix", "font.face.src", "font.face.uri", "foreignObject", "missing.glyph", "altGlyphItem", "animateColor", "feMorphology", "fePointLight", "feTurbulence", "altGlyphDef", "feComposite", "feMergeNode", "feSpotLight", "font.face", "altGlyph", "clipPath", "feOffset", "glyphRef", "metadata", "polyline", "textPath", "animate", "ellipse", "feBlend", "feFlood", "feFuncA", "feFuncB", "feFuncG", "feFuncR", "feImage", "feMerge", "pattern", "polygon", "circle", "cursor", "feTile", "filter", "marker", "script", "switch", "symbol", "glyph", "hkern", "image", "mpath", "style", "title", "tspan", "vkern", "defs", "desc", "font", "line", "mask", "path", "rect", "stop", "svgR", "text", "tref", "view", "set", "svg", "use", "a", "g"
+];
+
+ var acceptContentEle = { 
+'a' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'view' : [ "desc", "title", "metadata" ],
+'text' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "tspan", "tref", "textPath", "altGlyph", "a" ],
+'tspan' : [ "desc", "title", "metadata", "a", "altGlyph", "animate", "animateColor", "set", "tref", "tspan" ],
+'tref' : [ "desc", "title", "metadata", "animate", "animateColor", "set" ],
+'textPath' : [ "desc", "title", "metadata", "a", "altGlyph", "animate", "animateColor", "set", "tref", "tspan" ],
+'altGlyphDef' : [ "glyphRef", "altGlyphItem" ],
+'altGlyphItem' : [ "glyphRef" ],
+'glyphRef' : [ "Empty." ],
+'animate' : [ "desc", "title", "metadata" ],
+'set' : [ "desc", "title", "metadata" ],
+'animateMotion' : [ "desc", "title", "metadata", "mpath" ],
+'mpath' : [ "desc", "title", "metadata" ],
+'animateColor' : [ "desc", "title", "metadata" ],
+'animateTransform' : [ "desc", "title", "metadata" ],
+'rect' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'circle' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'ellipse' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'line' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'polyline' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'polygon' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'clipPath' : [ "desc", "title", "metadata", "animate", "set", "animateMotion", "animateColor", "animateTransform", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "text", "use" ],
+'mask' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'color.profile' : [ "desc", "title", "metadata" ],
+'cursor' : [ "desc", "title", "metadata" ],
+'svg' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'g' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'defs' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'symbol' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'use' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'image' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'switch' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "a", "foreignObject", "g", "image", "svg", "switch", "text", "use" ],
+'filter' : [ "desc", "title", "metadata", "feBlend", "feColorMatrix", "feComponentTransfer", "feComposite", "feConvolveMatrix", "feDiffuseLighting", "feDisplacementMap", "feFlood", "feGaussianBlur", "feImage", "feMerge", "feMorphology", "feOffset", "feSpecularLighting", "feTile", "feTurbulence", "animate", "set" ],
+'feDistantLight' : [ "animate", "set" ],
+'fePointLight' : [ "animate", "set" ],
+'feSpotLight' : [ "animate", "set" ],
+'feBlend' : [ "animate", "set" ],
+'feColorMatrix' : [ "animate", "set" ],
+'feComponentTransfer' : [ "feFuncA", "feFuncB", "feFuncG", "feFuncR" ],
+'feFuncR' : [ "animate", "set" ],
+'feFuncG' : [ "animate", "set" ],
+'feFuncB' : [ "animate", "set" ],
+'feFuncA' : [ "animate", "set" ],
+'feComposite' : [ "animate", "set" ],
+'feConvolveMatrix' : [ "animate", "set" ],
+'feDiffuseLighting' : [ "desc", "title", "metadata", "feDistantLight", "fePointLight", "feSpotLight" ],
+'feDisplacementMap' : [ "animate", "set" ],
+'feFlood' : [ "animate", "animateColor", "set" ],
+'feGaussianBlur' : [ "animate", "set" ],
+'feImage' : [ "animate", "animateTransform", "set" ],
+'feMerge' : [ "feMergeNode" ],
+'feMergeNode' : [ "animate", "set" ],
+'feMorphology' : [ "animate", "set" ],
+'feOffset' : [ "animate", "set" ],
+'feSpecularLighting' : [ "desc", "title", "metadata", "feDistantLight", "fePointLight", "feSpotLight" ],
+'feTile' : [ "animate", "set" ],
+'feTurbulence' : [ "animate", "set" ],
+'font' : [ "desc", "title", "metadata", "font.face", "glyph", "hkern", "missing.glyph", "vkern" ],
+'glyph' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'missing.glyph' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'hkern' : [ "Empty." ],
+'vkern' : [ "Empty." ],
+'font.face' : [ "desc", "title", "metadata", "font.face.src" ],
+'font.face.src' : [ "font.face.name", "font.face.uri" ],
+'font.face.uri' : [ "font.face.format" ],
+'font.face.format' : [ "Empty." ],
+'font.face.name' : [ "Empty." ],
+'linearGradient' : [ "desc", "title", "metadata", "animate", "animateTransform", "set", "stop" ],
+'radialGradient' : [ "desc", "title", "metadata", "animate", "animateTransform", "set", "stop" ],
+'stop' : [ "animate", "animateColor", "set" ],
+'pattern' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'marker' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+'path' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata" ],
+'svgR' : [ "animate", "set", "animateMotion", "animateColor", "animateTransform", "desc", "title", "metadata", "rect", "circle", "ellipse", "line", "polyline", "polygon", "path", "svg", "g", "defs", "symbol", "use", "linearGradient", "radialGradient", "a", "altGlyphDef", "clipPath", "color.profile", "cursor", "filter", "font", "font.face", "foreignObject", "image", "marker", "mask", "pattern", "script", "style", "switch", "text", "view" ],
+};
+}
+
+start=programme
+
+NL      =   '\r'? '\n' 
+EOF = !.
+
+
+expr_seperator =  ( comment NL / NL / ';')
+expr_list= _ ( expr (___ expr_seperator _ expr)* )?
+
+programme = expr_list _ EOF
+
+// TODO: replace binary_expr with expr???
+expr = svgRCall / ( ( '!' ___)? binary_expr ) 
+ 
+// TODO: add svgR rules
+//      define containers, shapes, ...., and rules of membership
+
+atomic_expr = 
+    ID / 
+    STRINGLITERAL /
+    HEX /
+    COMPLEX /
+    FLOAT /
+    INT /
+    'NULL' /
+    'NA' /
+    'Inf' /
+    'NaN' /
+    'TRUE' /
+    'FALSE' /
+    'next' /
+    'break'
+  
+// TODO: ALERT for missing }. ),   RULES: {, (
+//       ALERT for missing (  RULES :for, while,function
+left_token_expr =  
+    '{' _ expr_list _ '}'   /                          
+    'if' ___ '(' _ expr _ ')' _ expr ___ 'else' _ expr /
+    'if' ___ '(' _ expr _ ')' _ expr /
+    'for' ___ '(' _ ID _ 'in' _ expr _ ')' _ expr /
+    'while' ___ '(' _ expr _ ')' _ expr /
+    'repeat' _ expr /
+    '(' _ expr _ ')' /
+    'function' ___ '(' _ formals? _ ')' _ expr  /
+    ('+' / '-') expr
+  
+  
+//TODO: ALERT: formals, extra commas or missing commmas
+formal= ID ___ '=' _ expr / ID / '...'
+
+formalCombo1 =  (',' _ formal)
+
+formalCombo2 = ( _ (','/formal)) {
+    addError( "comma issues", location() ); 
+    return "comma";
+}
+
+formals= formal (___ (formalCombo1 / formalCombo2))* 
+
+
+//Todo: ALERT: parameters, extra commas or missing commas
+parameter= ID ___ '=' _ expr/ expr / '...'
+
+paramCombo1=(',' _ parameter)
+
+paramCombo2=( _ (','/parameter)) { 
+    addError( "comma issues", location() ); 
+    return "comma";
+}
+
+
+//parameters= parameter (___ ',' _ parameter)* 
+parameters= parameter (___ (paramCombo1/paramCombo2))* 
+        
+
+
+slist_expr =   ___ '[' _ sublist _ ']'  
+dlist_expr =   ___ '[[' _ sublist _ ']]'  
+call_expr=  '(' _ parameters? _ ')'
+
+composite_expr = ( left_token_expr / atomic_expr ) ( !expr_seperator ( dlist_expr / slist_expr / call_expr  )  )* 
+
+svgRCall = head:keySVGR '(' _ tail:svgRparameters? _ rightParen:( ')' / EOF ) 
+{
+    // Check each tail element which is an svgR call and see if it's belongs to the content model of the head element
+    var i, tailTok, tailLoc, result, headTok = head;
+    //console.log("svgRCall");
+    if(tail){
+        for( i=0; i< tail.length; i++){
+            if(tail[i]){
+                //console.log("\nsvgRCall tail:[" + i + "]\n" + JSON.stringify(tail[i]) +"\n");
+                if(tail[i] instanceof SvgEleInfo){
+                    tailTok=tail[i].token;
+                    if(allElements.hasValue( tailTok ) ){
+                        // if bad, record in warnings ow do nothing
+                        if(!acceptContentEle[headTok].hasValue(tailTok)){
+                            tailLoc=tail[i].location;
+                            addWarning( "Warning: " + tailTok + " not in content model of " + headTok, tailLoc );
+                            //break;  // may want to remove this break
+                        }
+                    }
+                } else {
+                    if(tail[i] instanceof SvgAttrInfo){
+                        tailTok=tail[i].token;
+                        if(!acceptedAttributes[headTok].hasValue(tailTok)){
+                            tailLoc=tail[i].location;
+                            addWarning( "Warning: " + tailTok + " not an attribute of " + headTok, tailLoc );
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if( rightParen ){
+        //showResult("rightParen=", rightParen);
+    } else {
+        addError("Missing Closing Right Parenthesis", location() );
+    }
+    // in any case, return head
+    result= new SvgEleInfo(headTok, location());
+     if( options.cursorPos ){
+         pushContext(result, options.cursorPos);
+     }
+    return result;
+}
+
+//Todo: ALERT: parameters, extra commas or missing commas
+
+svgRNamedParam = attr:ID ___ '=' _ expr
+{
+   var result;
+   //showResult("svgRNamedParam Attr-",attr);
+   result= new SvgAttrInfo(attr, location());
+//   console.log("\nsvgRNamedParam Result:\n" + JSON.stringify(result) + "\n" ) ;
+   return result;}
+
+svgRUnnamedParam = elem:svgRCall / expr / '...'
+{
+    var result = elem;
+    //showResult("svgRUnnamedParam Elem-",elem);
+    //result= new SvgEleInfo(elem, location());
+//    console.log("\nsvgRUnnamedParam Result:\n" + JSON.stringify(result) + "\n" ) ;
+    return result;
+}
+
+svgRparameter= svgRNamedParam/svgRUnnamedParam
+
+
+//This returns to return only svg token
+svgRparamCombo1= head:(',' _) tail:svgRparameter 
+{   
+    var result=tail, loc;
+//    console.log("svgRparamCombo1");
+    if(result){
+        loc=location();
+//        console.log("svgRparamCombo1: tail=" + result);
+//        printLocation(loc);
+//        console.log(loc);
+        //result=new SvgEleInfo(result, loc);
+    } else {
+//        console.log("svgRparamCombo1: result is null");
+    }
+//    console.log("\nsvgRparamCombo1 Result:\n" + JSON.stringify(result) + "\n" ) ;
+    //console.log(result);  
+    return result;
+}
+
+svgRparamCombo2= _ tail:(','/svgRparameter) 
+{ 
+    var result=tail;
+//    console.log("svgRparamCombo2");
+    //if(result)
+    //    result=new SvgEleInfo(tail, location());
+    addError( "comma issues", location() ); 
+//    console.log("\nsvgRparamCombo2 Result:\n" + JSON.stringify(result) +"\n");
+    return result;
+}
+
+svgRparamCombo12 = ___ tail:(svgRparamCombo1/svgRparamCombo2)
+{
+    var result=tail;
+    var resultType;
+ //   console.log("svgRparamCombo12");
+    if(result){
+        resultType = typeof result;
+//        console.log("svgRparamCombo12: typeof result =" + resultType);
+//        console.log(JSON.stringify(result));
+    } else {
+//        console.log("svgRparamCombo12: result is null");
+    }
+//    console.log("\nsvgRparamCombo12 Result:\n" + JSON.stringify(result) +"\n");
+    return result;
+}
+
+//parameters= parameter (___ ',' _ svgRparameter)* 
+
+// returns an array of potential svgR tokens
+svgRparameters= head:svgRparameter tail:(svgRparamCombo12)* 
+{
+    var result = tail;
+    var resultType =typeof head;
+    
+//    console.log("svgRparamCombo12: typeof head =" + resultType);
+
+//    console.log("Entering svgRparameters");
+    if(result){
+        resultType = typeof result;
+//        console.log("svgRparamCombo12: typeof tail =" + resultType);
+        result.unshift(head);
+    } else {
+        result = [head];
+    }
+//    console.log("\nsvgRparameters Result:\n" + JSON.stringify(result) +"\n");
+    return result;
+}
+ 
+
+// call_expr
+
+OP_SYMBOL = [><:+&*\-.$=/] / LETTER
+
+
+bin_op = '%' OP_SYMBOL*'%'/ '<<-' / '->>' /':::' /
+  '<-' / '==' /'::' / '>=' / '!=' / '||' / '&&' / ':=' /'<=' /  '->' / 
+  '$' / '@' / '^' / ':' / '*' / '/' / '+' / '-' / '>' /  '<' /   '&' /  '|' / '~'  / '=' 
+
+binary_expr = ( composite_expr ) (  ___ bin_op  _  expr  ___  )*
+
+ 
+//LineTerminator
+LineTerminator = [\u000A\u000D\u2028\u2029]
+
+// WhiteSpace
+WS = [\u0009\u000B\u000C\u0020\u00A0\uFEFF\u1680\u180E\u2000-\u200A\u202F\u205F\u3000]
+
+// Optional WhiteSpace
+_ = (WS / LineTerminator / comment)*
+
+// Optional WhiteSpace with no line breaks.
+__ = (WS /  comment)*
+
+___ = WS*
+
+
+LETTER  = [a-zA-Z] 
+
+
+keyWord = ('function' / 'if' / 'for' / 'while' / 'repeat' / 'next' / 'in') !(DIGIT/LETTER)
+idword  =  head:( LETTER / ( '.' (LETTER/'_'/'.') ) ) tail:(LETTER/DIGIT/'_'/'.')*
+{
+    var result = tail;
+    if(result){
+        result.unshift(head);
+        result=result.join("");
+    } else {
+        result=head
+    }
+    //showResult("idword", result); 
+    return result;
+}
+
+keySVGR = "feComponentTransfer"/ "feSpecularLighting"/ "feDiffuseLighting"/ "feDisplacementMap"/ "animateTransform"/ "feConvolveMatrix"/ "font.face.format"/ "feDistantLight"/ "feGaussianBlur"/ "font.face.name"/ "linearGradient"/ "radialGradient"/ "animateMotion"/ "color.profile"/ "feColorMatrix"/ "font.face.src"/ "font.face.uri"/ "foreignObject"/ "missing.glyph"/ "altGlyphItem"/ "animateColor"/ "feMorphology"/ "fePointLight"/ "feTurbulence"/ "altGlyphDef"/ "feComposite"/ "feMergeNode"/ "feSpotLight"/ "font.face"/ "altGlyph"/ "clipPath"/ "feOffset"/ "glyphRef"/ "metadata"/ "polyline"/ "textPath"/ "animate"/ "ellipse"/ "feBlend"/ "feFlood"/ "feFuncA"/ "feFuncB"/ "feFuncG"/ "feFuncR"/ "feImage"/ "feMerge"/ "pattern"/ "polygon"/ "circle"/ "cursor"/ "feTile"/ "filter"/ "marker"/ "script"/ "switch"/ "symbol"/ "glyph"/ "hkern"/ "image"/ "mpath"/ "style"/ "title"/ "tspan"/ "vkern"/ "defs"/ "desc"/ "font"/ "line"/ "mask"/ "path"/ "rect"/ "stop"/ "text"/ "tref"/ "view"/ "svgR" / "set"/ "svg"/ "use"/ "a"/ "g"
+
+ID = head:!(keyWord) tail:idword
+{   
+    var result =tail;
+    return result;
+}
+
+
+DIGIT=  [0-9]
+INT =   DIGIT+ [Ll]? 
+EXP =   ('E' / 'e') ('+' / '-')? INT
+
+FLOAT=  DIGIT+ '.' DIGIT* EXP? [Ll]? /
+    DIGIT+ EXP? [Ll]? /
+    '.' DIGIT+ EXP? [Ll]?
+    
+COMPLEX=    INT 'i' / FLOAT 'i'
+
+HEX =   '0' ('x'/'X') HEXDIGIT+ [Ll]?
+HEXDIGIT = ([0-9]/[a-f]/[A-F]) 
+HEX_ESCAPE = '\\' HEXDIGIT HEXDIGIT? 
+OCTAL_ESCAPE =  '\\' [0-3] [0-7] [0-7]
+    /   '\\' [0-7] [0-7]
+    /   '\\' [0-7] 
+    
+UNICODE_ESCAPE = '\\' 'u' HEXDIGIT HEXDIGIT HEXDIGIT HEXDIGIT /
+    '\\' 'u' '{' HEXDIGIT HEXDIGIT HEXDIGIT HEXDIGIT '}' 
+
+ESC =   '\\' [abtnfrv"'\\] /
+  UNICODE_ESCAPE /
+  HEX_ESCAPE /
+  OCTAL_ESCAPE
+
+
+sub =  expr / '...' 
+subg = (sub !sub) / ','
+sublist = _ (subg _)+
+ 
+
+STRINGLITERAL =
+    '"' DOUBLESTRINGCHARACTER* '"' /
+    "'" SINGLESTRINGCHARACTER* "'"
+    
+DOUBLESTRINGCHARACTER =
+    !(["] / "\\" ) .
+    
+SINGLESTRINGCHARACTER =
+    !(['] / "\\") .
+  
+
+comment =   '#' (!(NL/EOF) .)*
+
+

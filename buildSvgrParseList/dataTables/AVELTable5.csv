@@ -1,0 +1,1430 @@
+attr	element	anim	link	page	loc	val	lnk	treatValueAs
+accent-height	font-face	FALSE	fonts.html#FontFaceElementAccentHeightAttribute	fonts.html	FontFaceElementAccentHeightAttribute	<number>	types.html#DataTypeNumber	ignore
+alphabetic	font-face	FALSE	fonts.html#FontFaceElementAlphabeticAttribute	fonts.html	FontFaceElementAlphabeticAttribute	<number>	types.html#DataTypeNumber	ignore
+arabic-form	glyph	FALSE	fonts.html#GlyphElementArabicFormAttribute	fonts.html	GlyphElementArabicFormAttribute	initial | medial | terminal | isolated		ignore
+ascent	font-face	FALSE	fonts.html#FontFaceElementAscentAttribute	fonts.html	FontFaceElementAscentAttribute	<number>	types.html#DataTypeNumber	ignore
+bbox	font-face	FALSE	fonts.html#FontFaceElementBboxAttribute	fonts.html	FontFaceElementBboxAttribute	<string>		cmm-list
+cap-height	font-face	FALSE	fonts.html#FontFaceElementCapHeightAttribute	fonts.html	FontFaceElementCapHeightAttribute	<number>	types.html#DataTypeNumber	ignore
+d	glyph	FALSE	fonts.html#GlyphElementDAttribute	fonts.html	GlyphElementDAttribute	path data		path-data-list
+d	missing-glyph	FALSE	fonts.html#GlyphElementDAttribute	fonts.html	GlyphElementDAttribute	path data		path-data-list
+descent	font-face	FALSE	fonts.html#FontFaceElementDescentAttribute	fonts.html	FontFaceElementDescentAttribute	<number>	types.html#DataTypeNumber	ignore
+font-family	font-face	FALSE	fonts.html#FontFaceElementFontFamilyAttribute	fonts.html	FontFaceElementFontFamilyAttribute	<string>		cmm-list
+font-size	font-face	FALSE	fonts.html#FontFaceElementFontSizeAttribute	fonts.html	FontFaceElementFontSizeAttribute	<string>		cmm-list
+font-stretch	font-face	FALSE	fonts.html#FontFaceElementFontStretchAttribute	fonts.html	FontFaceElementFontStretchAttribute	all | [ normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded] [, [ normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded] ]*		ignore
+font-style	font-face	FALSE	fonts.html#FontFaceElementFontStyleAttribute	fonts.html	FontFaceElementFontStyleAttribute	all | [ normal | italic | oblique] [, [normal | italic | oblique]]*		ignore
+font-variant	font-face	FALSE	fonts.html#FontFaceElementFontVariantAttribute	fonts.html	FontFaceElementFontVariantAttribute	[normal | small-caps] [,[normal | small-caps]]*		ignore
+font-weight	font-face	FALSE	fonts.html#FontFaceElementFontWeightAttribute	fonts.html	FontFaceElementFontWeightAttribute	all | [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900] [, [normal | bold | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900]]*		ignore
+g1	hkern	FALSE	fonts.html#HKernElementG1Attribute	fonts.html	HKernElementG1Attribute	<name> [, <name> ]*		cmm-list
+g1	vkern	FALSE	fonts.html#HKernElementG1Attribute	fonts.html	HKernElementG1Attribute	<name> [, <name> ]*		cmm-list
+g2	hkern	FALSE	fonts.html#HKernElementG2Attribute	fonts.html	HKernElementG2Attribute	<name> [, <name> ]*		cmm-list
+g2	vkern	FALSE	fonts.html#HKernElementG2Attribute	fonts.html	HKernElementG2Attribute	<name> [, <name> ]*		cmm-list
+glyph-name	glyph	FALSE	fonts.html#GlyphElementGlyphNameAttribute	fonts.html	GlyphElementGlyphNameAttribute	<name> [, <name> ]*		cmm-list
+hanging	font-face	FALSE	fonts.html#FontFaceElementHangingAttribute	fonts.html	FontFaceElementHangingAttribute	<number>	types.html#DataTypeNumber	ignore
+horiz-adv-x	font	FALSE	fonts.html#FontElementHorizAdvXAttribute	fonts.html	FontElementHorizAdvXAttribute	<number>		ignore
+horiz-adv-x	glyph	FALSE	fonts.html#GlyphElementHorizAdvXAttribute	fonts.html	GlyphElementHorizAdvXAttribute	<number>		ignore
+horiz-adv-x	missing-glyph	FALSE	fonts.html#GlyphElementHorizAdvXAttribute	fonts.html	GlyphElementHorizAdvXAttribute	<number>		ignore
+horiz-origin-x	font	FALSE	fonts.html#FontElementHorizOriginXAttribute	fonts.html	FontElementHorizOriginXAttribute	<number>		ignore
+horiz-origin-y	font	FALSE	fonts.html#FontElementHorizOriginYAttribute	fonts.html	FontElementHorizOriginYAttribute	<number>		ignore
+ideographic	font-face	FALSE	fonts.html#FontFaceElementIdeographicAttribute	fonts.html	FontFaceElementIdeographicAttribute	<number>	types.html#DataTypeNumber	ignore
+k	hkern	FALSE	fonts.html#HKernElementKAttribute	fonts.html	HKernElementKAttribute	<number>		ignore
+k	vkern	FALSE	fonts.html#HKernElementKAttribute	fonts.html	HKernElementKAttribute	<number>		ignore
+lang	glyph	FALSE	fonts.html#GlyphElementLangAttribute	fonts.html	GlyphElementLangAttribute	%LanguageCodes;		cmm-list
+mathematical	font-face	FALSE	fonts.html#FontFaceElementMathematicalAttribute	fonts.html	FontFaceElementMathematicalAttribute	<number>	types.html#DataTypeNumber	ignore
+name	font-face-name	FALSE	fonts.html#FontFaceNameElementNameAttribute	fonts.html	FontFaceNameElementNameAttribute	<anything>	types.html#DataTypeAnything	ignore
+orientation	glyph	FALSE	fonts.html#GlyphElementOrientationAttribute	fonts.html	GlyphElementOrientationAttribute	h | v		ignore
+overline-position	font-face	FALSE	fonts.html#FontFaceElementOverlinePositionAttribute	fonts.html	FontFaceElementOverlinePositionAttribute	<number>	types.html#DataTypeNumber	ignore
+overline-thickness	font-face	FALSE	fonts.html#FontFaceElementOverlineThicknessAttribute	fonts.html	FontFaceElementOverlineThicknessAttribute	<number>	types.html#DataTypeNumber	ignore
+panose-1	font-face	FALSE	fonts.html#FontFaceElementPanose1Attribute	fonts.html	FontFaceElementPanose1Attribute	[<integer>]{10}		wsp-list
+slope	font-face	FALSE	fonts.html#FontFaceElementSlopeAttribute	fonts.html	FontFaceElementSlopeAttribute	<number>	types.html#DataTypeNumber	ignore
+stemh	font-face	FALSE	fonts.html#FontFaceElementStemhAttribute	fonts.html	FontFaceElementStemhAttribute	<number>	types.html#DataTypeNumber	ignore
+stemv	font-face	FALSE	fonts.html#FontFaceElementStemvAttribute	fonts.html	FontFaceElementStemvAttribute	<number>	types.html#DataTypeNumber	ignore
+strikethrough-position	font-face	FALSE	fonts.html#FontFaceElementStrikeThroughPositionAttribute	fonts.html	FontFaceElementStrikeThroughPositionAttribute	<number>	types.html#DataTypeNumber	ignore
+strikethrough-thickness	font-face	FALSE	fonts.html#FontFaceElementStrikeThroughThicknessAttribute	fonts.html	FontFaceElementStrikeThroughThicknessAttribute	<number>	types.html#DataTypeNumber	ignore
+string	font-face-format	FALSE	fonts.html#FontFaceFormatElementStringAttribute	fonts.html	FontFaceFormatElementStringAttribute	<anything>	types.html#DataTypeAnything	ignore
+u1	hkern	FALSE	fonts.html#HKernElementU1Attribute	fonts.html	HKernElementU1Attribute	[<character> | <urange> ] [, [<character> | <urange>] ]*		ignore
+u1	vkern	FALSE	fonts.html#HKernElementU1Attribute	fonts.html	HKernElementU1Attribute	[<character> | <urange> ] [, [<character> | <urange>] ]*		ignore
+u2	hkern	FALSE	fonts.html#HKernElementU2Attribute	fonts.html	HKernElementU2Attribute	[<character> | <urange>] [, [<character> | <urange>] ]*		ignore
+u2	vkern	FALSE	fonts.html#HKernElementU2Attribute	fonts.html	HKernElementU2Attribute	[<character> | <urange>] [, [<character> | <urange>] ]*		ignore
+underline-position	font-face	FALSE	fonts.html#FontFaceElementUnderlinePositionAttribute	fonts.html	FontFaceElementUnderlinePositionAttribute	<number>	types.html#DataTypeNumber	ignore
+underline-thickness	font-face	FALSE	fonts.html#FontFaceElementUnderlineThicknessAttribute	fonts.html	FontFaceElementUnderlineThicknessAttribute	<number>	types.html#DataTypeNumber	ignore
+unicode	glyph	FALSE	fonts.html#GlyphElementUnicodeAttribute	fonts.html	GlyphElementUnicodeAttribute	<string>		cmm-list
+unicode-range	font-face	FALSE	fonts.html#FontFaceElementUnicodeRangeAttribute	fonts.html	FontFaceElementUnicodeRangeAttribute	<urange> [, <urange>]*		cmm-list
+units-per-em	font-face	FALSE	fonts.html#FontFaceElementUnitsPerEmAttribute	fonts.html	FontFaceElementUnitsPerEmAttribute	<number>	types.html#DataTypeNumber	ignore
+v-alphabetic	font-face	FALSE	fonts.html#FontFaceElementVertAlphabeticAttribute	fonts.html	FontFaceElementVertAlphabeticAttribute	<number>	types.html#DataTypeNumber	ignore
+v-hanging	font-face	FALSE	fonts.html#FontFaceElementVertHangingAttribute	fonts.html	FontFaceElementVertHangingAttribute	<number>	types.html#DataTypeNumber	ignore
+v-ideographic	font-face	FALSE	fonts.html#FontFaceElementVertIdeographicAttribute	fonts.html	FontFaceElementVertIdeographicAttribute	<number>	types.html#DataTypeNumber	ignore
+v-mathematical	font-face	FALSE	fonts.html#FontFaceElementVertMathematicalAttribute	fonts.html	FontFaceElementVertMathematicalAttribute	<number>	types.html#DataTypeNumber	ignore
+vert-adv-y	font	FALSE	fonts.html#FontElementVertAdvYAttribute	fonts.html	FontElementVertAdvYAttribute	<number>		ignore
+vert-adv-y	glyph	FALSE	fonts.html#GlyphElementVertAdvYAttribute	fonts.html	GlyphElementVertAdvYAttribute	<number>		ignore
+vert-adv-y	missing-glyph	FALSE	fonts.html#GlyphElementVertAdvYAttribute	fonts.html	GlyphElementVertAdvYAttribute	<number>		ignore
+vert-origin-x	font	FALSE	fonts.html#FontElementVertOriginXAttribute	fonts.html	FontElementVertOriginXAttribute	<number>		ignore
+vert-origin-x	glyph	FALSE	fonts.html#GlyphElementVertOriginXAttribute	fonts.html	GlyphElementVertOriginXAttribute	<number>		ignore
+vert-origin-x	missing-glyph	FALSE	fonts.html#GlyphElementVertOriginXAttribute	fonts.html	GlyphElementVertOriginXAttribute	<number>		ignore
+vert-origin-y	font	FALSE	fonts.html#FontElementVertOriginYAttribute	fonts.html	FontElementVertOriginYAttribute	<number>		ignore
+vert-origin-y	glyph	FALSE	fonts.html#GlyphElementVertOriginYAttribute	fonts.html	GlyphElementVertOriginYAttribute	<number>		ignore
+vert-origin-y	missing-glyph	FALSE	fonts.html#GlyphElementVertOriginYAttribute	fonts.html	GlyphElementVertOriginYAttribute	<number>		ignore
+widths	font-face	FALSE	fonts.html#FontFaceElementWidthsAttribute	fonts.html	FontFaceElementWidthsAttribute	<string>		cmm-list
+x-height	font-face	FALSE	fonts.html#FontFaceElementXHeightAttribute	fonts.html	FontFaceElementXHeightAttribute	<number>	types.html#DataTypeNumber	ignore
+xlink:href	font-face-uri	FALSE	fonts.html#FontFaceUriElementHrefAttribute	fonts.html	FontFaceUriElementHrefAttribute	<IRI>	types.html#DataTypeIRI	ignore
+accumulate	animate	FALSE	animate.html#AccumulateAttribute	animate.html	AccumulateAttribute	none | sum		ignore
+accumulate	animateColor	FALSE	animate.html#AccumulateAttribute	animate.html	AccumulateAttribute	none | sum		ignore
+accumulate	animateMotion	FALSE	animate.html#AccumulateAttribute	animate.html	AccumulateAttribute	none | sum		ignore
+accumulate	animateTransform	FALSE	animate.html#AccumulateAttribute	animate.html	AccumulateAttribute	none | sum		ignore
+additive	animate	FALSE	animate.html#AdditiveAttribute	animate.html	AdditiveAttribute	replace | sum		ignore
+additive	animateColor	FALSE	animate.html#AdditiveAttribute	animate.html	AdditiveAttribute	replace | sum		ignore
+additive	animateMotion	FALSE	animate.html#AdditiveAttribute	animate.html	AdditiveAttribute	replace | sum		ignore
+additive	animateTransform	FALSE	animate.html#AdditiveAttribute	animate.html	AdditiveAttribute	replace | sum		ignore
+attributeName	animate	FALSE	animate.html#AttributeNameAttribute	animate.html	AttributeNameAttribute	<attributeName>		ignore
+attributeName	animateColor	FALSE	animate.html#AttributeNameAttribute	animate.html	AttributeNameAttribute	<attributeName>		ignore
+attributeName	animateTransform	FALSE	animate.html#AttributeNameAttribute	animate.html	AttributeNameAttribute	<attributeName>		ignore
+attributeName	set	FALSE	animate.html#AttributeNameAttribute	animate.html	AttributeNameAttribute	<attributeName>		ignore
+attributeType	animate	FALSE	animate.html#AttributeTypeAttribute	animate.html	AttributeTypeAttribute	CSS | XML | auto		ignore
+attributeType	animateColor	FALSE	animate.html#AttributeTypeAttribute	animate.html	AttributeTypeAttribute	CSS | XML | auto		ignore
+attributeType	animateTransform	FALSE	animate.html#AttributeTypeAttribute	animate.html	AttributeTypeAttribute	CSS | XML | auto		ignore
+attributeType	set	FALSE	animate.html#AttributeTypeAttribute	animate.html	AttributeTypeAttribute	CSS | XML | auto		ignore
+begin	animate	FALSE	animate.html#BeginAttribute	animate.html	BeginAttribute	begin-value-list		scln-list
+begin	animateColor	FALSE	animate.html#BeginAttribute	animate.html	BeginAttribute	begin-value-list		scln-list
+begin	animateMotion	FALSE	animate.html#BeginAttribute	animate.html	BeginAttribute	begin-value-list		scln-list
+begin	animateTransform	FALSE	animate.html#BeginAttribute	animate.html	BeginAttribute	begin-value-list		scln-list
+begin	set	FALSE	animate.html#BeginAttribute	animate.html	BeginAttribute	begin-value-list		scln-list
+by	animate	FALSE	animate.html#ByAttribute	animate.html	ByAttribute	<value>		cmm-list
+by	animateColor	FALSE	animate.html#ByAttribute	animate.html	ByAttribute	<value>		cmm-list
+by	animateMotion	FALSE	animate.html#ByAttribute	animate.html	ByAttribute	<value>		cmm-list
+by	animateTransform	FALSE	animate.html#ByAttribute	animate.html	ByAttribute	<value>		cmm-list
+calcMode	animate	FALSE	animate.html#CalcModeAttribute	animate.html	CalcModeAttribute	discrete | linear | paced | spline		ignore
+calcMode	animateColor	FALSE	animate.html#CalcModeAttribute	animate.html	CalcModeAttribute	discrete | linear | paced | spline		ignore
+calcMode	animateMotion	FALSE	animate.html#CalcModeAttribute	animate.html	CalcModeAttribute	discrete | linear | paced | spline		ignore
+calcMode	animateTransform	FALSE	animate.html#CalcModeAttribute	animate.html	CalcModeAttribute	discrete | linear | paced | spline		ignore
+dur	animate	FALSE	animate.html#DurAttribute	animate.html	DurAttribute	"Clock-value | ""media"" | ""indefinite"""		ignore
+dur	animateColor	FALSE	animate.html#DurAttribute	animate.html	DurAttribute	"Clock-value | ""media"" | ""indefinite"""		ignore
+dur	animateMotion	FALSE	animate.html#DurAttribute	animate.html	DurAttribute	"Clock-value | ""media"" | ""indefinite"""		ignore
+dur	animateTransform	FALSE	animate.html#DurAttribute	animate.html	DurAttribute	"Clock-value | ""media"" | ""indefinite"""		ignore
+dur	set	FALSE	animate.html#DurAttribute	animate.html	DurAttribute	"Clock-value | ""media"" | ""indefinite"""		ignore
+end	animate	FALSE	animate.html#EndAttribute	animate.html	EndAttribute	end-value-list		scln-list
+end	animateColor	FALSE	animate.html#EndAttribute	animate.html	EndAttribute	end-value-list		scln-list
+end	animateMotion	FALSE	animate.html#EndAttribute	animate.html	EndAttribute	end-value-list		scln-list
+end	animateTransform	FALSE	animate.html#EndAttribute	animate.html	EndAttribute	end-value-list		scln-list
+end	set	FALSE	animate.html#EndAttribute	animate.html	EndAttribute	end-value-list		scln-list
+fill	animate	FALSE	animate.html#FillAttribute	animate.html	FillAttribute	"freeze"" | ""remove"		ignore
+fill	animateColor	FALSE	animate.html#FillAttribute	animate.html	FillAttribute	"freeze"" | ""remove"		ignore
+fill	animateMotion	FALSE	animate.html#FillAttribute	animate.html	FillAttribute	"freeze"" | ""remove"		ignore
+fill	animateTransform	FALSE	animate.html#FillAttribute	animate.html	FillAttribute	"freeze"" | ""remove"		ignore
+fill	set	FALSE	animate.html#FillAttribute	animate.html	FillAttribute	"freeze"" | ""remove"		ignore
+from	animate	FALSE	animate.html#FromAttribute	animate.html	FromAttribute	<value>		cmm-list
+from	animateColor	FALSE	animate.html#FromAttribute	animate.html	FromAttribute	<value>		cmm-list
+from	animateMotion	FALSE	animate.html#FromAttribute	animate.html	FromAttribute	<value>		cmm-list
+from	animateTransform	FALSE	animate.html#FromAttribute	animate.html	FromAttribute	<value>		cmm-list
+keyPoints	animateMotion	FALSE	animate.html#KeyPointsAttribute	animate.html	KeyPointsAttribute	<list-of-numbers>		scln-list
+keySplines	animate	FALSE	animate.html#KeySplinesAttribute	animate.html	KeySplinesAttribute	<list>		wsp4scln-list
+keySplines	animateColor	FALSE	animate.html#KeySplinesAttribute	animate.html	KeySplinesAttribute	<list>		wsp4scln-list
+keySplines	animateMotion	FALSE	animate.html#KeySplinesAttribute	animate.html	KeySplinesAttribute	<list>		wsp4scln-list
+keySplines	animateTransform	FALSE	animate.html#KeySplinesAttribute	animate.html	KeySplinesAttribute	<list>		wsp4scln-list
+keyTimes	animate	FALSE	animate.html#KeyTimesAttribute	animate.html	KeyTimesAttribute	<list>		scln-list
+keyTimes	animateColor	FALSE	animate.html#KeyTimesAttribute	animate.html	KeyTimesAttribute	<list>		scln-list
+keyTimes	animateMotion	FALSE	animate.html#KeyTimesAttribute	animate.html	KeyTimesAttribute	<list>		scln-list
+keyTimes	animateTransform	FALSE	animate.html#KeyTimesAttribute	animate.html	KeyTimesAttribute	<list>		scln-list
+max	animate	FALSE	animate.html#MaxAttribute	animate.html	MaxAttribute	"Clock-value | ""media"""		ignore
+max	animateColor	FALSE	animate.html#MaxAttribute	animate.html	MaxAttribute	"Clock-value | ""media"""		ignore
+max	animateMotion	FALSE	animate.html#MaxAttribute	animate.html	MaxAttribute	"Clock-value | ""media"""		ignore
+max	animateTransform	FALSE	animate.html#MaxAttribute	animate.html	MaxAttribute	"Clock-value | ""media"""		ignore
+max	set	FALSE	animate.html#MaxAttribute	animate.html	MaxAttribute	"Clock-value | ""media"""		ignore
+min	animate	FALSE	animate.html#MinAttribute	animate.html	MinAttribute	"Clock-value | ""media"""		ignore
+min	animateColor	FALSE	animate.html#MinAttribute	animate.html	MinAttribute	"Clock-value | ""media"""		ignore
+min	animateMotion	FALSE	animate.html#MinAttribute	animate.html	MinAttribute	"Clock-value | ""media"""		ignore
+min	animateTransform	FALSE	animate.html#MinAttribute	animate.html	MinAttribute	"Clock-value | ""media"""		ignore
+min	set	FALSE	animate.html#MinAttribute	animate.html	MinAttribute	"Clock-value | ""media"""		ignore
+origin	animateMotion	FALSE	animate.html#OriginAttribute	animate.html	OriginAttribute	default		ignore
+path	animateMotion	FALSE	animate.html#PathAttribute	animate.html	PathAttribute	<path-data>		path-data-list
+repeatCount	animate	FALSE	animate.html#RepeatCountAttribute	animate.html	RepeatCountAttribute	"numeric value | ""indefinite"""		ignore
+repeatCount	animateColor	FALSE	animate.html#RepeatCountAttribute	animate.html	RepeatCountAttribute	"numeric value | ""indefinite"""		ignore
+repeatCount	animateMotion	FALSE	animate.html#RepeatCountAttribute	animate.html	RepeatCountAttribute	"numeric value | ""indefinite"""		ignore
+repeatCount	animateTransform	FALSE	animate.html#RepeatCountAttribute	animate.html	RepeatCountAttribute	"numeric value | ""indefinite"""		ignore
+repeatCount	set	FALSE	animate.html#RepeatCountAttribute	animate.html	RepeatCountAttribute	"numeric value | ""indefinite"""		ignore
+repeatDur	animate	FALSE	animate.html#RepeatDurAttribute	animate.html	RepeatDurAttribute	"Clock-value | ""indefinite"""		ignore
+repeatDur	animateColor	FALSE	animate.html#RepeatDurAttribute	animate.html	RepeatDurAttribute	"Clock-value | ""indefinite"""		ignore
+repeatDur	animateMotion	FALSE	animate.html#RepeatDurAttribute	animate.html	RepeatDurAttribute	"Clock-value | ""indefinite"""		ignore
+repeatDur	animateTransform	FALSE	animate.html#RepeatDurAttribute	animate.html	RepeatDurAttribute	"Clock-value | ""indefinite"""		ignore
+repeatDur	set	FALSE	animate.html#RepeatDurAttribute	animate.html	RepeatDurAttribute	"Clock-value | ""indefinite"""		ignore
+restart	animate	FALSE	animate.html#RestartAttribute	animate.html	RestartAttribute	"always"" | ""whenNotActive"" | ""never"		ignore
+restart	animateColor	FALSE	animate.html#RestartAttribute	animate.html	RestartAttribute	"always"" | ""whenNotActive"" | ""never"		ignore
+restart	animateMotion	FALSE	animate.html#RestartAttribute	animate.html	RestartAttribute	"always"" | ""whenNotActive"" | ""never"		ignore
+restart	animateTransform	FALSE	animate.html#RestartAttribute	animate.html	RestartAttribute	"always"" | ""whenNotActive"" | ""never"		ignore
+restart	set	FALSE	animate.html#RestartAttribute	animate.html	RestartAttribute	"always"" | ""whenNotActive"" | ""never"		ignore
+rotate	animateMotion	FALSE	animate.html#RotateAttribute	animate.html	RotateAttribute	<number> | auto | auto-reverse	types.html#DataTypeNumber	ignore
+to	set	FALSE	animate.html#SetElementToAttribute	animate.html	SetElementToAttribute	<value>		ignore
+to	animate	FALSE	animate.html#ToAttribute	animate.html	ToAttribute	<value>		cmm-list
+to	animateColor	FALSE	animate.html#ToAttribute	animate.html	ToAttribute	<value>		cmm-list
+to	animateMotion	FALSE	animate.html#ToAttribute	animate.html	ToAttribute	<value>		cmm-list
+to	animateTransform	FALSE	animate.html#ToAttribute	animate.html	ToAttribute	<value>		cmm-list
+type	animateTransform	FALSE	animate.html#AnimateTransformElementTypeAttribute	animate.html	AnimateTransformElementTypeAttribute	translate | scale | rotate | skewX | skewY		ignore
+values	animate	FALSE	animate.html#ValuesAttribute	animate.html	ValuesAttribute	<list>		wsp-scln-list
+values	animateColor	FALSE	animate.html#ValuesAttribute	animate.html	ValuesAttribute	<list>		wsp-scln-list
+values	animateMotion	FALSE	animate.html#ValuesAttribute	animate.html	ValuesAttribute	<list>		wsp-scln-list
+values	animateTransform	FALSE	animate.html#ValuesAttribute	animate.html	ValuesAttribute	<list>		wsp-scln-list
+xlink:href	mpath	FALSE	animate.html#MPathElementHrefAttribute	animate.html	MPathElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	animate	FALSE	animate.html#HrefAttribute	animate.html	HrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	animateColor	FALSE	animate.html#HrefAttribute	animate.html	HrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	animateMotion	FALSE	animate.html#HrefAttribute	animate.html	HrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	animateTransform	FALSE	animate.html#HrefAttribute	animate.html	HrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	set	FALSE	animate.html#HrefAttribute	animate.html	HrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+amplitude	feFuncA	TRUE	filters.html#feComponentTransferAmplitudeAttribute	filters.html	feComponentTransferAmplitudeAttribute	<number>	types.html#DataTypeNumber	ignore
+amplitude	feFuncB	TRUE	filters.html#feComponentTransferAmplitudeAttribute	filters.html	feComponentTransferAmplitudeAttribute	<number>	types.html#DataTypeNumber	ignore
+amplitude	feFuncG	TRUE	filters.html#feComponentTransferAmplitudeAttribute	filters.html	feComponentTransferAmplitudeAttribute	<number>	types.html#DataTypeNumber	ignore
+amplitude	feFuncR	TRUE	filters.html#feComponentTransferAmplitudeAttribute	filters.html	feComponentTransferAmplitudeAttribute	<number>	types.html#DataTypeNumber	ignore
+azimuth	feDistantLight	TRUE	filters.html#feDistantLightAzimuthAttribute	filters.html	feDistantLightAzimuthAttribute	<number>	types.html#DataTypeNumber	ignore
+baseFrequency	feTurbulence	TRUE	filters.html#feTurbulenceBaseFrequencyAttribute	filters.html	feTurbulenceBaseFrequencyAttribute	<number-optional-number>	types.html#DataTypeNumberOptionalNumber	number-optional-number
+bias	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementBiasAttribute	filters.html	feConvolveMatrixElementBiasAttribute	<number>	types.html#DataTypeNumber	ignore
+diffuseConstant	feDiffuseLighting	TRUE	filters.html#feDiffuseLightingDiffuseConstantAttribute	filters.html	feDiffuseLightingDiffuseConstantAttribute	<number>	types.html#DataTypeNumber	ignore
+divisor	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementDivisorAttribute	filters.html	feConvolveMatrixElementDivisorAttribute	<number>	types.html#DataTypeNumber	ignore
+dx	feOffset	TRUE	filters.html#feOffsetDxAttribute	filters.html	feOffsetDxAttribute	<number>	types.html#DataTypeNumber	ignore
+dy	feOffset	TRUE	filters.html#feOffsetDyAttribute	filters.html	feOffsetDyAttribute	<number>	types.html#DataTypeNumber	ignore
+edgeMode	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementEdgeModeAttribute	filters.html	feConvolveMatrixElementEdgeModeAttribute	duplicate | wrap | none		ignore
+elevation	feDistantLight	TRUE	filters.html#feDistantLightElevationAttribute	filters.html	feDistantLightElevationAttribute	<number>	types.html#DataTypeNumber	ignore
+exponent	feFuncA	TRUE	filters.html#feComponentTransferExponentAttribute	filters.html	feComponentTransferExponentAttribute	<number>	types.html#DataTypeNumber	ignore
+exponent	feFuncB	TRUE	filters.html#feComponentTransferExponentAttribute	filters.html	feComponentTransferExponentAttribute	<number>	types.html#DataTypeNumber	ignore
+exponent	feFuncG	TRUE	filters.html#feComponentTransferExponentAttribute	filters.html	feComponentTransferExponentAttribute	<number>	types.html#DataTypeNumber	ignore
+exponent	feFuncR	TRUE	filters.html#feComponentTransferExponentAttribute	filters.html	feComponentTransferExponentAttribute	<number>	types.html#DataTypeNumber	ignore
+filterRes	filter	TRUE	filters.html#FilterElementFilterResAttribute	filters.html	FilterElementFilterResAttribute	<number-optional-number>	types.html#DataTypeNumberOptionalNumber	number-optional-number
+filterUnits	filter	TRUE	filters.html#FilterElementFilterUnitsAttribute	filters.html	FilterElementFilterUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+height	filter	TRUE	filters.html#FilterElementHeightAttribute	filters.html	FilterElementHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feBlend	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feColorMatrix	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feComponentTransfer	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feComposite	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feConvolveMatrix	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feDiffuseLighting	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feDisplacementMap	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feFlood	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feGaussianBlur	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feImage	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feMerge	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feMorphology	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feOffset	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feSpecularLighting	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feTile	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	feTurbulence	TRUE	filters.html#FilterPrimitiveHeightAttribute	filters.html	FilterPrimitiveHeightAttribute	<length>	types.html#DataTypeLength	ignore
+in1	feBlend	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feColorMatrix	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feComponentTransfer	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feComposite	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feConvolveMatrix	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feDiffuseLighting	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feDisplacementMap	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feGaussianBlur	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feMorphology	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feOffset	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feSpecularLighting	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in1	feTile	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in2	feBlend	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn2Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in2	feComposite	TRUE	filters.html#feCompositeIn2Attribute	filters.html	FilterPrimitiveIn2Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+in2	feDisplacementMap	TRUE	filters.html#feDisplacementMapIn2Attribute	filters.html	FilterPrimitiveIn2Attribute	SourceGraphic	filters.html#SourceGraphic	ignore
+intercept	feFuncA	TRUE	filters.html#feComponentTransferInterceptAttribute	filters.html	feComponentTransferInterceptAttribute	<number>	types.html#DataTypeNumber	ignore
+intercept	feFuncB	TRUE	filters.html#feComponentTransferInterceptAttribute	filters.html	feComponentTransferInterceptAttribute	<number>	types.html#DataTypeNumber	ignore
+intercept	feFuncG	TRUE	filters.html#feComponentTransferInterceptAttribute	filters.html	feComponentTransferInterceptAttribute	<number>	types.html#DataTypeNumber	ignore
+intercept	feFuncR	TRUE	filters.html#feComponentTransferInterceptAttribute	filters.html	feComponentTransferInterceptAttribute	<number>	types.html#DataTypeNumber	ignore
+k1	feComposite	TRUE	filters.html#feCompositeK1Attribute	filters.html	feCompositeK1Attribute	<number>	types.html#DataTypeNumber	ignore
+k2	feComposite	TRUE	filters.html#feCompositeK2Attribute	filters.html	feCompositeK2Attribute	<number>	types.html#DataTypeNumber	ignore
+k3	feComposite	TRUE	filters.html#feCompositeK3Attribute	filters.html	feCompositeK3Attribute	<number>	types.html#DataTypeNumber	ignore
+k4	feComposite	TRUE	filters.html#feCompositeK4Attribute	filters.html	feCompositeK4Attribute	<number>	types.html#DataTypeNumber	ignore
+kernelMatrix	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementKernelMatrixAttribute	filters.html	feConvolveMatrixElementKernelMatrixAttribute	<list of numbers>		wsp-list
+kernelUnitLength	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementKernelUnitLengthAttribute	filters.html	feConvolveMatrixElementKernelUnitLengthAttribute	<number-optional-number>	**	number-optional-number
+kernelUnitLength	feDiffuseLighting	TRUE	filters.html#feDiffuseLightingKernelUnitLengthAttribute	filters.html	feDiffuseLightingKernelUnitLengthAttribute	<number-optional-number>	types.html#DataTypeNumberOptionalNumber	number-optional-number
+kernelUnitLength	feSpecularLighting	TRUE	filters.html#feSpecularLightingKernelUnitLengthAttribute	filters.html	feSpecularLightingKernelUnitLengthAttribute	<number-optional-number>	types.html#DataTypeNumberOptionalNumber	number-optional-number
+limitingConeAngle	feSpotLight	TRUE	filters.html#feSpotLightLimitingConeAngleAttribute	filters.html	feSpotLightLimitingConeAngleAttribute	<number>	types.html#DataTypeNumber	ignore
+mode	feBlend	TRUE	filters.html#feBlendModeAttribute	filters.html	feBlendModeAttribute	normal | multiply | screen | darken | lighten		ignore
+numOctaves	feTurbulence	TRUE	filters.html#feTurbulenceNumOctavesAttribute	filters.html	feTurbulenceNumOctavesAttribute	<integer>	types.html#DataTypeInteger	ignore
+offset	feFuncA	TRUE	filters.html#feComponentTransferOffsetAttribute	filters.html	feComponentTransferOffsetAttribute	<number>	types.html#DataTypeNumber	ignore
+offset	feFuncB	TRUE	filters.html#feComponentTransferOffsetAttribute	filters.html	feComponentTransferOffsetAttribute	<number>	types.html#DataTypeNumber	ignore
+offset	feFuncG	TRUE	filters.html#feComponentTransferOffsetAttribute	filters.html	feComponentTransferOffsetAttribute	<number>	types.html#DataTypeNumber	ignore
+offset	feFuncR	TRUE	filters.html#feComponentTransferOffsetAttribute	filters.html	feComponentTransferOffsetAttribute	<number>	types.html#DataTypeNumber	ignore
+operator	feComposite	TRUE	filters.html#feCompositeOperatorAttribute	filters.html	feCompositeOperatorAttribute	over | in | out | atop | xor | arithmetic		ignore
+operator	feMorphology	TRUE	filters.html#feMorphologyOperatorAttribute	filters.html	feMorphologyOperatorAttribute	erode | dilate		ignore
+order	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementOrderAttribute	filters.html	feConvolveMatrixElementOrderAttribute	<number-optional-number>	types.html#DataTypeNumberOptionalNumber	number-optional-number
+pointsAtX	feSpotLight	TRUE	filters.html#feSpotLightPointsAtXAttribute	filters.html	feSpotLightPointsAtXAttribute	<number>	types.html#DataTypeNumber	ignore
+pointsAtY	feSpotLight	TRUE	filters.html#feSpotLightPointsAtYAttribute	filters.html	feSpotLightPointsAtYAttribute	<number>	types.html#DataTypeNumber	ignore
+pointsAtZ	feSpotLight	TRUE	filters.html#feSpotLightPointsAtZAttribute	filters.html	feSpotLightPointsAtZAttribute	<number>	types.html#DataTypeNumber	ignore
+preserveAlpha	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementPreserveAlphaAttribute	filters.html	feConvolveMatrixElementPreserveAlphaAttribute	false | true		ignore
+primitiveUnits	filter	TRUE	filters.html#FilterElementPrimitiveUnitsAttribute	filters.html	FilterElementPrimitiveUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+radius	feMorphology	TRUE	filters.html#feMorphologyRadiusAttribute	filters.html	feMorphologyRadiusAttribute	<number-optional-number>	types.html#DataTypeNumberOptionalNumber	number-optional-number
+result	feBlend	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feColorMatrix	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feComponentTransfer	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feComposite	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feConvolveMatrix	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feDiffuseLighting	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feDisplacementMap	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feFlood	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feGaussianBlur	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feImage	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feMerge	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feMorphology	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feOffset	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feSpecularLighting	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feTile	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+result	feTurbulence	TRUE	filters.html#FilterPrimitiveResultAttribute	filters.html	FilterPrimitiveResultAttribute	<filter-primitive-reference>		ignore
+scale	feDisplacementMap	TRUE	filters.html#feDisplacementMapScaleAttribute	filters.html	feDisplacementMapScaleAttribute	<number>	types.html#DataTypeNumber	ignore
+seed	feTurbulence	TRUE	filters.html#feTurbulenceSeedAttribute	filters.html	feTurbulenceSeedAttribute	<number>	types.html#DataTypeNumber	ignore
+slope	feFuncA	TRUE	filters.html#feComponentTransferSlopeAttribute	filters.html	feComponentTransferSlopeAttribute	<number>	types.html#DataTypeNumber	ignore
+slope	feFuncB	TRUE	filters.html#feComponentTransferSlopeAttribute	filters.html	feComponentTransferSlopeAttribute	<number>	types.html#DataTypeNumber	ignore
+slope	feFuncG	TRUE	filters.html#feComponentTransferSlopeAttribute	filters.html	feComponentTransferSlopeAttribute	<number>	types.html#DataTypeNumber	ignore
+slope	feFuncR	TRUE	filters.html#feComponentTransferSlopeAttribute	filters.html	feComponentTransferSlopeAttribute	<number>	types.html#DataTypeNumber	ignore
+specularConstant	feSpecularLighting	TRUE	filters.html#feSpecularLightingSpecularConstantAttribute	filters.html	feSpecularLightingSpecularConstantAttribute	<number>	types.html#DataTypeNumber	ignore
+specularExponent	feSpecularLighting	TRUE	filters.html#feSpecularLightingSpecularExponentAttribute	filters.html	feSpecularLightingSpecularExponentAttribute	<number>	types.html#DataTypeNumber	ignore
+specularExponent	feSpotLight	TRUE	filters.html#feSpotLightSpecularExponentAttribute	filters.html	feSpotLightSpecularExponentAttribute	<number>	types.html#DataTypeNumber	ignore
+stdDeviation	feGaussianBlur	TRUE	filters.html#feGaussianBlurStdDeviationAttribute	filters.html	feGaussianBlurStdDeviationAttribute	<number-optional-number>	types.html#DataTypeNumberOptionalNumber	number-optional-number
+stitchTiles	feTurbulence	TRUE	filters.html#feTurbulenceStitchTilesAttribute	filters.html	feTurbulenceStitchTilesAttribute	stitch | noStitch		ignore
+surfaceScale	feDiffuseLighting	TRUE	filters.html#feDiffuseLightingSurfaceScaleAttribute	filters.html	feDiffuseLightingSurfaceScaleAttribute	<number>	types.html#DataTypeNumber	ignore
+surfaceScale	feSpecularLighting	TRUE	filters.html#feSpecularLightingSurfaceScaleAttribute	filters.html	feSpecularLightingSurfaceScaleAttribute	<number>	types.html#DataTypeNumber	ignore
+tableValues	feFuncA	TRUE	filters.html#feComponentTransferTableValuesAttribute	filters.html	feComponentTransferTableValuesAttribute	<number>	types.html#DataTypeNumber	ignore
+tableValues	feFuncB	TRUE	filters.html#feComponentTransferTableValuesAttribute	filters.html	feComponentTransferTableValuesAttribute	<number>	types.html#DataTypeNumber	ignore
+tableValues	feFuncG	TRUE	filters.html#feComponentTransferTableValuesAttribute	filters.html	feComponentTransferTableValuesAttribute	<number>	types.html#DataTypeNumber	ignore
+tableValues	feFuncR	TRUE	filters.html#feComponentTransferTableValuesAttribute	filters.html	feComponentTransferTableValuesAttribute	<number>	types.html#DataTypeNumber	ignore
+targetX	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementTargetXAttribute	filters.html	feConvolveMatrixElementTargetXAttribute	<integer>	types.html#DataTypeInteger	ignore
+targetY	feConvolveMatrix	TRUE	filters.html#feConvolveMatrixElementTargetYAttribute	filters.html	feConvolveMatrixElementTargetYAttribute	<integer>	types.html#DataTypeInteger	ignore
+type	feColorMatrix	TRUE	filters.html#feColorMatrixTypeAttribute	filters.html	feColorMatrixTypeAttribute	matrix | saturate | hueRotate | luminanceToAlpha		ignore
+type	feTurbulence	TRUE	filters.html#feTurbulenceTypeAttribute	filters.html	feTurbulenceTypeAttribute	fractalNoise | turbulence		ignore
+type	feFuncA	TRUE	filters.html#feComponentTransferTypeAttribute	filters.html	feComponentTransferTypeAttribute	identity | table | discrete | linear | gamma		ignore
+type	feFuncB	TRUE	filters.html#feComponentTransferTypeAttribute	filters.html	feComponentTransferTypeAttribute	identity | table | discrete | linear | gamma		ignore
+type	feFuncG	TRUE	filters.html#feComponentTransferTypeAttribute	filters.html	feComponentTransferTypeAttribute	identity | table | discrete | linear | gamma		ignore
+type	feFuncR	TRUE	filters.html#feComponentTransferTypeAttribute	filters.html	feComponentTransferTypeAttribute	identity | table | discrete | linear | gamma		ignore
+values	feColorMatrix	TRUE	filters.html#feColorMatrixValuesAttribute	filters.html	feColorMatrixValuesAttribute	<number>	types.html#DataTypeNumber	ignore
+width	filter	TRUE	filters.html#FilterElementWidthAttribute	filters.html	FilterElementWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feBlend	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feColorMatrix	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feComponentTransfer	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feComposite	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feConvolveMatrix	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feDiffuseLighting	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feDisplacementMap	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feFlood	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feGaussianBlur	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feImage	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feMerge	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feMorphology	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feOffset	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feSpecularLighting	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feTile	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	feTurbulence	TRUE	filters.html#FilterPrimitiveWidthAttribute	filters.html	FilterPrimitiveWidthAttribute	<length>	types.html#DataTypeLength	ignore
+x	fePointLight	TRUE	filters.html#fePointLightXAttribute	filters.html	fePointLightXAttribute	<number>	types.html#DataTypeNumber	ignore
+x	feSpotLight	TRUE	filters.html#feSpotLightXAttribute	filters.html	feSpotLightXAttribute	<number>	types.html#DataTypeNumber	ignore
+x	filter	TRUE	filters.html#FilterElementXAttribute	filters.html	FilterElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feBlend	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feColorMatrix	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feComponentTransfer	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feComposite	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feConvolveMatrix	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feDiffuseLighting	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feDisplacementMap	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feFlood	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feGaussianBlur	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feImage	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feMerge	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feMorphology	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feOffset	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feSpecularLighting	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feTile	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	feTurbulence	TRUE	filters.html#FilterPrimitiveXAttribute	filters.html	FilterPrimitiveXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+xChannelSelector	feDisplacementMap	TRUE	filters.html#feDisplacementMapXChannelSelectorAttribute	filters.html	feDisplacementMapXChannelSelectorAttribute	R | G | B | A		ignore
+xlink:href	feImage	TRUE	filters.html#feImageElementHrefAttribute	filters.html	feImageElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	filter	TRUE	filters.html#FilterElementHrefAttribute	filters.html	FilterElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+y	fePointLight	TRUE	filters.html#fePointLightYAttribute	filters.html	fePointLightYAttribute	<number>	types.html#DataTypeNumber	ignore
+y	feSpotLight	TRUE	filters.html#feSpotLightYAttribute	filters.html	feSpotLightYAttribute	<number>	types.html#DataTypeNumber	ignore
+y	filter	TRUE	filters.html#FilterElementYAttribute	filters.html	FilterElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feBlend	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feColorMatrix	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feComponentTransfer	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feComposite	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feConvolveMatrix	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feDiffuseLighting	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feDisplacementMap	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feFlood	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feGaussianBlur	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feImage	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feMerge	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feMorphology	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feOffset	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feSpecularLighting	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feTile	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	feTurbulence	TRUE	filters.html#FilterPrimitiveYAttribute	filters.html	FilterPrimitiveYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+yChannelSelector	feDisplacementMap	TRUE	filters.html#feDisplacementMapYChannelSelectorAttribute	filters.html	feDisplacementMapYChannelSelectorAttribute	R | G | B | A		ignore
+z	fePointLight	TRUE	filters.html#fePointLightZAttribute	filters.html	fePointLightZAttribute	<number>	types.html#DataTypeNumber	ignore
+z	feSpotLight	TRUE	filters.html#feSpotLightZAttribute	filters.html	feSpotLightZAttribute	<number>	types.html#DataTypeNumber	ignore
+baseProfile	svg	FALSE	struct.html#SVGElementBaseProfileAttribute	struct.html	SVGElementBaseProfileAttribute	profile-name		ignore
+externalResourcesRequired	a	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	altGlyph	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	animate	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	animateColor	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	animateMotion	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	animateTransform	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	circle	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	clipPath	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	cursor	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	defs	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	ellipse	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	feImage	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	filter	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	font	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	foreignObject	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	g	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	image	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	line	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	linearGradient	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	marker	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	mask	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	mpath	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	path	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	pattern	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	polygon	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	polyline	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	radialGradient	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	rect	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	script	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	set	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	svg	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	switch	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	symbol	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	text	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	textPath	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	tref	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	tspan	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	use	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+externalResourcesRequired	view	FALSE	struct.html#ExternalResourcesRequiredAttribute	struct.html	ExternalResourcesRequiredAttribute	false | true		ignore
+height	image	TRUE	struct.html#ImageElementHeightAttribute	struct.html	ImageElementHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	svg	TRUE	struct.html#SVGElementHeightAttribute	struct.html	SVGElementHeightAttribute	<length>	types.html#DataTypeLength	ignore
+height	use	TRUE	struct.html#UseElementHeightAttribute	struct.html	UseElementHeightAttribute	<length>	types.html#DataTypeLength	ignore
+id	a	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	altGlyph	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	altGlyphDef	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	altGlyphItem	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	animate	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	animateColor	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	animateMotion	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	animateTransform	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	circle	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	clipPath	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	color-profile	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	cursor	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	defs	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	desc	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	ellipse	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feBlend	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feColorMatrix	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feComponentTransfer	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feComposite	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feConvolveMatrix	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feDiffuseLighting	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feDisplacementMap	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feDistantLight	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feFlood	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feFuncA	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feFuncB	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feFuncG	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feFuncR	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feGaussianBlur	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feImage	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feMerge	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feMergeNode	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feMorphology	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feOffset	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	fePointLight	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feSpecularLighting	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feSpotLight	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feTile	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	feTurbulence	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	filter	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	font	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	font-face	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	font-face-format	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	font-face-name	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	font-face-src	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	font-face-uri	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	foreignObject	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	g	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	glyph	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	glyphRef	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	hkern	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	image	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	line	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	linearGradient	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	marker	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	mask	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	metadata	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	missing-glyph	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	mpath	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	path	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	pattern	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	polygon	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	polyline	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	radialGradient	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	rect	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	script	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	set	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	stop	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	style	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	svg	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	switch	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	symbol	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	text	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	textPath	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	title	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	tref	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	tspan	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	use	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	view	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+id	vkern	FALSE	struct.html#IDAttribute	struct.html	IDAttribute	name		ignore
+requiredExtensions	a	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	altGlyph	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	animate	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	animateColor	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	animateMotion	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	animateTransform	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	circle	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	clipPath	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	cursor	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	defs	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	ellipse	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	foreignObject	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	g	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	image	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	line	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	mask	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	path	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	pattern	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	polygon	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	polyline	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	rect	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	set	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	svg	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	switch	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	text	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	textPath	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	tref	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	tspan	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredExtensions	use	FALSE	struct.html#RequiredExtensionsAttribute	struct.html	RequiredExtensionsAttribute	list-of-extensions		wsp-list
+requiredFeatures	a	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	altGlyph	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	animate	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	animateColor	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	animateMotion	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	animateTransform	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	circle	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	clipPath	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	cursor	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	defs	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	ellipse	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	foreignObject	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	g	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	image	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	line	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	mask	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	path	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	pattern	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	polygon	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	polyline	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	rect	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	set	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	svg	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	switch	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	text	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	textPath	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	tref	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	tspan	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+requiredFeatures	use	FALSE	struct.html#RequiredFeaturesAttribute	struct.html	RequiredFeaturesAttribute	list-of-features		wsp-list
+systemLanguage	a	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	altGlyph	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	animate	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	animateColor	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	animateMotion	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	animateTransform	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	circle	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	clipPath	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	cursor	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	defs	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	ellipse	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	foreignObject	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	g	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	image	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	line	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	mask	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	path	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	pattern	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	polygon	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	polyline	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	rect	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	set	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	svg	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	switch	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	text	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	textPath	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	tref	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	tspan	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+systemLanguage	use	FALSE	struct.html#SystemLanguageAttribute	struct.html	SystemLanguageAttribute	The attribute value is a comma-separated list of language names as defined in BCP 47 [BCP47].	http://www.ietf.org/rfc/bcp/bcp47.txt	cmm-list
+version	svg	FALSE	struct.html#SVGElementVersionAttribute	struct.html	SVGElementVersionAttribute	<number>	types.html#DataTypeNumber	ignore
+width	image	TRUE	struct.html#ImageElementWidthAttribute	struct.html	ImageElementWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	svg	TRUE	struct.html#SVGElementWidthAttribute	struct.html	SVGElementWidthAttribute	<length>	types.html#DataTypeLength	ignore
+width	use	TRUE	struct.html#UseElementWidthAttribute	struct.html	UseElementWidthAttribute	<length>	types.html#DataTypeLength	ignore
+x	image	TRUE	struct.html#ImageElementXAttribute	struct.html	ImageElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	svg	TRUE	struct.html#SVGElementXAttribute	struct.html	SVGElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x	use	TRUE	struct.html#UseElementXAttribute	struct.html	UseElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+xlink:href	image	TRUE	struct.html#ImageElementHrefAttribute	struct.html	ImageElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	use	TRUE	struct.html#UseElementHrefAttribute	struct.html	UseElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	a	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	altGlyph	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	altGlyphDef	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	altGlyphItem	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	animate	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	animateColor	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	animateMotion	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	animateTransform	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	circle	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	clipPath	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	color-profile	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	cursor	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	defs	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	desc	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	ellipse	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feBlend	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feColorMatrix	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feComponentTransfer	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feComposite	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feConvolveMatrix	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feDiffuseLighting	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feDisplacementMap	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feDistantLight	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feFlood	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feFuncA	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feFuncB	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feFuncG	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feFuncR	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feGaussianBlur	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feImage	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feMerge	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feMergeNode	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feMorphology	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feOffset	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	fePointLight	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feSpecularLighting	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feSpotLight	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feTile	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	feTurbulence	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	filter	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	font	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	font-face	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	font-face-format	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	font-face-name	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	font-face-src	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	font-face-uri	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	foreignObject	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	g	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	glyph	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	glyphRef	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	hkern	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	image	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	line	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	linearGradient	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	marker	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	mask	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	metadata	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	missing-glyph	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	mpath	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	path	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	pattern	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	polygon	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	polyline	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	radialGradient	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	rect	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	script	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	set	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	stop	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	style	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	svg	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	switch	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	symbol	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	text	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	textPath	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	title	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	tref	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	tspan	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	use	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	view	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:base	vkern	FALSE	struct.html#XMLBaseAttribute	struct.html	XMLBaseAttribute	<iri>	types.html#DataTypeIRI	ignore
+xml:lang	a	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	altGlyph	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	altGlyphDef	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	altGlyphItem	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	animate	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	animateColor	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	animateMotion	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	animateTransform	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	circle	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	clipPath	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	color-profile	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	cursor	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	defs	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	desc	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	ellipse	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feBlend	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feColorMatrix	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feComponentTransfer	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feComposite	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feConvolveMatrix	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feDiffuseLighting	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feDisplacementMap	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feDistantLight	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feFlood	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feFuncA	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feFuncB	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feFuncG	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feFuncR	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feGaussianBlur	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feImage	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feMerge	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feMergeNode	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feMorphology	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feOffset	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	fePointLight	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feSpecularLighting	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feSpotLight	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feTile	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	feTurbulence	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	filter	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	font	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	font-face	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	font-face-format	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	font-face-name	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	font-face-src	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	font-face-uri	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	foreignObject	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	g	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	glyph	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	glyphRef	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	hkern	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	image	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	line	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	linearGradient	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	marker	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	mask	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	metadata	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	missing-glyph	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	mpath	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	path	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	pattern	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	polygon	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	polyline	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	radialGradient	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	rect	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	script	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	set	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	stop	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	style	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	svg	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	switch	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	symbol	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	text	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	textPath	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	title	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	tref	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	tspan	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	use	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	view	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:lang	vkern	FALSE	struct.html#XMLLangAttribute	struct.html	XMLLangAttribute	languageID		ignore
+xml:space	a	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	altGlyph	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	altGlyphDef	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	altGlyphItem	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	animate	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	animateColor	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	animateMotion	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	animateTransform	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	circle	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	clipPath	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	color-profile	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	cursor	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	defs	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	desc	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	ellipse	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feBlend	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feColorMatrix	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feComponentTransfer	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feComposite	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feConvolveMatrix	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feDiffuseLighting	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feDisplacementMap	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feDistantLight	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feFlood	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feFuncA	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feFuncB	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feFuncG	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feFuncR	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feGaussianBlur	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feImage	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feMerge	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feMergeNode	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feMorphology	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feOffset	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	fePointLight	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feSpecularLighting	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feSpotLight	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feTile	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	feTurbulence	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	filter	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	font	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	font-face	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	font-face-format	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	font-face-name	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	font-face-src	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	font-face-uri	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	foreignObject	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	g	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	glyph	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	glyphRef	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	hkern	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	image	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	line	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	linearGradient	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	marker	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	mask	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	metadata	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	missing-glyph	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	mpath	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	path	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	pattern	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	polygon	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	polyline	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	radialGradient	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	rect	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	script	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	set	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	stop	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	style	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	svg	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	switch	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	symbol	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	text	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	textPath	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	title	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	tref	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	tspan	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	use	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	view	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+xml:space	vkern	FALSE	struct.html#XMLSpaceAttribute	struct.html	XMLSpaceAttribute	{default | preserve}		ignore
+y	image	TRUE	struct.html#ImageElementYAttribute	struct.html	ImageElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	svg	TRUE	struct.html#SVGElementYAttribute	struct.html	SVGElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	use	TRUE	struct.html#UseElementYAttribute	struct.html	UseElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+class	a	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	altGlyph	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	circle	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	clipPath	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	defs	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	desc	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	ellipse	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feBlend	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feColorMatrix	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feComponentTransfer	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feComposite	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feConvolveMatrix	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feDiffuseLighting	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feDisplacementMap	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feFlood	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feGaussianBlur	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feImage	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feMerge	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feMorphology	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feOffset	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feSpecularLighting	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feTile	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	feTurbulence	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	filter	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	font	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	foreignObject	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	g	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	glyph	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	glyphRef	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	image	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	line	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	linearGradient	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	marker	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	mask	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	missing-glyph	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	path	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	pattern	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	polygon	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	polyline	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	radialGradient	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	rect	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	stop	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	svg	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	switch	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	symbol	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	text	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	textPath	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	title	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	tref	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	tspan	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+class	use	TRUE	styling.html#ClassAttribute	styling.html	ClassAttribute	6.11 The class attribute		wsp-list
+contentStyleType	svg	FALSE	styling.html#ContentStyleTypeAttribute	styling.html	ContentStyleTypeAttribute	content-type		ignore
+media	style	FALSE	styling.html#StyleElementMediaAttribute	styling.html	StyleElementMediaAttribute	media-descriptors		cmm-list
+style	a	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	altGlyph	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	circle	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	clipPath	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	defs	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	desc	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	ellipse	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feBlend	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feColorMatrix	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feComponentTransfer	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feComposite	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feConvolveMatrix	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feDiffuseLighting	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feDisplacementMap	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feFlood	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feGaussianBlur	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feImage	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feMerge	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feMorphology	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feOffset	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feSpecularLighting	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feTile	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	feTurbulence	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	filter	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	font	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	foreignObject	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	g	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	glyph	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	glyphRef	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	image	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	line	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	linearGradient	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	marker	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	mask	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	missing-glyph	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	path	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	pattern	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	polygon	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	polyline	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	radialGradient	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	rect	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	stop	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	svg	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	switch	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	symbol	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	text	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	textPath	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	title	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	tref	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	tspan	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+style	use	FALSE	styling.html#StyleAttribute	styling.html	StyleAttribute	6.12 The style attribute		cln-scln-list
+title	style	FALSE	styling.html#StyleElementTitleAttribute	styling.html	StyleElementTitleAttribute	advisory-title		ignore
+type	style	FALSE	styling.html#StyleElementTypeAttribute	styling.html	StyleElementTypeAttribute	content-type		ignore
+clipPathUnits	clipPath	TRUE	masking.html#ClipPathElementClipPathUnitsAttribute	masking.html	ClipPathElementClipPathUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+height	mask	TRUE	masking.html#MaskElementHeightAttribute	masking.html	MaskElementHeightAttribute	<length>	types.html#DataTypeLength	ignore
+maskContentUnits	mask	TRUE	masking.html#MaskElementMaskContentUnitsAttribute	masking.html	MaskElementMaskContentUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+maskUnits	mask	TRUE	masking.html#MaskElementMaskUnitsAttribute	masking.html	MaskElementMaskUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+width	mask	TRUE	masking.html#MaskElementWidthAttribute	masking.html	MaskElementWidthAttribute	<length>	types.html#DataTypeLength	ignore
+x	mask	TRUE	masking.html#MaskElementXAttribute	masking.html	MaskElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	mask	TRUE	masking.html#MaskElementYAttribute	masking.html	MaskElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+contentScriptType	svg	FALSE	script.html#ContentScriptTypeAttribute	script.html	ContentScriptTypeAttribute	content-type		ignore
+onabort	svg	FALSE	script.html#OnAbortEventAttribute	script.html	OnAbortEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	a	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	altGlyph	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	circle	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	defs	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	ellipse	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	foreignObject	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	g	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	image	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	line	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	path	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	polygon	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	polyline	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	rect	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	svg	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	switch	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	symbol	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	text	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	textPath	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	tref	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	tspan	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onactivate	use	FALSE	script.html#OnActivateEventAttribute	script.html	OnActivateEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onbegin	animate	FALSE	script.html#OnBeginEventAttribute	script.html	OnBeginEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onbegin	animateColor	FALSE	script.html#OnBeginEventAttribute	script.html	OnBeginEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onbegin	animateMotion	FALSE	script.html#OnBeginEventAttribute	script.html	OnBeginEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onbegin	animateTransform	FALSE	script.html#OnBeginEventAttribute	script.html	OnBeginEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onbegin	set	FALSE	script.html#OnBeginEventAttribute	script.html	OnBeginEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	a	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	altGlyph	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	circle	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	defs	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	ellipse	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	foreignObject	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	g	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	image	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	line	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	path	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	polygon	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	polyline	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	rect	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	svg	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	switch	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	symbol	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	text	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	textPath	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	tref	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	tspan	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onclick	use	FALSE	script.html#OnClickEventAttribute	script.html	OnClickEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onend	animate	FALSE	script.html#OnEndEventAttribute	script.html	OnEndEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onend	animateColor	FALSE	script.html#OnEndEventAttribute	script.html	OnEndEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onend	animateMotion	FALSE	script.html#OnEndEventAttribute	script.html	OnEndEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onend	animateTransform	FALSE	script.html#OnEndEventAttribute	script.html	OnEndEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onend	set	FALSE	script.html#OnEndEventAttribute	script.html	OnEndEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onerror	svg	FALSE	script.html#OnErrorEventAttribute	script.html	OnErrorEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	a	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	altGlyph	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	circle	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	defs	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	ellipse	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	foreignObject	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	g	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	image	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	line	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	path	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	polygon	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	polyline	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	rect	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	svg	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	switch	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	symbol	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	text	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	textPath	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	tref	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	tspan	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusin	use	FALSE	script.html#OnFocusInEventAttribute	script.html	OnFocusInEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	a	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	altGlyph	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	circle	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	defs	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	ellipse	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	foreignObject	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	g	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	image	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	line	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	path	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	polygon	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	polyline	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	rect	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	svg	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	switch	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	symbol	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	text	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	textPath	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	tref	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	tspan	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onfocusout	use	FALSE	script.html#OnFocusOutEventAttribute	script.html	OnFocusOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	a	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	altGlyph	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	circle	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	defs	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	ellipse	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	foreignObject	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	g	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	image	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	line	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	path	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	polygon	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	polyline	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	rect	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	svg	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	switch	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	symbol	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	text	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	textPath	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	tref	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	tspan	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	use	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	animate	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	animateColor	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	animateMotion	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	animateTransform	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onload	set	FALSE	script.html#OnLoadEventAttribute	script.html	OnLoadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	a	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	altGlyph	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	circle	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	defs	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	ellipse	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	foreignObject	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	g	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	image	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	line	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	path	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	polygon	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	polyline	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	rect	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	svg	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	switch	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	symbol	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	text	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	textPath	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	tref	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	tspan	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousedown	use	FALSE	script.html#OnMouseDownEventAttribute	script.html	OnMouseDownEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	a	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	altGlyph	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	circle	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	defs	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	ellipse	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	foreignObject	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	g	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	image	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	line	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	path	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	polygon	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	polyline	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	rect	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	svg	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	switch	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	symbol	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	text	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	textPath	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	tref	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	tspan	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmousemove	use	FALSE	script.html#OnMouseMoveEventAttribute	script.html	OnMouseMoveEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	a	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	altGlyph	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	circle	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	defs	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	ellipse	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	foreignObject	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	g	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	image	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	line	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	path	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	polygon	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	polyline	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	rect	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	svg	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	switch	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	symbol	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	text	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	textPath	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	tref	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	tspan	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseout	use	FALSE	script.html#OnMouseOutEventAttribute	script.html	OnMouseOutEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	a	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	altGlyph	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	circle	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	defs	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	ellipse	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	foreignObject	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	g	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	image	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	line	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	path	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	polygon	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	polyline	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	rect	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	svg	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	switch	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	symbol	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	text	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	textPath	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	tref	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	tspan	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseover	use	FALSE	script.html#OnMouseOverEventAttribute	script.html	OnMouseOverEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	a	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	altGlyph	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	circle	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	defs	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	ellipse	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	foreignObject	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	g	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	image	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	line	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	path	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	polygon	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	polyline	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	rect	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	svg	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	switch	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	symbol	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	text	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	textPath	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	tref	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	tspan	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onmouseup	use	FALSE	script.html#OnMouseUpEventAttribute	script.html	OnMouseUpEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onrepeat	animate	FALSE	script.html#OnRepeatEventAttribute	script.html	OnRepeatEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onrepeat	animateColor	FALSE	script.html#OnRepeatEventAttribute	script.html	OnRepeatEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onrepeat	animateMotion	FALSE	script.html#OnRepeatEventAttribute	script.html	OnRepeatEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onrepeat	animateTransform	FALSE	script.html#OnRepeatEventAttribute	script.html	OnRepeatEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onrepeat	set	FALSE	script.html#OnRepeatEventAttribute	script.html	OnRepeatEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onresize	svg	FALSE	script.html#OnResizeEventAttribute	script.html	OnResizeEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onscroll	svg	FALSE	script.html#OnScrollEventAttribute	script.html	OnScrollEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onunload	svg	FALSE	script.html#OnUnloadEventAttribute	script.html	OnUnloadEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+onzoom	svg	FALSE	script.html#OnZoomEventAttribute	script.html	OnZoomEventAttribute	<anything>	types.html#DataTypeAnything	ignore
+type	script	FALSE	script.html#ScriptElementTypeAttribute	script.html	ScriptElementTypeAttribute	content-type		ignore
+xlink:href	script	FALSE	script.html#ScriptElementHrefAttribute	script.html	ScriptElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+cx	circle	TRUE	shapes.html#CircleElementCXAttribute	shapes.html	CircleElementCXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+cx	ellipse	TRUE	shapes.html#EllipseElementCXAttribute	shapes.html	EllipseElementCXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+cy	circle	TRUE	shapes.html#CircleElementCYAttribute	shapes.html	CircleElementCYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+cy	ellipse	TRUE	shapes.html#EllipseElementCYAttribute	shapes.html	EllipseElementCYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+height	rect	TRUE	shapes.html#RectElementHeightAttribute	shapes.html	RectElementHeightAttribute	<length>	types.html#DataTypeLength	ignore
+points	polygon	TRUE	shapes.html#PolygonElementPointsAttribute	shapes.html	PolygonElementPointsAttribute	<list-of-points>	shapes.html#PointsBNF	cmm-wsp-list
+points	polyline	TRUE	shapes.html#PolylineElementPointsAttribute	shapes.html	PolylineElementPointsAttribute	<list-of-points>	shapes.html#PointsBNF	cmm-wsp-list
+r	circle	TRUE	shapes.html#CircleElementRAttribute	shapes.html	CircleElementRAttribute	<length>	types.html#DataTypeLength	ignore
+rx	ellipse	TRUE	shapes.html#EllipseElementRXAttribute	shapes.html	EllipseElementRXAttribute	<length>	types.html#DataTypeLength	ignore
+rx	rect	TRUE	shapes.html#RectElementRXAttribute	shapes.html	RectElementRXAttribute	<length>	types.html#DataTypeLength	ignore
+ry	ellipse	TRUE	shapes.html#EllipseElementRYAttribute	shapes.html	EllipseElementRYAttribute	<length>	types.html#DataTypeLength	ignore
+ry	rect	TRUE	shapes.html#RectElementRYAttribute	shapes.html	RectElementRYAttribute	<length>	types.html#DataTypeLength	ignore
+width	rect	TRUE	shapes.html#RectElementWidthAttribute	shapes.html	RectElementWidthAttribute	<length>	types.html#DataTypeLength	ignore
+x	rect	TRUE	shapes.html#RectElementXAttribute	shapes.html	RectElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x1	line	TRUE	shapes.html#LineElementX1Attribute	shapes.html	LineElementX1Attribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x2	line	TRUE	shapes.html#LineElementX2Attribute	shapes.html	LineElementX2Attribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	rect	TRUE	shapes.html#RectElementYAttribute	shapes.html	RectElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y1	line	TRUE	shapes.html#LineElementY1Attribute	shapes.html	LineElementY1Attribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y2	line	TRUE	shapes.html#LineElementY2Attribute	shapes.html	LineElementY2Attribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+cx	radialGradient	TRUE	pservers.html#RadialGradientElementCXAttribute	pservers.html	RadialGradientElementCXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+cy	radialGradient	TRUE	pservers.html#RadialGradientElementCYAttribute	pservers.html	RadialGradientElementCYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+fx	radialGradient	TRUE	pservers.html#RadialGradientElementFXAttribute	pservers.html	RadialGradientElementFXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+fy	radialGradient	TRUE	pservers.html#RadialGradientElementFYAttribute	pservers.html	RadialGradientElementFYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+gradientTransform	linearGradient	TRUE	pservers.html#LinearGradientElementGradientTransformAttribute	pservers.html	LinearGradientElementGradientTransformAttribute	<transform-list>	types.html#DataTypeTransformList	transform-list
+gradientTransform	radialGradient	TRUE	pservers.html#RadialGradientElementGradientTransformAttribute	pservers.html	RadialGradientElementGradientTransformAttribute	<transform-list>	types.html#DataTypeTransformList	transform-list
+gradientUnits	linearGradient	TRUE	pservers.html#LinearGradientElementGradientUnitsAttribute	pservers.html	LinearGradientElementGradientUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+gradientUnits	radialGradient	TRUE	pservers.html#RadialGradientElementGradientUnitsAttribute	pservers.html	RadialGradientElementGradientUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+height	pattern	TRUE	pservers.html#PatternElementHeightAttribute	pservers.html	PatternElementHeightAttribute	<length>	types.html#DataTypeLength	ignore
+offset	stop	TRUE	pservers.html#StopElementOffsetAttribute	pservers.html	StopElementOffsetAttribute	<number>	types.html#DataTypeNumber	ignore
+patternContentUnits	pattern	TRUE	pservers.html#PatternElementPatternContentUnitsAttribute	pservers.html	PatternElementPatternContentUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+patternTransform	pattern	TRUE	pservers.html#PatternElementPatternTransformAttribute	pservers.html	PatternElementPatternTransformAttribute	<transform-list>	types.html#DataTypeTransformList	transform-list
+patternUnits	pattern	TRUE	pservers.html#PatternElementPatternUnitsAttribute	pservers.html	PatternElementPatternUnitsAttribute	userSpaceOnUse | objectBoundingBox		ignore
+r	radialGradient	TRUE	pservers.html#RadialGradientElementRAttribute	pservers.html	RadialGradientElementRAttribute	<length>	types.html#DataTypeLength	ignore
+spreadMethod	linearGradient	TRUE	pservers.html#LinearGradientElementSpreadMethodAttribute	pservers.html	LinearGradientElementSpreadMethodAttribute	pad | reflect | repeat		ignore
+spreadMethod	radialGradient	TRUE	pservers.html#RadialGradientElementSpreadMethodAttribute	pservers.html	RadialGradientElementSpreadMethodAttribute	pad | reflect | repeat		ignore
+width	pattern	TRUE	pservers.html#PatternElementWidthAttribute	pservers.html	PatternElementWidthAttribute	<length>	types.html#DataTypeLength	ignore
+x	pattern	TRUE	pservers.html#PatternElementXAttribute	pservers.html	PatternElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x1	linearGradient	TRUE	pservers.html#LinearGradientElementX1Attribute	pservers.html	LinearGradientElementX1Attribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+x2	linearGradient	TRUE	pservers.html#LinearGradientElementX2Attribute	pservers.html	LinearGradientElementX2Attribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+xlink:href	linearGradient	TRUE	pservers.html#LinearGradientElementHrefAttribute	pservers.html	LinearGradientElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	pattern	TRUE	pservers.html#PatternElementHrefAttribute	pservers.html	PatternElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	radialGradient	TRUE	pservers.html#RadialGradientElementHrefAttribute	pservers.html	RadialGradientElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+y	pattern	TRUE	pservers.html#PatternElementYAttribute	pservers.html	PatternElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y1	linearGradient	TRUE	pservers.html#LinearGradientElementY1Attribute	pservers.html	LinearGradientElementY1Attribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y2	linearGradient	TRUE	pservers.html#LinearGradientElementY2Attribute	pservers.html	LinearGradientElementY2Attribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+d	path	TRUE	paths.html#DAttribute	paths.html	DAttribute	path data		path-data-list
+pathLength	path	TRUE	paths.html#PathLengthAttribute	paths.html	PathLengthAttribute	<number>	types.html#DataTypeNumber	ignore
+dx	altGlyph	TRUE	text.html#AltGlyphElementDXAttribute	text.html	AltGlyphElementDXAttribute	<list-of-lengths>	types.html#DataTypeLengths	wsp-list
+dx	glyphRef	FALSE	text.html#GlyphRefElementDXAttribute	text.html	GlyphRefElementDXAttribute	<number>	types.html#DataTypeNumber	ignore
+dx	text	TRUE	text.html#TextElementDXAttribute	text.html	TextElementDXAttribute	<list-of-lengths>	types.html#DataTypeLengths	wsp-list
+dx	tref	TRUE	text.html#TSpanElementDXAttribute	text.html	TSpanElementDXAttribute	<list-of-lengths>	types.html#DataTypeLengths	wsp-list
+dx	tspan	TRUE	text.html#TSpanElementDXAttribute	text.html	TSpanElementDXAttribute	<list-of-lengths>	types.html#DataTypeLengths	wsp-list
+dy	altGlyph	TRUE	text.html#AltGlyphElementDYAttribute	text.html	AltGlyphElementDYAttribute	<list-of-lengths>	types.html#DataTypeLengths	wsp-list
+dy	glyphRef	FALSE	text.html#GlyphRefElementDYAttribute	text.html	GlyphRefElementDYAttribute	<number>	types.html#DataTypeNumber	ignore
+dy	text	TRUE	text.html#TextElementDYAttribute	text.html	TextElementDYAttribute	<list-of-lengths>	types.html#DataTypeLengths	wsp-list
+dy	tref	TRUE	text.html#TSpanElementDYAttribute	text.html	TSpanElementDYAttribute	<list-of-lengths>	types.html#DataTypeLengths	wsp-list
+dy	tspan	TRUE	text.html#TSpanElementDYAttribute	text.html	TSpanElementDYAttribute	<list-of-lengths>	types.html#DataTypeLengths	wsp-list
+format	altGlyph	FALSE	text.html#AltGlyphElementFormatAttribute	text.html	AltGlyphElementFormatAttribute	<string>		cmm-list
+format	glyphRef	FALSE	text.html#GlyphRefElementFormatAttribute	text.html	GlyphRefElementFormatAttribute	<string>		cmm-list
+glyphRef	altGlyph	FALSE	text.html#AltGlyphElementGlyphRefAttribute	text.html	AltGlyphElementGlyphRefAttribute	<string>		cmm-list
+glyphRef	glyphRef	FALSE	text.html#GlyphRefElementGlyphRefAttribute	text.html	GlyphRefElementGlyphRefAttribute	<string>		cmm-list
+lengthAdjust	text	TRUE	text.html#TextElementLengthAdjustAttribute	text.html	TextElementLengthAdjustAttribute	spacing|spacingAndGlyphs		ignore
+lengthAdjust	textPath	TRUE	text.html#TextElementLengthAdjustAttribute	text.html	TextElementLengthAdjustAttribute	spacing|spacingAndGlyphs		ignore
+lengthAdjust	tref	TRUE	text.html#TextElementLengthAdjustAttribute	text.html	TextElementLengthAdjustAttribute	spacing|spacingAndGlyphs		ignore
+lengthAdjust	tspan	TRUE	text.html#TextElementLengthAdjustAttribute	text.html	TextElementLengthAdjustAttribute	spacing|spacingAndGlyphs		ignore
+method	textPath	TRUE	text.html#TextPathElementMethodAttribute	text.html	TextPathElementMethodAttribute	align | stretch	**	ignore
+rotate	altGlyph	TRUE	text.html#AltGlyphElementRotateAttribute	text.html	AltGlyphElementRotateAttribute	<list-of-numbers>	types.html#DataTypeNumbers	wsp-list
+rotate	text	TRUE	text.html#TextElementRotateAttribute	text.html	TextElementRotateAttribute	<list-of-numbers>	types.html#DataTypeNumbers	wsp-list
+rotate	tref	TRUE	text.html#TSpanElementRotateAttribute	text.html	TSpanElementRotateAttribute	<list-of-numbers>	types.html#DataTypeNumbers	wsp-list
+rotate	tspan	TRUE	text.html#TSpanElementRotateAttribute	text.html	TSpanElementRotateAttribute	<list-of-numbers>	types.html#DataTypeNumbers	wsp-list
+spacing	textPath	TRUE	text.html#TextPathElementSpacingAttribute	text.html	TextPathElementSpacingAttribute	auto | exact	**	ignore
+startOffset	textPath	TRUE	text.html#TextPathElementStartOffsetAttribute	text.html	TextPathElementStartOffsetAttribute	<length>	types.html#DataTypeLength	ignore
+textLength	text	TRUE	text.html#TextElementTextLengthAttribute	text.html	TextElementTextLengthAttribute	<length>	types.html#DataTypeLength	ignore
+textLength	textPath	TRUE	text.html#TSpanElementTextLengthAttribute	text.html	TSpanElementTextLengthAttribute	<length>	types.html#DataTypeLength	ignore
+textLength	tref	TRUE	text.html#TSpanElementTextLengthAttribute	text.html	TSpanElementTextLengthAttribute	<length>	types.html#DataTypeLength	ignore
+textLength	tspan	TRUE	text.html#TSpanElementTextLengthAttribute	text.html	TSpanElementTextLengthAttribute	<length>	types.html#DataTypeLength	ignore
+x	altGlyph	TRUE	text.html#AltGlyphElementXAttribute	text.html	AltGlyphElementXAttribute	<list-of-coordinates>	types.html#DataTypeCoordinates	wsp-list
+x	glyphRef	FALSE	text.html#GlyphRefElementXAttribute	text.html	GlyphRefElementXAttribute	<number>	types.html#DataTypeNumber	ignore
+x	text	TRUE	text.html#TextElementXAttribute	text.html	TextElementXAttribute	<list-of-coordinates>	types.html#DataTypeCoordinates	wsp-list
+x	tref	TRUE	text.html#TSpanElementXAttribute	text.html	TSpanElementXAttribute	<list-of-coordinates>	types.html#DataTypeCoordinates	wsp-list
+x	tspan	TRUE	text.html#TSpanElementXAttribute	text.html	TSpanElementXAttribute	<list-of-coordinates>	types.html#DataTypeCoordinates	wsp-list
+xlink:href	altGlyph	FALSE	text.html#AltGlyphElementHrefAttribute	text.html	AltGlyphElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	glyphRef	FALSE	text.html#GlyphRefElementHrefAttribute	text.html	GlyphRefElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+xlink:href	textPath	TRUE	text.html#TextPathElementHrefAttribute	text.html	TextPathElementHrefAttribute	<iri>	**	ignore
+xlink:href	tref	TRUE	text.html#TRefElementHrefAttribute	text.html	TRefElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+y	altGlyph	TRUE	text.html#AltGlyphElementYAttribute	text.html	AltGlyphElementYAttribute	<list-of-coordinates>	types.html#DataTypeCoordinates	wsp-list
+y	glyphRef	FALSE	text.html#GlyphRefElementYAttribute	text.html	GlyphRefElementYAttribute	<number>	types.html#DataTypeNumber	ignore
+y	text	TRUE	text.html#TextElementYAttribute	text.html	TextElementYAttribute	<list-of-coordinates>	types.html#DataTypeCoordinates	wsp-list
+y	tref	TRUE	text.html#TSpanElementYAttribute	text.html	TSpanElementYAttribute	<list-of-coordinates>	types.html#DataTypeCoordinates	wsp-list
+y	tspan	TRUE	text.html#TSpanElementYAttribute	text.html	TSpanElementYAttribute	<list-of-coordinates>	types.html#DataTypeCoordinates	wsp-list
+height	foreignObject	TRUE	extend.html#ForeignObjectElementHeightAttribute	extend.html	ForeignObjectElementHeightAttribute	<length>	types.html#DataTypeLength	ignore
+width	foreignObject	TRUE	extend.html#ForeignObjectElementWidthAttribute	extend.html	ForeignObjectElementWidthAttribute	<length>	types.html#DataTypeLength	ignore
+x	foreignObject	TRUE	extend.html#ForeignObjectElementXAttribute	extend.html	ForeignObjectElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+y	foreignObject	TRUE	extend.html#ForeignObjectElementYAttribute	extend.html	ForeignObjectElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+local	color-profile	FALSE	color.html#ColorProfileElementLocalAttribute	color.html	ColorProfileElementLocalAttribute	<string>		cmm-list
+name	color-profile	FALSE	color.html#ColorProfileElementNameAttribute	color.html	ColorProfileElementNameAttribute	<name>		ignore
+rendering-intent	color-profile	FALSE	color.html#ColorProfileElementRenderingIntentAttribute	color.html	ColorProfileElementRenderingIntentAttribute	auto | perceptual | relative-colorimetric | saturation | absolute-colorimetric		ignore
+xlink:href	color-profile	FALSE	color.html#ColorProfileElementHrefAttribute	color.html	ColorProfileElementHrefAttribute	<iri>	types.html#DataTypeIRI	ignore
+markerHeight	marker	TRUE	painting.html#MarkerHeightAttribute	painting.html	MarkerHeightAttribute	<length>	types.html#DataTypeLength	ignore
+markerUnits	marker	TRUE	painting.html#MarkerUnitsAttribute	painting.html	MarkerUnitsAttribute	strokeWidth | userSpaceOnUse		ignore
+markerWidth	marker	TRUE	painting.html#MarkerWidthAttribute	painting.html	MarkerWidthAttribute	<length>	types.html#DataTypeLength	ignore
+orient	marker	TRUE	painting.html#OrientAttribute	painting.html	OrientAttribute	auto | <angle>	types.html#DataTypeAngle	ignore
+refX	marker	TRUE	painting.html#MarkerElementRefXAttribute	painting.html	MarkerElementRefXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+refY	marker	TRUE	painting.html#MarkerElementRefYAttribute	painting.html	MarkerElementRefYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+preserveAspectRatio	feImage	TRUE	coords.html#PreserveAspectRatioAttribute	coords.html	PreserveAspectRatioAttribute	7.8 The preserveAspectRatio attribute		wsp-list
+preserveAspectRatio	image	TRUE	coords.html#PreserveAspectRatioAttribute	coords.html	PreserveAspectRatioAttribute	7.8 The preserveAspectRatio attribute		wsp-list
+preserveAspectRatio	marker	TRUE	coords.html#PreserveAspectRatioAttribute	coords.html	PreserveAspectRatioAttribute	7.8 The preserveAspectRatio attribute		wsp-list
+preserveAspectRatio	pattern	TRUE	coords.html#PreserveAspectRatioAttribute	coords.html	PreserveAspectRatioAttribute	7.8 The preserveAspectRatio attribute		wsp-list
+preserveAspectRatio	svg	TRUE	coords.html#PreserveAspectRatioAttribute	coords.html	PreserveAspectRatioAttribute	7.8 The preserveAspectRatio attribute		wsp-list
+preserveAspectRatio	symbol	TRUE	coords.html#PreserveAspectRatioAttribute	coords.html	PreserveAspectRatioAttribute	7.8 The preserveAspectRatio attribute		wsp-list
+preserveAspectRatio	view	TRUE	coords.html#PreserveAspectRatioAttribute	coords.html	PreserveAspectRatioAttribute	7.8 The preserveAspectRatio attribute		wsp-list
+transform	a	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	circle	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	clipPath	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	defs	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	ellipse	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	foreignObject	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	g	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	image	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	line	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	path	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	polygon	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	polyline	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	rect	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	switch	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	text	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+transform	use	TRUE	coords.html#TransformAttribute	coords.html	TransformAttribute	7.6 The transform attribute		transform-list
+viewBox	marker	TRUE	coords.html#ViewBoxAttribute	coords.html	ViewBoxAttribute	7.7 The viewBox attribute		cmm-list
+viewBox	pattern	TRUE	coords.html#ViewBoxAttribute	coords.html	ViewBoxAttribute	7.7 The viewBox attribute		cmm-list
+viewBox	svg	TRUE	coords.html#ViewBoxAttribute	coords.html	ViewBoxAttribute	7.7 The viewBox attribute		cmm-list
+viewBox	symbol	TRUE	coords.html#ViewBoxAttribute	coords.html	ViewBoxAttribute	7.7 The viewBox attribute		cmm-list
+viewBox	view	TRUE	coords.html#ViewBoxAttribute	coords.html	ViewBoxAttribute	7.7 The viewBox attribute		cmm-list
+target	a	TRUE	linking.html#AElementTargetAttribute	linking.html	AElementTargetAttribute	_replace		ignore
+viewTarget	view	FALSE	linking.html#ViewElementViewTargetAttribute	linking.html	ViewElementViewTargetAttribute	XML_Name [XML_NAME]*		ignore
+xlink:actuate	a	FALSE	linking.html#AElementXLinkActuateAttribute	linking.html	AElementXLinkActuateAttribute	onRequest		ignore
+xlink:actuate	altGlyph	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	animate	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	animateColor	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	animateMotion	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	animateTransform	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	color-profile	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	cursor	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	feImage	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	filter	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	font-face-uri	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	glyphRef	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	image	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	mpath	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	pattern	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	script	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	set	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:actuate	use	FALSE	linking.html#XLinkActuateAttribute	linking.html	XLinkActuateAttribute	onLoad	**	ignore
+xlink:arcrole	a	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	altGlyph	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	animate	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	animateColor	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	animateMotion	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	animateTransform	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	color-profile	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	cursor	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	feImage	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	filter	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	font-face-uri	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	glyphRef	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	image	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	linearGradient	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	mpath	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	pattern	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	radialGradient	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	script	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	set	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	textPath	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	tref	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:arcrole	use	FALSE	linking.html#XLinkArcRoleAttribute	linking.html	XLinkArcRoleAttribute	<IRI>	**	ignore
+xlink:href	a	TRUE	linking.html#AElementXLinkHrefAttribute	linking.html	AElementXLinkHrefAttribute	<IRI>	types.html#DataTypeIRI	ignore
+xlink:role	a	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	altGlyph	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	animate	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	animateColor	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	animateMotion	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	animateTransform	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	color-profile	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	cursor	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	feImage	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	filter	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	font-face-uri	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	glyphRef	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	image	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	linearGradient	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	mpath	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	pattern	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	radialGradient	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	script	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	set	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	textPath	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	tref	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:role	use	FALSE	linking.html#XLinkRoleAttribute	linking.html	XLinkRoleAttribute	<IRI>	**	ignore
+xlink:show	a	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	altGlyph	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	animate	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	animateColor	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	animateMotion	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	animateTransform	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	color-profile	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	cursor	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	feImage	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	filter	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	font-face-uri	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	glyphRef	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	image	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	mpath	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	pattern	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	script	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	set	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:show	use	FALSE	linking.html#XLinkShowAttribute	linking.html	XLinkShowAttribute	'new' | 'replace' | 'embed' | 'other' | 'none'	**	ignore
+xlink:title	a	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	altGlyph	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	animate	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	animateColor	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	animateMotion	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	animateTransform	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	color-profile	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	cursor	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	feImage	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	filter	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	font-face-uri	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	glyphRef	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	image	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	linearGradient	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	mpath	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	pattern	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	radialGradient	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	script	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	set	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	textPath	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	tref	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:title	use	FALSE	linking.html#XLinkTitleAttribute	linking.html	XLinkTitleAttribute	<anything>	**	ignore
+xlink:type	a	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	altGlyph	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	animate	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	animateColor	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	animateMotion	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	animateTransform	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	color-profile	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	cursor	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	feImage	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	filter	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	font-face-uri	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	glyphRef	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	image	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	linearGradient	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	mpath	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	pattern	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	radialGradient	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	script	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	set	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	textPath	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	tref	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+xlink:type	use	FALSE	linking.html#XLinkTypeAttribute	linking.html	XLinkTypeAttribute	simple	**	ignore
+x	cursor	TRUE	interact.html#CursorElementXAttribute	interact.html	CursorElementXAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+xlink:href	cursor	TRUE	interact.html#CursorElementHrefAttribute	interact.html	CursorElementHrefAttribute	<funciri>	types.html#DataTypeFuncIRI	ignore
+y	cursor	TRUE	interact.html#CursorElementYAttribute	interact.html	CursorElementYAttribute	<coordinate>	types.html#DataTypeCoordinate	ignore
+zoomAndPan	svg	FALSE	interact.html#ZoomAndPanAttribute	interact.html	ZoomAndPanAttribute	Magnification represents a complete, uniform transformation on an SVG document fragment, where the magnify operation scales all graphical elements by the same amount. A magnify operation has the effect of a supplemental scale and translate transformation placed at the outermost level on the SVG document fragment (i.e., outside the outermost svg element).	intro.html#TermOutermostSVGElement	ignore
+zoomAndPan	view	FALSE	interact.html#ZoomAndPanAttribute	interact.html	ZoomAndPanAttribute	Magnification represents a complete, uniform transformation on an SVG document fragment, where the magnify operation scales all graphical elements by the same amount. A magnify operation has the effect of a supplemental scale and translate transformation placed at the outermost level on the SVG document fragment (i.e., outside the outermost svg element).	intro.html#TermOutermostSVGElement	ignore
+in1	feMergeNode	TRUE	filters.html#FilterPrimitiveInAttribute	filters.html	FilterPrimitiveIn1Attribute	SourceGraphic	filters.html#SourceGraphic	ignore

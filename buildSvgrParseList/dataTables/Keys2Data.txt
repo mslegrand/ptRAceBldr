@@ -1,0 +1,63 @@
+Brief description of data files:
+
+1. AVETable.csv is currently being used by svgcreator to build the svg element functions. 
+
+It is created by AEVL.R by scraping 
+ url="http://www.w3.org/TR/SVG/attindex.html" 
+and following the links
+
+
+2. elementSummary.csv is currently being used to generate documentation for elements and
+regular attributes. 
+
+It is created by elementSummary.R by scraping the pages occurring as links found on
+"http://www.w3.org/TR/SVG/eltindex.html"
+
+elementSummary and AVETable should (in principle) contain the same information
+
+3.  presentationAttr.csv
+contains details of the presentation properties (attributes)
+
+Is created by presentationAttr.R by scraping the pages:
+"text.html",  "masking.html",  "painting.html", "color.html", "interact.html", "filters.html", "pservers.html"
+
+4. propIndex.csv
+also contains details of presentation properties. 
+
+Created by propertyIndx.R by scraping a single page: url="http://www.w3.org/TR/SVG/propidx.html"
+ propIndx.csv appears to contain the same info that presentationAttr.csv, the difference is the source
+and propIndx is wide while presentationAttr is long
+
+
+5. Terminology.csv
+defines element classes such as shapes and also some attribute classes. Not known if this information is implict in elementSummary.csv
+
+Obtain by scrapping the single page http://www.w3.org/TR/SVG/intro.html#Terminology
+
+http://www.w3.org/TR/SVG/intro.html#Terminology
+
+
+6. Unicode
+
+created by getUnicodeTables.R
+
+# Element categories
+[1] "Animation elements"     vs Animation element  
+ [2] "Basic shapes"          vs Basic shape element  
+ [3] "Container elements"    vs Container element    
+ [4] "Descriptive elements"  vs Descriptive element    
+ [5] "Filter primitive elements"  vs Filter primitive element
+ [6] "Font elements"    vs ??          
+ [7] "Gradient elements"  vs Gradient element        
+ [8] "Graphics elements"  vs Graphics element   
+ [9] "Light source elements"  vs Light source element       
+[10] "Shape elements"         vs??    
+[11] "Structural elements"    vs??
+[12] "Text content child elements" vs ??
+[13] "Text content elements"   vs Text content element   
+[14] "Uncategorized elements" vs None
+
+[12] "Text content child elements"
+[13] "Text content elements"      
+[14] "Uncategorized elements"     
+> 

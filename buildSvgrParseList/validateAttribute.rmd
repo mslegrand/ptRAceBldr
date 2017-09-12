@@ -1,0 +1,178 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+## Todo
+
+
+
+
+First we get the necessary tables
+
+
+```{r}
+library(data.table)
+source("tableLoader.R")
+requireTable(AVEL.DT,ANC.DT,PA.DT)
+
+```
+
+
+
+Now extract the  element attribute pairs to for the regular attributes
+
+```{r}
+ERA.DT<-AVEL.DT[ ,.(attr,element)]
+```
+
+
+
+
+
+
+
+Next the element attribute pairs to for the presentation attributes
+
+
+
+
+```{r}
+EPA.DT<-PA.DT[variable=='Applies to',.(attr,value)]
+setnames(EPA.DT, "value","element")
+setcolorder(EPA.DT, c("attr","element"))
+
+```
+
+Finally the element attribute pairs for the Ancillary Atrributes
+
+```{r}
+EAA.DT<-ANC.DT[, .(attr,element)]
+```
+
+
+Now put together
+```{r}
+EA.DT<-rbindlist(list(ERA.DT,EPA.DT,EAA.DT))
+EA.DT
+```
+
+
+I need to extend EA.DT by adding rows for 
+
+```
+elements<-gsub("[-:]", ".", elements)
+attrs<-gsub("[-:]", ".", attrs)
+```
+# We do elements first
+
+```{r}
+EEA.DT<-EA.DT[ element  %like% '[-:]',]
+EEA.DT[,element:=gsub('[-:]','.', element)]
+EA.DT<-rbindlist(list(EA.DT, EEA.DT))
+EA.DT
+```
+
+
+And do the same for the attributes
+
+
+```{r}
+EEA.DT<-EA.DT[ attr  %like% '[-:]',]
+EEA.DT[,attr:=gsub('[-:]','.', attr)]
+EA.DT<-rbindlist(list(EA.DT, EEA.DT))
+EA.DT
+```
+
+## But there is serious error here: 
+
+* Attributes/Elements with - or : in them must be quoted *
+
+Also anything quoted seems to pass as an attribute
+
+So instead of extending we should just simply replace (at least for now)
+
+```{r}
+
+EA.DT<-rbindlist(list(ERA.DT,EPA.DT,EAA.DT))
+EA.DT[,element:=gsub('[-:]','.', element)]
+EA.DT[,attr:=gsub('[-:]','.', attr)]
+```
+
+
+Next we add an entry for svgR
+
+```{r}
+SVGR.DT<-EA.DT[element=='svg',]
+SVGR.DT[, element:='svgR',]
+EA.DT<-rbindlist(list(EA.DT, SVGR.DT))
+EA.DT
+```
+
+Now we want all elements and  attributes to be quoted
+
+```{r}
+EA.DT[,element:=paste0('"',element,'"')]
+EA.DT[,attr:=paste0('"',attr,'"')]
+EA.DT
+```
+
+
+Now group by element
+
+```{r}
+EA.DT<-EA.DT[,list(.(attr)),by=element]
+setnames(EA.DT, "V1","attrs")
+EA.DT
+```
+
+and sort each the attrs of each row
+
+```{r}
+EA.DT[,attrs:= lapply(attrs,sort)]
+EA.DT
+```
+
+Next sort by element
+
+```{r}
+EA.DT<-EA.DT[order(element),]
+EA.DT
+```
+
+Now paste the attributes together
+
+
+```{r}
+EA.DT[,attr:=paste(unlist(attrs), collapse=", "), by=element]
+EA.DT[1,attr]
+```
+
+
+Now  add element=[]
+
+```{r}
+ele.attr<-EA.DT[, paste(element," : [",attr,"]")]
+cat(head(ele.attr),1)
+```
+
+
+And now glue together
+```{r}
+txt<-paste0(
+"var acceptedAttributes = {\n ",
+paste(ele.attr, collapse=",\n"),
+"\n};\n", 
+collapse="\n")
+paste(txt,collapse="\n")
+```
+
+
+
+```{r}
+cat(txt,file = "validateElementAttributes.txt")
+```
+
+

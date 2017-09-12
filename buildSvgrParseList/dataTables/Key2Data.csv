@@ -1,0 +1,11 @@
+SourceCode,DataSource,Output,description
+AVEL.R,"links in  url=""http://www.w3.org/TR/SVG/attindex.html""",AVETable.tsv,Regular attributes
+elementSummary.R,"links in url=""http://www.w3.org/TR/SVG/eltindex.html""",elementSummary.tsv ,elements
+presentationAttr.R,"""text.html"",  ""masking.html"",  ""painting.html"", ""color.html"", ""interact.html"", ""filters.html"", ""pservers.html""",presentationAttr.tsv,presentation attributes
+propIndx.R,"url=""http://www.w3.org/TR/SVG/propidx.html""",propIndex.tsv,presentation attributes
+ terminology.R,url=http://www.w3.org/TR/SVG/intro.html#Terminology,AttrCat.tsv:,Attribute Categories (incomplete?)
+ terminology.R,url=http://www.w3.org/TR/SVG/intro.html#Terminology,ElCat.tsv,Element Categories (incomplete?)
+elementClassSummary.R,"links in url=""http://www.w3.org/TR/SVG/eltindex.html""",elementAttrCategorySummary.tsv,
+customAttrs.R,AVETable.tsv,specParamsCXY.tsv,"cxy for elem with xy, wh"
+customAttrs.R,AVETable.tsv,comboParams.tsv,"Combo Attributes, such as cxy"
+getUnicodeTables.R,"""http://www.ssec.wisc.edu/~tomw/java/unicode.html""",,

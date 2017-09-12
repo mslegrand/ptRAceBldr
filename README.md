@@ -1,5 +1,5 @@
 
-# highlighters, syntaxValidators, code completions for pointR
+# Highlighters, SyntaxValidators, Code Completors for pointR
 
 
 This is a rather specialized collection of files and scripts that together

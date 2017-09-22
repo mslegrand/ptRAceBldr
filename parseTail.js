@@ -54,8 +54,16 @@ function ptr$context( _input, _cursorPos ){
       _input = undefined;
     }
     _input = _input || '';
-    //var options={};
-    var options={cursorPos: _cursorPos};
+    var options={};
+    if( _cursorPos){
+	    options={
+		    cursorPos: {
+			    row:  _cursorPos.row+1,
+			    column: _cursorPos.column+1
+			}
+	};
+    }
+    // var options={cursorPos: _cursorPos};
     var contextCandidate = {
             tok: "",
             pos: {line: -1, col: -1}
@@ -72,7 +80,7 @@ function ptr$context( _input, _cursorPos ){
             for( var i=0, len=contextStack.length; i<len; i++)
            {
                contx=contextStack[i];
-               //console.log(JSON.stringify(contx));
+               console.log( "contextStack " + i + ":  " +  JSON.stringify(contx));
                
                
                 if(
@@ -117,9 +125,9 @@ function ptr$availableCompletions( _input, _cursorPos ){
 }
 
 function ptr$scope(  _input, _cursorPos){
-    console.log("Enter ptr$scope");
-    console.log("_cursorPos=");
-    console.log(JSON.stringify(_cursorPos));
+    //console.log("Enter ptr$scope");
+    //console.log("_cursorPos=");
+   // console.log(JSON.stringify(_cursorPos));
     //mssgStack.length=0;
     //contextStack.length=0;
         return ptr$context( _input, _cursorPos ).tok;
@@ -131,7 +139,9 @@ return {
   parse: ptr$parse,
   scope:  ptr$scope,
   attributeMap:	acceptedAttributes,
-  contentMap: 	acceptContentEle
+  contentMap: 	acceptContentEle,
+  scoreMap:  scores,
+  metaMap: metas
 };
 
 })();

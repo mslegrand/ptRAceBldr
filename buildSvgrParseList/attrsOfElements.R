@@ -7,6 +7,7 @@
 
 
 library(data.table)
+library(jsonlite)
 requireTable(AVEL.DT,COP.DT,PA.DT, AET.DT)
 
 getAttrsOrig<-function(eleName){
@@ -16,6 +17,31 @@ getAttrsOrig<-function(eleName){
   presAttrs<-PA.DT[variable=="Applies to" & value==eleName]$attr
   attrs<-c(regAttrs, comboAttrs, presAttrs) 
   sort(attrs)
+}
+
+
+getScoreArr<-function(){
+  tmp<-list(
+  allEles<-sort(unique(AET.DT$element)),
+  allComboAttrs<-sort(unique(COP.DT[,.SD[1,], by=variable]$variable)),
+  allRegAttrs<-sort(unique(AVEL.DT[, attr])), 
+  allPresAttrs<-sort(unique(PA.DT$attr))
+  )
+  scores<-toJSON(gsub("[:-]",".", unlist(tmp)), pretty=TRUE)
+  
+  metas<-as.list(cumsum(sapply(tmp, length)))
+  metas<-c(
+    rep('Content Element', length(allEles)),
+    rep('Complementary Attribute', length(allComboAttrs)),
+    rep('Regular Attribute', length(allRegAttrs)),
+    rep('Presentation Attribute', length(allPresAttrs))
+  ) 
+  
+  metas<-toJSON(unlist(metas), pretty=TRUE)
+  
+  scrarry<-paste0("var scores =", scores, ";\n","var metas=",metas,";\n")
+  
+  scrarry
 }
 
 getAttributeCompletions<-function(){
@@ -51,5 +77,10 @@ do.attr.completions<-function(composerFiles="svgR"){
   cat(completions, file=paste(composerFiles, "eleCompletions.R", sep="/") )
 }
 
-do.attr.completions()
+do.scoreArray<-function(){
+  sa<-getScoreArr()
+  cat(sa, file ='scoring.txt')
+}
 
+#do.attr.completions()
+do.scoreArray()

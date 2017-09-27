@@ -1,5 +1,33 @@
-# syntaxValidators
-peg source for pegjs: Used for creating parser to check syntax for the ACE editor
+
+# Highlighters, SyntaxValidators, Code Completors for pointR
+
+
+This is a rather specialized collection of files and scripts that together
+are used to create 
+
+- mode-ptr.js
+- worker-ptr.js
+
+After creations, they are copied to pointR/inst/App/www/Acejs for use
+by the pointR application.
+
+
+Included here is 
+
+- the version of shinyAce used by TrestleTech
+- the source for 
+    + ptr.js
+    + ptr_completions.js
+    + ptr_hightlight_rules.js
+    + ptr_worker.js
+    + ptrparse.js
+    + mode-ptr.js
+    + worker-ptr.js
+    + ptR.peg
+    + parseTail.js    
+- scripts to build the above.
+
+ptR.peg source for pegjs: Used for creating parser to check syntax for the ACE editor
 
 This is a rather specialized collection of scripts, designed solely to create a parser
 to be called by a worker for the ptr-mode in the ACE editor. The steps involved here

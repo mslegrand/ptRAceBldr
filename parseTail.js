@@ -64,6 +64,8 @@ function ptr$context( _input, _cursorPos ){
 	};
     }
     // var options={cursorPos: _cursorPos};
+    console.log("context options");
+    console.log( JSON.stringify(options));
     var contextCandidate = {
             tok: "",
             pos: {line: -1, col: -1}
@@ -138,10 +140,12 @@ return {
   version: '0.2.0',
   parse: ptr$parse,
   scope:  ptr$scope,
-  attributeMap:	acceptedAttributes,
-  contentMap: 	acceptContentEle,
-  scoreMap:  scores,
-  metaMap: metas
+  candidates: scopeCompletionCandidates,
+  completionCodeMap: scopeCompletions
+  //attributeMap:	acceptedAttributes,
+  //contentMap: 	acceptContentEle,
+  //scoreMap:  scores,
+ // metaMap: metas
 };
 
 })();

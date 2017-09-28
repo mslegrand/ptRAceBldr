@@ -217,7 +217,7 @@ function peg$parse(input, options) {
       peg$c67 = function(head, tail, rightParen) {
           // Check each tail element which is an svgR call and see if it's belongs to the content model of the head element
           var i, tailTok, tailLoc, result, headTok = head;
-          console.log("svgRCall 1");
+          
           if(tail){
               for( i=0; i< tail.length; i++){
                   if(tail[i]){
@@ -244,25 +244,36 @@ function peg$parse(input, options) {
                   }
               }
           }
-          console.log("svgRCall 2");
           if( rightParen ){
               //showResult("rightParen=", rightParen);
-      	    console.log("svgRCall 3.1");
           } else {
-      	    console.log("svgRCall 3.2");
               addError("Missing Closing Right Parenthesis", location() );
-      	    console.log("svgRCall 3.3");
           }
-          console.log("svgRCall 4");
-          console.log("before getting result");
-          console.log("headTok");
-          console.log(JSON.stringify(headTok));
+         
           // in any case, return head
           result= new SvgEleInfo(headTok, location());
-          console.log("inside svgRCall: options=");
-          console.log(JSON.stringify(options));
-           if( options.cursorPos ){
-               pushContext(result, options.cursorPos);
+          
+           if( !!options.cursorPos ){
+      	if ( eleScopeContainsCursor( result, options.cursorPos) ){
+      		containedAttrs=[]
+      		if(!!tail){
+      			console.log("about to construct containedAttrs");
+      			containedAttrs=tail.filter(function(e){
+      				return !!e && (e instanceof SvgAttrInfo );
+      			}).map( function(e) { return e.token; });
+      			console.log("fin to containedAttrs");
+      			console.log(JSON.stringify(containedAttrs));
+      		};
+      		contextStack.push(
+                          {
+                              token: result.token,
+                              location: result.location,
+      			attrs: containedAttrs
+                          }
+                      );
+      	}
+      	 // todo: iterate over tail and 
+      	 // if tail[i] is an instance of SvgAttrInfo, push onto some stack? (or where?
            }
           return result;
       },
@@ -5306,11 +5317,7 @@ function peg$parse(input, options) {
       var contextStack=[];
       
       function comparePos( r1, c1, r2, c2){
-          //console.log("comparePos");
-          //console.log(JSON.stringify(r1));
-          //console.log(JSON.stringify(c1));
-          //console.log(JSON.stringify(r2));
-          //console.log(JSON.stringify(c2));
+          
           if( r1<r2 ){
                   return 1;
           }
@@ -5328,31 +5335,55 @@ function peg$parse(input, options) {
           return 0;
       };
       
-      function pushContext( svgEleInfo, cursorPos){
-      console.log("pushContext");
+      function  eleScopeContainsCursor( svgEleInfo, cursorPos){
+  	var comp1=comparePos( 
+                      svgEleInfo.location.start.line, 
+                      svgEleInfo.location.start.column,
+                      cursorPos.row,
+                      cursorPos.column
+                  );
+      
+  	var comp2=comparePos( 
+                      cursorPos.row,
+                      cursorPos.column,
+                      svgEleInfo.location.end.line, 
+                      svgEleInfo.location.end.column
+                  );
+  	return (comparePos( 
+                      svgEleInfo.location.start.line, 
+                      svgEleInfo.location.start.column,
+                      cursorPos.row,
+                      cursorPos.column
+                  )==1 
+              &&
+              comparePos( 
+                      cursorPos.row,
+                      cursorPos.column,
+                      svgEleInfo.location.end.line, 
+                      svgEleInfo.location.end.column
+                  )==1 );
+    
+      };
+      
+      function pushContext( svgEleInfo, cursorPos, stail){
+      
           if(cursorPos){
-      console.log("cursorPos=" + JSON.stringify(cursorPos));
-      console.log("svgEleInfo.token=");
-      console.log(svgEleInfo.token);
-      //console.log("fuck=");
-      //console.log("svgEleInfo.location.start.line",svgEleInfo.location.start.line);
-      //console.log("svgEleInfo.location.start.column",svgEleInfo.location.start.column);
-      //console.log("cursorPos.row",cursorPos.row);
-     //console.log("cursorPos.column",cursorPos.column);
+      
+      
       var comp1=comparePos( 
                       svgEleInfo.location.start.line, 
                       svgEleInfo.location.start.column,
                       cursorPos.row,
                       cursorPos.column
                   );
-      //console.log("comp1=" + comp1);
+      
       var comp2=comparePos( 
                       cursorPos.row,
                       cursorPos.column,
                       svgEleInfo.location.end.line, 
                       svgEleInfo.location.end.column
                   );
-      //console.log(", comp2=" + comp2);
+     
               if(
                   comparePos( 
                       svgEleInfo.location.start.line, 
@@ -5368,11 +5399,25 @@ function peg$parse(input, options) {
                       svgEleInfo.location.end.column
                   )==1 
               ){
-  		console.log('pushing token= ' + svgEleInfo.token);
+  		// assume tail passed  into fn
+  		var svgAttrs=[];
+  		console.log('pushing context: pushing ' + svgEleInfo.token);
+  		console.log('pushing context: stail=')
+  	    for( i=0; i< stail.length; i++){
+  		   console.log( JSON.stringify(stail[i]));
+  	    }
+  		
+  		
+  		if(!!stail){ 
+  		   svgAttrs=stail.filter(function(e){
+  			return e instanceof SvgAttrInfo;
+  		   }).map(function(e){ e.token})
+  	        }
                   contextStack.push(
                       {
                           token: svgEleInfo.token,
-                          location: svgEleInfo.location
+                          location: svgEleInfo.location,
+  			attrs: svgAttrs
                       }
                   );
 

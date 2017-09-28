@@ -23,6 +23,36 @@
         return 0;
     };
     
+    function  eleScopeContainsCursor( svgEleInfo, cursorPos){
+	var comp1=comparePos( 
+                    svgEleInfo.location.start.line, 
+                    svgEleInfo.location.start.column,
+                    cursorPos.row,
+                    cursorPos.column
+                );
+    
+	var comp2=comparePos( 
+                    cursorPos.row,
+                    cursorPos.column,
+                    svgEleInfo.location.end.line, 
+                    svgEleInfo.location.end.column
+                );
+	return (comparePos( 
+                    svgEleInfo.location.start.line, 
+                    svgEleInfo.location.start.column,
+                    cursorPos.row,
+                    cursorPos.column
+                )==1 
+            &&
+            comparePos( 
+                    cursorPos.row,
+                    cursorPos.column,
+                    svgEleInfo.location.end.line, 
+                    svgEleInfo.location.end.column
+                )==1 );
+  
+    };
+    
     function pushContext( svgEleInfo, cursorPos, stail){
     
         if(cursorPos){
@@ -59,11 +89,18 @@
             ){
 		// assume tail passed  into fn
 		var svgAttrs=[];
-		if(stail){ 
+		console.log('pushing context: pushing ' + svgEleInfo.token);
+		console.log('pushing context: stail=')
+	    for( i=0; i< stail.length; i++){
+		   console.log( JSON.stringify(stail[i]));
+	    }
+		
+		
+		if(!!stail){ 
 		   svgAttrs=stail.filter(function(e){
 			return e instanceof SvgAttrInfo;
 		   }).map(function(e){ e.token})
-		
+	        }
                 contextStack.push(
                     {
                         token: svgEleInfo.token,
@@ -346,7 +383,7 @@ atomic_expr =
     'break'
   
 // TODO: ALERT for missing }. ),   RULES: {, (
-//       ALERT for missing (  RULES :for, while,function
+// ALERT for missing (  RULES :for, while,function
 left_token_expr =  
     '{' _ expr_list _ '}'   /                          
     'if' ___ '(' _ expr _ ')' _ expr ___ 'else' _ expr /
@@ -402,7 +439,7 @@ svgRCall = head:keySVGR '(' _ tail:svgRparameters? _ rightParen:( ')' / EOF )
     if(tail){
         for( i=0; i< tail.length; i++){
             if(tail[i]){
-                //console.log("\nsvgRCall tail:[" + i + "]\n" + JSON.stringify(tail[i]) +"\n");
+                console.log("\nsvgRCall tail:[" + i + "]\n" + JSON.stringify(tail[i]) +"\n");
                 if(tail[i] instanceof SvgEleInfo){
                     tailTok=tail[i].token;
                     if(allElements.hasValue( tailTok ) ){
@@ -434,8 +471,25 @@ svgRCall = head:keySVGR '(' _ tail:svgRparameters? _ rightParen:( ')' / EOF )
     // in any case, return head
     result= new SvgEleInfo(headTok, location());
     
-     if( options.cursorPos ){
-         pushContext(result, options.cursorPos, tail);
+     if( !!options.cursorPos ){
+	if ( eleScopeContainsCursor( result, options.cursorPos) ){
+		containedAttrs=[]
+		if(!!tail){
+			console.log("about to construct containedAttrs");
+			containedAttrs=tail.filter(function(e){
+				return !!e && (e instanceof SvgAttrInfo );
+			}).map( function(e) { return e.token; });
+			console.log("fin to containedAttrs");
+			console.log(JSON.stringify(containedAttrs));
+		};
+		contextStack.push(
+                    {
+                        token: result.token,
+                        location: result.location,
+			attrs: containedAttrs
+                    }
+                );
+	}
 	 // todo: iterate over tail and 
 	 // if tail[i] is an instance of SvgAttrInfo, push onto some stack? (or where?
      }

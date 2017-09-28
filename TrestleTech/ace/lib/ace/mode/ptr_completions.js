@@ -32,10 +32,14 @@ var PtrCompletions = function() {
     //console.log("text= \n" + text);
     //console.log( "pos=\n");
     //console.log(JSON.stringify(pos));
-    
-    var scope = ptrparser.scope(text, pos);
+    var context = ptrparser.context(text, pos);
+    var scope = context.tok;
+    var attrsTaken = context.attrs;
+	    
     console.log( "scope=");	    
     console.log(JSON.stringify(scope));
+    console.log( "attrsTaken=");	    
+    console.log(JSON.stringify(attrsTaken));
     //var availContent = [];
     //var availAttributes = [];
     var scodes=[];
@@ -56,7 +60,15 @@ var PtrCompletions = function() {
       //console.log("sm");
       //console.log(JSON.stringify(sm));
       stcodes= scodes.map( function(sc){
-        return [ sc[0], sc[1], candidates[ sc[1] ][ sc[0]] ];
+	    return [ sc[0], sc[1], candidates[ sc[1] ][ sc[0]] ]
+      }).filter( function(e){
+	   if( !!attrsTaken ){
+		console.log('taken ' + JSON.stringify(e));
+		console.log('filter=' + JSON.stringify( attrsTaken.indexOf(e[2]) == -1));
+		return attrsTaken.indexOf(e[2]) == -1;
+	   } else {
+	        return true;
+	   }
       });
     }
     //console.log("stcodes");

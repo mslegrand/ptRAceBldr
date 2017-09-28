@@ -96,6 +96,7 @@ function ptr$context( _input, _cursorPos ){
                     contextCandidate.pos.line=contx.location.start.line ;
                     contextCandidate.pos.col=contx.location.start.column;
                     contextCandidate.tok=contx.token;
+		    contextCandidate.attrs=contx.attrs;
                 }
             }
         }
@@ -139,7 +140,7 @@ function ptr$scope(  _input, _cursorPos){
 return {
   version: '0.2.0',
   parse: ptr$parse,
-  scope:  ptr$scope,
+  context: ptr$context,
   candidates: scopeCompletionCandidates,
   completionCodeMap: scopeCompletions
   //attributeMap:	acceptedAttributes,

@@ -221,7 +221,6 @@ function peg$parse(input, options) {
           if(tail){
               for( i=0; i< tail.length; i++){
                   if(tail[i]){
-                      console.log("\nsvgRCall tail:[" + i + "]\n" + JSON.stringify(tail[i]) +"\n");
                       if(tail[i] instanceof SvgEleInfo){
                           tailTok=tail[i].token;
                           if(allElements.hasValue( tailTok ) ){
@@ -257,12 +256,9 @@ function peg$parse(input, options) {
       	if ( eleScopeContainsCursor( result, options.cursorPos) ){
       		containedAttrs=[]
       		if(!!tail){
-      			console.log("about to construct containedAttrs");
       			containedAttrs=tail.filter(function(e){
       				return !!e && (e instanceof SvgAttrInfo );
       			}).map( function(e) { return e.token; });
-      			console.log("fin to containedAttrs");
-      			console.log(JSON.stringify(containedAttrs));
       		};
       		contextStack.push(
                           {
@@ -281,69 +277,43 @@ function peg$parse(input, options) {
          var result;
          //showResult("svgRNamedParam Attr-",attr);
          result= new SvgAttrInfo(attr, location());
-      //   console.log("\nsvgRNamedParam Result:\n" + JSON.stringify(result) + "\n" ) ;
          return result;},
       peg$c69 = function() {
           var result = elem;
-          //showResult("svgRUnnamedParam Elem-",elem);
-          //result= new SvgEleInfo(elem, location());
-      //    console.log("\nsvgRUnnamedParam Result:\n" + JSON.stringify(result) + "\n" ) ;
           return result;
       },
       peg$c70 = function(head, tail) {   
           var result=tail, loc;
-      //    console.log("svgRparamCombo1");
           if(result){
               loc=location();
-      //        console.log("svgRparamCombo1: tail=" + result);
-      //        printLocation(loc);
-      //        console.log(loc);
-              //result=new SvgEleInfo(result, loc);
           } else {
-      //        console.log("svgRparamCombo1: result is null");
           }
-      //    console.log("\nsvgRparamCombo1 Result:\n" + JSON.stringify(result) + "\n" ) ;
-          //console.log(result);  
           return result;
       },
       peg$c71 = function(tail) { 
           var result=tail;
-      //    console.log("svgRparamCombo2");
-          //if(result)
-          //    result=new SvgEleInfo(tail, location());
           addError( "comma issues", location() ); 
-      //    console.log("\nsvgRparamCombo2 Result:\n" + JSON.stringify(result) +"\n");
           return result;
       },
       peg$c72 = function(tail) {
           var result=tail;
           var resultType;
-       //   console.log("svgRparamCombo12");
           if(result){
               resultType = typeof result;
-      //        console.log("svgRparamCombo12: typeof result =" + resultType);
-      //        console.log(JSON.stringify(result));
           } else {
-      //        console.log("svgRparamCombo12: result is null");
           }
-      //    console.log("\nsvgRparamCombo12 Result:\n" + JSON.stringify(result) +"\n");
           return result;
       },
       peg$c73 = function(head, tail) {
           var result = tail;
           var resultType =typeof head;
           
-      //    console.log("svgRparamCombo12: typeof head =" + resultType);
-
-      //    console.log("Entering svgRparameters");
           if(result){
               resultType = typeof result;
-      //        console.log("svgRparamCombo12: typeof tail =" + resultType);
               result.unshift(head);
           } else {
               result = [head];
           }
-      //    console.log("\nsvgRparameters Result:\n" + JSON.stringify(result) +"\n");
           return result;
       },
       peg$c74 = /^[><:+&*\-.$=\/]/,
@@ -5401,12 +5371,6 @@ function peg$parse(input, options) {
               ){
   		// assume tail passed  into fn
   		var svgAttrs=[];
-  		console.log('pushing context: pushing ' + svgEleInfo.token);
-  		console.log('pushing context: stail=')
-  	    for( i=0; i< stail.length; i++){
-  		   console.log( JSON.stringify(stail[i]));
-  	    }
-  		
   		
   		if(!!stail){ 
   		   svgAttrs=stail.filter(function(e){

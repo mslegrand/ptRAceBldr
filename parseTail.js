@@ -63,9 +63,6 @@ function ptr$context( _input, _cursorPos ){
 			}
 	};
     }
-    // var options={cursorPos: _cursorPos};
-    console.log("context options");
-    console.log( JSON.stringify(options));
     var contextCandidate = {
             tok: "",
             pos: {line: -1, col: -1}
@@ -82,8 +79,6 @@ function ptr$context( _input, _cursorPos ){
             for( var i=0, len=contextStack.length; i<len; i++)
            {
                contx=contextStack[i];
-               console.log( "contextStack " + i + ":  " +  JSON.stringify(contx));
-               
                
                 if(
                     comparePos(
@@ -128,12 +123,7 @@ function ptr$availableCompletions( _input, _cursorPos ){
 }
 
 function ptr$scope(  _input, _cursorPos){
-    //console.log("Enter ptr$scope");
-    //console.log("_cursorPos=");
-   // console.log(JSON.stringify(_cursorPos));
-    //mssgStack.length=0;
-    //contextStack.length=0;
-        return ptr$context( _input, _cursorPos ).tok;
+    return ptr$context( _input, _cursorPos ).tok;
 }
 
 
@@ -143,10 +133,6 @@ return {
   context: ptr$context,
   candidates: scopeCompletionCandidates,
   completionCodeMap: scopeCompletions
-  //attributeMap:	acceptedAttributes,
-  //contentMap: 	acceptContentEle,
-  //scoreMap:  scores,
- // metaMap: metas
 };
 
 })();

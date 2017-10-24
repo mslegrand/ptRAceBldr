@@ -35,8 +35,8 @@ var PtrCompletions = function() {
 	    return [ sc[0], sc[1], candidates[ sc[1] ][ sc[0]] ]
       }).filter( function(e){
 	   if( !!attrsTaken ){
-		console.log('taken ' + JSON.stringify(e));
-		console.log('filter=' + JSON.stringify( attrsTaken.indexOf(e[2]) == -1));
+		//console.log('taken ' + JSON.stringify(e));
+		//console.log('filter=' + JSON.stringify( attrsTaken.indexOf(e[2]) == -1));
 		return attrsTaken.indexOf(e[2]) == -1;
 	   } else {
 	        return true;

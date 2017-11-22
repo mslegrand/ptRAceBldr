@@ -387,7 +387,7 @@ left_token_expr =
     'repeat' _ expr /
     '(' _ expr _ ')' /
     'function' ___ '(' _ formals? _ ')' _ expr  /
-    ('+' / '-') expr
+    ('+' / '-' / '~') _ expr
   
   
 //TODO: ALERT: formals, extra commas or missing commmas
@@ -605,7 +605,7 @@ ID = head:!(keyWord) tail:idword
 
 
 DIGIT=  [0-9]
-INT =   DIGIT+ [Ll]? 
+INT =   DIGIT+ [Ll]?  // 
 EXP =   ('E' / 'e') ('+' / '-')? INT
 
 FLOAT=  DIGIT+ '.' DIGIT* EXP? [Ll]? /

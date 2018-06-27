@@ -1,0 +1,50 @@
+# ptrrmd
+
+# Includes octopress (http://octopress.org/) snippets
+
+snippet [
+	[${1:text}](http://${2:address} )
+snippet [*
+	[${1:link}](${2:`@*`} "${3:title}")${4}
+
+snippet [:
+	[${1:id}]: http://${2:url} "${3:title}"
+snippet [:*
+	[${1:id}]: ${2:`@*`} "${3:title}"
+
+snippet ![
+	![${1:alttext}](${2:/images/image.jpg} "${3:title}")
+snippet ![*
+	![${1:alt}](${2:`@*`} "${3:title}")${4}
+
+snippet ![:
+	![${1:id}]: ${2:url} "${3:title}"
+snippet ![:*
+	![${1:id}]: ${2:`@*`} "${3:title}"
+
+snippet ===
+regex /^/=+/=*//
+	${PREV_LINE/./=/g}
+	
+	${0}
+snippet ---
+regex /^/-+/-*//
+	${PREV_LINE/./-/g}
+	
+	${0}
+
+
+snippet plain_codeblock
+	```
+	${1:code_snippet}
+	```
+
+snippet R_codeblock
+	```{r${2: ref.label}${3:, echo= FALSE}${4:, results='asis'}}
+	${5:library(svgR)}
+	WH=${6:c(600,400)}
+	svgR(wh=WH,
+		${0:circle(cxy=WH/2,r=min(WH/4),fill='red')}
+	)
+	```
+

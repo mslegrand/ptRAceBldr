@@ -582,7 +582,7 @@ LETTER  = [a-zA-Z]
 
 
 keyWord = ('function' / 'if' / 'for' / 'while' / 'repeat' / 'next' / 'in') !(DIGIT/LETTER)
-idword  =  head:( LETTER / ( '.' (LETTER/'_'/'.') ) ) tail:(LETTER/DIGIT/'_'/'.')*
+idword  =  head:( LETTER / ( '.' (LETTER/'_'/'.') / '.' ) ) tail:(LETTER/DIGIT/'_'/'.')*
 {
     var result = tail;
     if(result){

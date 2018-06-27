@@ -2,7 +2,7 @@
 
 # readom the source
 sourceFile<-"./ptrparse.js"
-targetFile<-"./TrestleTech/ace/lib/ace/mode/ptr/ptrparse.js"
+targetFile<-"./TrestleTech/ace-1.3.0/lib/ace/mode/ptr/ptrparse.js"
 sourceTail<-"./parseTail.js"
 
 src<-readLines(sourceFile)

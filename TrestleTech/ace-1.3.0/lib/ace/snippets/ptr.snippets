@@ -62,6 +62,8 @@ snippet mat
 	matrix(${1:data}, nrow=${2:rows}, ncol=${3:cols})
 
 # apply functions
+snippet pma
+	pmap(ptR[['${1:x}']], ${2:polygon} ) ${0:,} 
 snippet apply
 	apply(${1:array}, ${2:margin}, ${3:function})
 snippet lapply

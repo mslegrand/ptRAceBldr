@@ -38,18 +38,18 @@ var XmlMode = require("./xml").Mode;
 var HtmlMode = require("./html").Mode;
 var PtrMode = require("./ptr").Mode;
 var SnippetMode = require("./snippets").Mode;
-var PtrrmdHighlightRules = require("./ptrrmd_highlight_rules").PtrrmdHighlightRules;
+var DnippetsHighlightRules = require("./dnippets_highlight_rules").DnippetsHighlightRules;
 var MarkdownFoldMode = require("./folding/markdown").FoldMode;
 
 var Mode = function() {
-    this.HighlightRules = PtrrmdHighlightRules;
+    this.HighlightRules = DnippetsHighlightRules;
 
     this.createModeDelegates({
         "js-": JavaScriptMode,
         "xml-": XmlMode,
         "html-": HtmlMode,
-	      "ptr-": PtrMode,
-	      "snippet-": SnippetMode
+	      "ptr-":PtrMode,
+	      "snippet-":SnippetMode
     });
 
     this.foldingRules = new MarkdownFoldMode();
@@ -74,7 +74,7 @@ oop.inherits(Mode, TextMode);
             return this.$getIndent(line);
         }
     };
-    this.$id = "ace/mode/ptrrmd";
+    this.$id = "ace/mode/dnippets";
 }).call(Mode.prototype);
 
 exports.Mode = Mode;
